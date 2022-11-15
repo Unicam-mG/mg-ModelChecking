@@ -1,0 +1,80 @@
+Property TwoPhaseLocking-PT-nC00004vD-00
+  "Automatically generated"
+  is:
+    A (X G ((2) <= (#tokens("haveA"))) | G (!((#tokens("haveA2andB")) <= (#tokens("resA"))) U X X ((#tokens("haveA")) <= (#tokens("haveA2andB")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-01
+  "Automatically generated"
+  is:
+    A X X !(F ((#tokens("haveA")) <= (#tokens("Clients"))) | X (F ((1) <= (#tokens("haveA"))) & ((((0) <= (#tokens("haveAandB"))) & ((#tokens("resA")) <= (#tokens("Clients")))) U ((2) <= (#tokens("resA"))))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-02
+  "Automatically generated"
+  is:
+    A F !F X (((#tokens("haveA2andB")) <= (#tokens("haveA"))) & G ((#tokens("haveA2")) <= (#tokens("resB"))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-03
+  "Automatically generated"
+  is:
+    A F X (((#tokens("haveAandB")) <= (#tokens("resB"))) U X ((#tokens("resA")) <= (#tokens("resB"))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-04
+  "Automatically generated"
+  is:
+    A (!((2) <= (#tokens("haveAandB"))) & F ((#tokens("resB")) <= (#tokens("haveA2andB"))) & (((#tokens("resA")) <= (#tokens("resB"))) | X ((#tokens("resB")) <= (#tokens("haveA2andB")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-05
+  "Automatically generated"
+  is:
+    A X F (!X !(((#tokens("haveA2andB")) <= (#tokens("resA"))) | X !((#tokens("haveA2andB")) <= (#tokens("resA")))) U ((#tokens("haveA2andB")) <= (#tokens("resA"))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-06
+  "Automatically generated"
+  is:
+    A F G X X ((#tokens("haveA")) <= (#tokens("haveA2andB")))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-07
+  "Automatically generated"
+  is:
+    A G (G ((#tokens("haveA2")) <= (#tokens("resB"))) | X (((F ((1) <= (#tokens("haveB"))) U ((1) <= (#tokens("haveB")))) & G F ((1) <= (#tokens("Clients")))) U ((#tokens("haveA")) <= (#tokens("haveAandB")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-08
+  "Automatically generated"
+  is:
+    A (!F ((#tokens("haveA2")) <= (#tokens("Clients"))) & F !(!((#tokens("haveA2")) <= (#tokens("Clients"))) U X ((#tokens("haveAandB")) <= (#tokens("haveB")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-09
+  "Automatically generated"
+  is:
+    A ((!((3) <= (#tokens("resA"))) & F ((0) <= (#tokens("haveA2"))) & !G ((#tokens("Clients")) <= (#tokens("resB")))) | G !X ((#tokens("Clients")) <= (#tokens("resB"))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-10
+  "Automatically generated"
+  is:
+    A (!F (((#tokens("resB")) <= (#tokens("resA"))) & X F ((2) <= (#tokens("Clients")))) U G (((1) <= (#tokens("haveA"))) & F ((2) <= (#tokens("haveA2andB")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-11
+  "Automatically generated"
+  is:
+    A (X !((X F (((3) <= (#tokens("haveA"))) & ((1) <= (#tokens("haveA2")))) U ((1) <= (#tokens("haveA2")))) U ((1) <= (#tokens("haveA2")))) U (((1) <= (#tokens("haveA2"))) U ((3) <= (#tokens("haveA")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-12
+  "Automatically generated"
+  is:
+    A (F ((#tokens("resA")) <= (#tokens("haveAandB"))) & G !(!((#tokens("Clients")) <= (#tokens("resB"))) & ((3) <= (#tokens("resB")))) & G (((3) <= (#tokens("resB"))) & !((2) <= (#tokens("haveA2")))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-13
+  "Automatically generated"
+  is:
+    A !G F X !G X ((1) <= (#tokens("resA")))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-14
+  "Automatically generated"
+  is:
+    A G !(F !G (G ((#tokens("resB")) <= (#tokens("resA"))) | G ((#tokens("Clients")) <= (#tokens("haveAandB")))) U ((#tokens("haveB")) <= (#tokens("haveAandB"))))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-15
+  "Automatically generated"
+  is:
+    A !F ((((0) <= (#tokens("haveA"))) U X ((0) <= (#tokens("haveA")))) | X ((0) <= (#tokens("haveA"))))
+  end.

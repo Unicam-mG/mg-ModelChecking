@@ -1,0 +1,80 @@
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("p0")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("p9")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("p1")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("p3")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("p1")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("p2")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("p2")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("p9")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("p6")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("p5")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("p9")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("p0")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("p5")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("p12")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("p11")
+  end.
+Property SatelliteMemory-PT-X00100Y0003-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("p2")
+  end.

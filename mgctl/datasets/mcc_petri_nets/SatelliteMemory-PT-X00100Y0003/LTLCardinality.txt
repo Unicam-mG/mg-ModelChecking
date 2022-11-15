@@ -1,0 +1,80 @@
+Property SatelliteMemory-PT-X00100Y0003-00
+  "Automatically generated"
+  is:
+    A !X F X (F ((#tokens("p9")) <= (#tokens("p0"))) U F X ((#tokens("p9")) <= (#tokens("p0"))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-01
+  "Automatically generated"
+  is:
+    A X ((!((3) <= (#tokens("p10"))) U G X ((1) <= (#tokens("p9")))) U G ((#tokens("p2")) <= (#tokens("p3"))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-02
+  "Automatically generated"
+  is:
+    A (X (((3) <= (#tokens("p11"))) | G ((#tokens("p11")) <= (#tokens("p12")))) U !(((1) <= (#tokens("p5"))) | X ((#tokens("p10")) <= (#tokens("p8"))) | X !((1) <= (#tokens("p5")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-03
+  "Automatically generated"
+  is:
+    A X G (((#tokens("p7")) <= (#tokens("p5"))) | ((1) <= (#tokens("p5"))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-04
+  "Automatically generated"
+  is:
+    A (((0) <= (#tokens("p12"))) U F (((#tokens("p2")) <= (#tokens("p8"))) | ((#tokens("p5")) <= (#tokens("p6")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-05
+  "Automatically generated"
+  is:
+    A (((#tokens("p7")) <= (#tokens("p4"))) U ((#tokens("p0")) <= (#tokens("p6"))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-06
+  "Automatically generated"
+  is:
+    A ((!((1) <= (#tokens("p10"))) U X G X ((2) <= (#tokens("p1")))) | X (((1) <= (#tokens("p2"))) & !(((1) <= (#tokens("p10"))) U ((2) <= (#tokens("p1"))))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-07
+  "Automatically generated"
+  is:
+    A X F (X ((#tokens("p8")) <= (#tokens("p5"))) | F (((#tokens("p8")) <= (#tokens("p5"))) & F ((#tokens("p10")) <= (#tokens("p4"))) & G !((#tokens("p10")) <= (#tokens("p8")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-08
+  "Automatically generated"
+  is:
+    A (((#tokens("p6")) <= (#tokens("p8"))) & (!F ((((0) <= (#tokens("p4"))) & G ((#tokens("p6")) <= (#tokens("p8")))) U F ((#tokens("p6")) <= (#tokens("p8")))) U G ((#tokens("p6")) <= (#tokens("p8")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-09
+  "Automatically generated"
+  is:
+    A (((0) <= (#tokens("p5"))) & F !((#tokens("p2")) <= (#tokens("p5"))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-10
+  "Automatically generated"
+  is:
+    A ((F ((2) <= (#tokens("p6"))) U ((#tokens("p6")) <= (#tokens("p8")))) & X (((#tokens("p6")) <= (#tokens("p8"))) & G ((#tokens("p9")) <= (#tokens("p7")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-11
+  "Automatically generated"
+  is:
+    A G F (((0) <= (#tokens("p1"))) | (((#tokens("p1")) <= (#tokens("p9"))) & X !X !((#tokens("p12")) <= (#tokens("p6")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-12
+  "Automatically generated"
+  is:
+    A F G F (!((3) <= (#tokens("p10"))) & (F !((#tokens("p11")) <= (#tokens("p2"))) U ((3) <= (#tokens("p10")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-13
+  "Automatically generated"
+  is:
+    A !F X G (X (((3) <= (#tokens("p11"))) & ((#tokens("p12")) <= (#tokens("p3")))) U !((2) <= (#tokens("p12"))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-14
+  "Automatically generated"
+  is:
+    A F ((F ((0) <= (#tokens("p2"))) U ((#tokens("p2")) <= (#tokens("p8")))) & G !X (((3) <= (#tokens("p4"))) & !((0) <= (#tokens("p2")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-15
+  "Automatically generated"
+  is:
+    A (((3) <= (#tokens("p1"))) | (!((3) <= (#tokens("p1"))) & F ((3) <= (#tokens("p11"))) & G !G (((#tokens("p9")) <= (#tokens("p8"))) U !((3) <= (#tokens("p11"))))))
+  end.

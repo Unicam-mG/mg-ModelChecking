@@ -1,0 +1,80 @@
+Property TwoPhaseLocking-PT-nC00004vD-00
+  "Automatically generated"
+  is:
+    A X ("relA2"? | X "relA2"? | ("lockA"? U X !"relA"?) | F X "relB"?)
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-01
+  "Automatically generated"
+  is:
+    A G (X F !X !F "lockA2"? U F "relB"?)
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-02
+  "Automatically generated"
+  is:
+    A G ("lockA2"? & G X "relB"?)
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-03
+  "Automatically generated"
+  is:
+    A !(X "relA2"? | (F "lockA2"? U X ("lockA2"? & F X F "relA2"?)))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-04
+  "Automatically generated"
+  is:
+    A (F "lockB"? | G F ("lockB"? | G "lockA"?))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-05
+  "Automatically generated"
+  is:
+    A (!"lockA2"? & X (!F "relB"? U X X "lockA2"?))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-06
+  "Automatically generated"
+  is:
+    A ("relA2"? | G X "lockA"? | !X "relA2"?)
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-07
+  "Automatically generated"
+  is:
+    A F (F "relA2"? | !G (!"relA"? & "lockB"?))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-08
+  "Automatically generated"
+  is:
+    A F ("lockB"? & !(!(G !"lockA"? | ("relA2"? U "lockA"?)) | G "lockB"?))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-09
+  "Automatically generated"
+  is:
+    A X (F ("lockA2"? | G F "lockB"?) U X "relA"?)
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-10
+  "Automatically generated"
+  is:
+    A ("relA"? & F !G (("relB"? U "lockB"?) & G (F "relB"? & F "relB"?)))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-11
+  "Automatically generated"
+  is:
+    A ("relA"? & ((G "lockA"? | ("lockB"? U G "lockB"?)) U "lockB"?))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-12
+  "Automatically generated"
+  is:
+    A F "lockA"?
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-13
+  "Automatically generated"
+  is:
+    A G F G X "lockA2"?
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-14
+  "Automatically generated"
+  is:
+    A (G "lockA"? & X (!("relB"? & F "relA2"?) U (!"relB"? & X "lockA"?)))
+  end.
+Property TwoPhaseLocking-PT-nC00004vD-15
+  "Automatically generated"
+  is:
+    A F X ("lockB"? | ("relA2"? & X "lockB"? & G ("relA2"? U "lockB"?)))
+  end.

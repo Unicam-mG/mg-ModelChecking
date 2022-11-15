@@ -1,0 +1,80 @@
+Property Dekker-PT-015-00
+  "Automatically generated"
+  is:
+    A ("withdraw_14_1"? | (X !"withdraw_14_3"? U ("withdraw_11_1"? & G X "withdraw_14_3"?)) | !G "withdraw_11_1"?)
+  end.
+Property Dekker-PT-015-01
+  "Automatically generated"
+  is:
+    A F !F ("try_6"? | G (G "withdraw_8_3"? | ("withdraw_1_0"? U "withdraw_0_4"?)))
+  end.
+Property Dekker-PT-015-02
+  "Automatically generated"
+  is:
+    A ((!"exit_9"? | (F "enter_3"? U "withdraw_7_14"?)) & X G !"exit_9"?)
+  end.
+Property Dekker-PT-015-03
+  "Automatically generated"
+  is:
+    A F G !X !G !G !X F "enter_1"?
+  end.
+Property Dekker-PT-015-04
+  "Automatically generated"
+  is:
+    A X ((G !"withdraw_13_6"? & !F X "withdraw_14_10"?) | F X "withdraw_4_8"?)
+  end.
+Property Dekker-PT-015-05
+  "Automatically generated"
+  is:
+    A G X !G ("withdraw_6_0"? | ("withdraw_10_5"? U "withdraw_8_6"?) | G ("withdraw_6_0"? U "withdraw_13_11"?))
+  end.
+Property Dekker-PT-015-06
+  "Automatically generated"
+  is:
+    A (!"enter_14"? | "withdraw_6_9"? | X !X (X ("withdraw_5_13"? | "withdraw_0_6"?) U X "withdraw_6_9"?))
+  end.
+Property Dekker-PT-015-07
+  "Automatically generated"
+  is:
+    A (X F G "withdraw_7_4"? U ("enter_10"? | G X "withdraw_2_13"?))
+  end.
+Property Dekker-PT-015-08
+  "Automatically generated"
+  is:
+    A X X G "withdraw_0_1"?
+  end.
+Property Dekker-PT-015-09
+  "Automatically generated"
+  is:
+    A (G "exit_8"? U (!"exit_7"? U "exit_8"?))
+  end.
+Property Dekker-PT-015-10
+  "Automatically generated"
+  is:
+    A F X F G (("withdraw_12_4"? | X F X !"withdraw_12_4"?) U G "withdraw_2_7"?)
+  end.
+Property Dekker-PT-015-11
+  "Automatically generated"
+  is:
+    A F "withdraw_12_2"?
+  end.
+Property Dekker-PT-015-12
+  "Automatically generated"
+  is:
+    A F !X G (F ("withdraw_9_14"? U "withdraw_0_13"?) & G X "withdraw_0_13"?)
+  end.
+Property Dekker-PT-015-13
+  "Automatically generated"
+  is:
+    A ("try_3"? & G "try_3"? & !X !G ("withdraw_14_11"? & X G "exit_14"?))
+  end.
+Property Dekker-PT-015-14
+  "Automatically generated"
+  is:
+    A F (F G "withdraw_4_7"? & G X "withdraw_5_2"?)
+  end.
+Property Dekker-PT-015-15
+  "Automatically generated"
+  is:
+    A ("withdraw_7_3"? | G F (X G X ("withdraw_11_2"? & "withdraw_5_11"?) U "withdraw_13_11"?))
+  end.

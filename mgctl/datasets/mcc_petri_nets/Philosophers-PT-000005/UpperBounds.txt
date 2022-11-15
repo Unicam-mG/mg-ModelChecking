@@ -1,0 +1,80 @@
+Property Philosophers-PT-000005-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")
+  end.
+Property Philosophers-PT-000005-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")
+  end.
+Property Philosophers-PT-000005-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")
+  end.
+Property Philosophers-PT-000005-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")
+  end.
+Property Philosophers-PT-000005-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")
+  end.
+Property Philosophers-PT-000005-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("Fork_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("Think_2")
+  end.
+Property Philosophers-PT-000005-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("Fork_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("Fork_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("Think_1")
+  end.
+Property Philosophers-PT-000005-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("Eat_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("Eat_4")
+  end.
+Property Philosophers-PT-000005-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("Fork_1")
+  end.

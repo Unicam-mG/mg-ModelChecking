@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<property-set xmlns="http://mcc.lip6.fr/">
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-00</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>Cb</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-01</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>CwA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-02</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-03</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SwG</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-04</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-05</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>CF</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-06</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SwG</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-07</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>Si</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-08</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SF</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-09</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>Mi</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-10</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>CwA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-11</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SpG</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-12</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>StF</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-13</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>StR</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-14</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SR</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>ClientsAndServers-PT-N0001P0-UpperBounds-15</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>SpG</place>
+      </place-bound>
+    </formula>
+  </property>
+</property-set>

@@ -1,0 +1,80 @@
+Property BART-PT-002-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("DistStation_18")
+  end.
+Property BART-PT-002-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("DistStation_11")
+  end.
+Property BART-PT-002-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("TrainState_1_4_31")
+  end.
+Property BART-PT-002-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("TrainState_1_2_10")
+  end.
+Property BART-PT-002-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("NewDistTable_26_1_25")
+  end.
+Property BART-PT-002-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("TrainState_1_4_25")
+  end.
+Property BART-PT-002-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("TrainState_2_1_40")
+  end.
+Property BART-PT-002-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("TrainState_1_2_8")
+  end.
+Property BART-PT-002-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("NewDistTable_8_1_7")
+  end.
+Property BART-PT-002-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("NewDistTable_14_4_10")
+  end.
+Property BART-PT-002-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("NewDistTable_12_2_10")
+  end.
+Property BART-PT-002-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("NewDistTable_17_4_13")
+  end.
+Property BART-PT-002-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("NewDistTable_36_4_32")
+  end.
+Property BART-PT-002-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("TrainState_2_2_37")
+  end.
+Property BART-PT-002-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("TrainState_2_2_18")
+  end.
+Property BART-PT-002-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("NewDistTable_13_3_10")
+  end.

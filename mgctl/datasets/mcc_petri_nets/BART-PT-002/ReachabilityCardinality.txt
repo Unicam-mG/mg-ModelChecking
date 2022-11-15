@@ -1,0 +1,80 @@
+Property BART-PT-002-ReachabilityCardinality-00
+  "Automatically generated"
+  is:
+    A G ((((! ((3) <= (#tokens("TrainState_2_1_38")))) & (! ((1) <= (#tokens("NewDistTable_24_4_20")))))) | (! ! ((#tokens("NewDistTable_11_3_8")) <= (#tokens("NewDistTable_21_5_16")))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-01
+  "Automatically generated"
+  is:
+    E F ((((((((#tokens("TrainState_1_1_8")) <= (#tokens("NewDistTable_35_4_31")))) & (((#tokens("DistStation_11")) <= (#tokens("NewDistTable_17_2_15")))))) | (! ((#tokens("NewDistTable_4_2_2")) <= (#tokens("TrainState_2_4_24")))))) & (((((((3) <= (#tokens("TrainState_2_1_1")))) & (((#tokens("TrainState_1_2_16")) <= (#tokens("TrainState_1_2_39")))))) & (((#tokens("TrainState_2_2_17")) <= (#tokens("NewDistTable_16_4_12")))))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-02
+  "Automatically generated"
+  is:
+    E F ((! ! ((1) <= (#tokens("TrainState_2_2_23")))) & (((((((2) <= (#tokens("NewDistTable_18_5_13")))) & (((2) <= (#tokens("DistStation_7")))))) | (! ((#tokens("TrainState_1_1_2")) <= (#tokens("NewDistTable_28_3_25")))))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-03
+  "Automatically generated"
+  is:
+    E F ((2) <= (#tokens("NewDistTable_12_1_11")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-04
+  "Automatically generated"
+  is:
+    E F ((((((2) <= (#tokens("NewDistTable_14_2_12")))) & (((#tokens("TrainState_1_4_13")) <= (#tokens("NewDistTable_36_2_34")))))) & (((((((1) <= (#tokens("NewDistTable_26_2_24")))) & (((2) <= (#tokens("NewDistTable_17_4_13")))))) & (((((2) <= (#tokens("NewDistTable_6_1_5")))) & (((1) <= (#tokens("TrainState_1_3_15")))))))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-05
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("NewDistTable_26_5_21")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-06
+  "Automatically generated"
+  is:
+    A G ((1) <= (#tokens("DistStation_16")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-07
+  "Automatically generated"
+  is:
+    A G ((#tokens("TrainState_2_1_6")) <= (#tokens("NewDistTable_4_3_1")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-08
+  "Automatically generated"
+  is:
+    E F ((((3) <= (#tokens("NewDistTable_32_5_27")))) & (! ((#tokens("TrainState_2_4_33")) <= (#tokens("TrainState_1_2_36")))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-09
+  "Automatically generated"
+  is:
+    E F ((2) <= (#tokens("NewDistTable_6_2_4")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-10
+  "Automatically generated"
+  is:
+    E F ! ((((((1) <= (#tokens("NewDistTable_8_3_5")))) | (((#tokens("NewDistTable_32_2_30")) <= (#tokens("NewDistTable_22_2_20")))))) | (((((#tokens("NewDistTable_13_5_8")) <= (#tokens("TrainState_1_2_12")))) & (((#tokens("NewDistTable_37_3_34")) <= (#tokens("TrainState_1_1_25")))))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-11
+  "Automatically generated"
+  is:
+    E F ((((((1) <= (#tokens("TrainState_1_4_22")))) | (((2) <= (#tokens("TrainState_1_2_39")))))) | (((((3) <= (#tokens("TrainState_2_4_24")))) | (((((3) <= (#tokens("NewDistTable_8_3_5")))) | (((3) <= (#tokens("TrainState_1_2_29")))))))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-12
+  "Automatically generated"
+  is:
+    A G ((#tokens("NewDistTable_28_5_23")) <= (#tokens("DistStation_13")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-13
+  "Automatically generated"
+  is:
+    A G ((((((((#tokens("NewDistTable_11_2_9")) <= (#tokens("NewDistTable_13_2_11")))) | (((3) <= (#tokens("TrainState_2_4_27")))))) | (((((1) <= (#tokens("NewDistTable_12_5_7")))) | (((2) <= (#tokens("NewDistTable_34_4_30")))))))) | (((((#tokens("NewDistTable_40_1_39")) <= (#tokens("TrainState_2_1_9")))) | (! ((1) <= (#tokens("TrainState_2_2_12")))))))
+  end.
+Property BART-PT-002-ReachabilityCardinality-14
+  "Automatically generated"
+  is:
+    A G ! ((3) <= (#tokens("TrainState_2_3_31")))
+  end.
+Property BART-PT-002-ReachabilityCardinality-15
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("NewDistTable_34_4_30")))
+  end.

@@ -1,0 +1,80 @@
+Property RobotManipulation-PT-00005-00
+  "Automatically generated"
+  is:
+    A (X F (F X G ((#tokens("p_sc")) <= (#tokens("r_active"))) & (((#tokens("r_stopped")) <= (#tokens("p_rel"))) U G ((2) <= (#tokens("p_m"))))) & F !((#tokens("r_stopped")) <= (#tokens("p_rel"))))
+  end.
+Property RobotManipulation-PT-00005-01
+  "Automatically generated"
+  is:
+    A X (F ((#tokens("p_rel")) <= (#tokens("access"))) | X X X G !(((3) <= (#tokens("r_moving"))) & X ((#tokens("r_active")) <= (#tokens("initialize")))))
+  end.
+Property RobotManipulation-PT-00005-02
+  "Automatically generated"
+  is:
+    A (X ((2) <= (#tokens("r_stopped"))) & X G !X F ((#tokens("initialize")) <= (#tokens("initialized"))))
+  end.
+Property RobotManipulation-PT-00005-03
+  "Automatically generated"
+  is:
+    A F (X ((3) <= (#tokens("move"))) | X ((0) <= (#tokens("move"))))
+  end.
+Property RobotManipulation-PT-00005-04
+  "Automatically generated"
+  is:
+    A G (G (((3) <= (#tokens("moved"))) U ((#tokens("p_rdy")) <= (#tokens("r_stopped")))) & F G (((#tokens("p_sc")) <= (#tokens("r_stopped"))) | (((2) <= (#tokens("r_stopped"))) & ((3) <= (#tokens("moved"))))))
+  end.
+Property RobotManipulation-PT-00005-05
+  "Automatically generated"
+  is:
+    A (F (((#tokens("p_m")) <= (#tokens("p_sc"))) | (((#tokens("moved")) <= (#tokens("initialize"))) U ((0) <= (#tokens("initialize"))))) | X F X ((#tokens("moved")) <= (#tokens("initialize"))))
+  end.
+Property RobotManipulation-PT-00005-06
+  "Automatically generated"
+  is:
+    A X !(F X ((0) <= (#tokens("moved"))) & (G !F ((#tokens("p_rel")) <= (#tokens("p_i1"))) U X ((0) <= (#tokens("moved")))))
+  end.
+Property RobotManipulation-PT-00005-07
+  "Automatically generated"
+  is:
+    A !((((1) <= (#tokens("p_m"))) U !X F ((#tokens("p_i1")) <= (#tokens("access")))) U X (((3) <= (#tokens("move"))) | !((2) <= (#tokens("p_i2")))))
+  end.
+Property RobotManipulation-PT-00005-08
+  "Automatically generated"
+  is:
+    A !(!((#tokens("initialized")) <= (#tokens("initialize"))) | F !((1) <= (#tokens("p_sc"))))
+  end.
+Property RobotManipulation-PT-00005-09
+  "Automatically generated"
+  is:
+    A F (((#tokens("access")) <= (#tokens("move"))) & F (F ((1) <= (#tokens("r_stopped"))) & X (((1) <= (#tokens("r_stopped"))) & ((#tokens("p_i1")) <= (#tokens("r_active"))))))
+  end.
+Property RobotManipulation-PT-00005-10
+  "Automatically generated"
+  is:
+    A (X (((#tokens("r_active")) <= (#tokens("initialize"))) & G ((1) <= (#tokens("p_sc")))) | !X ((#tokens("p_i2")) <= (#tokens("off"))))
+  end.
+Property RobotManipulation-PT-00005-11
+  "Automatically generated"
+  is:
+    A (!(((3) <= (#tokens("p_sc"))) | G ((#tokens("initialize")) <= (#tokens("p_i2")))) U G !((#tokens("initialize")) <= (#tokens("p_i2"))))
+  end.
+Property RobotManipulation-PT-00005-12
+  "Automatically generated"
+  is:
+    A F !F ((F !F ((2) <= (#tokens("p_rdy"))) & G ((1) <= (#tokens("p_sc")))) U (((#tokens("p_sc")) <= (#tokens("access"))) | ((#tokens("moved")) <= (#tokens("r_moving")))))
+  end.
+Property RobotManipulation-PT-00005-13
+  "Automatically generated"
+  is:
+    A X (((#tokens("initialize")) <= (#tokens("p_sc"))) & G (F ((3) <= (#tokens("access"))) | !(((#tokens("p_sc")) <= (#tokens("moved"))) U ((#tokens("initialize")) <= (#tokens("p_sc"))))))
+  end.
+Property RobotManipulation-PT-00005-14
+  "Automatically generated"
+  is:
+    A X X X (G X ((0) <= (#tokens("r_moving"))) | F (G X ((0) <= (#tokens("r_moving"))) U ((#tokens("initialized")) <= (#tokens("initialize")))))
+  end.
+Property RobotManipulation-PT-00005-15
+  "Automatically generated"
+  is:
+    A !(X ((#tokens("moved")) <= (#tokens("p_rdy"))) | F G (((2) <= (#tokens("p_rel"))) U (((3) <= (#tokens("p_m"))) U ((2) <= (#tokens("off"))))))
+  end.

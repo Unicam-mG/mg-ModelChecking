@@ -1,0 +1,5 @@
+libmg
+networkx
+pymodelchecking
+regex
+snakes

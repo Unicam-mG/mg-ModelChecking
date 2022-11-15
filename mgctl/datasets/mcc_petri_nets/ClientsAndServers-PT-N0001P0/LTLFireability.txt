@@ -1,0 +1,80 @@
+Property ClientsAndServers-PT-N0001P0-00
+  "Automatically generated"
+  is:
+    A X !("mfU"? U F ("msG"? U G !"ssG"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-01
+  "Automatically generated"
+  is:
+    A (G X !"ssG"? & X X X ("csR"? | F "csR"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-02
+  "Automatically generated"
+  is:
+    A (G ("ssR"? & "mrR"?) & (("ssR"? & X "ssR"?) U X !"srG"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-03
+  "Automatically generated"
+  is:
+    A !F (F "csR"? U !("msA"? & "csR"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-04
+  "Automatically generated"
+  is:
+    A F (!("srG"? | F "msA"?) U F X X X F ("srG"? U "mrF"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-05
+  "Automatically generated"
+  is:
+    A (("srR"? & "ssR"? & ("csF"? | X "ssR"?)) U X "csF"?)
+  end.
+Property ClientsAndServers-PT-N0001P0-06
+  "Automatically generated"
+  is:
+    A ("ssG"? & G "mrF"? & F (F G F "csF"? U !"ssG"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-07
+  "Automatically generated"
+  is:
+    A (("srF"? | "ssR"?) & G ("srF"? & F X G (!"csF"? U X "srR"?)))
+  end.
+Property ClientsAndServers-PT-N0001P0-08
+  "Automatically generated"
+  is:
+    A G "mrF"?
+  end.
+Property ClientsAndServers-PT-N0001P0-09
+  "Automatically generated"
+  is:
+    A ("ssA"? | "ssF"? | F "mfU"? | F (!"srG"? & X "mrF"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-10
+  "Automatically generated"
+  is:
+    A G X (X "mfU"? | X "maU"?)
+  end.
+Property ClientsAndServers-PT-N0001P0-11
+  "Automatically generated"
+  is:
+    A F X X X G X "crG"?
+  end.
+Property ClientsAndServers-PT-N0001P0-12
+  "Automatically generated"
+  is:
+    A (G F ("mfU"? U G "crG"?) | !X G "msG"?)
+  end.
+Property ClientsAndServers-PT-N0001P0-13
+  "Automatically generated"
+  is:
+    A !F G F !F X G F X "msA"?
+  end.
+Property ClientsAndServers-PT-N0001P0-14
+  "Automatically generated"
+  is:
+    A (F G ("srR"? | G "srF"?) U ("srF"? | X F !"ssR"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-15
+  "Automatically generated"
+  is:
+    A !X G !G F !("maU"? & F X "mrR"?)
+  end.

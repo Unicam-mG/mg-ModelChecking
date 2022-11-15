@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<property-set xmlns="http://mcc.lip6.fr/">
+  <property>
+    <id>2PhLockVParam-UpperBounds-00</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>Clients</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-01</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>Clients</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-02</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-03</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>Clients</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-04</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>resB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-05</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>resA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-06</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveAandB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-07</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveA2</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-08</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-09</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveAandB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-10</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-11</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>resA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-12</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveA2</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-13</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>resA</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-14</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveAandB</place>
+      </place-bound>
+    </formula>
+  </property>
+  <property>
+    <id>2PhLockVParam-UpperBounds-15</id>
+    <description>Automatically generated</description>
+    <formula>
+      <place-bound>
+        <place>haveA2andB</place>
+      </place-bound>
+    </formula>
+  </property>
+</property-set>

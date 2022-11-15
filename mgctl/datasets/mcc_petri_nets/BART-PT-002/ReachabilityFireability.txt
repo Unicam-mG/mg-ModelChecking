@@ -1,0 +1,80 @@
+Property BART-PT-002-ReachabilityFireability-00
+  "Automatically generated"
+  is:
+    A G ! (((((("TrainStable_1_2_1_15_14_13_3"?) & ("TrainDecc_2_1_3_4_2_1_6"?))) & ("TrainAcc_1_2_40_39_38_3"?))) & (! ! "TrainStable_1_2_1_25_24_23_3"?))
+  end.
+Property BART-PT-002-ReachabilityFireability-01
+  "Automatically generated"
+  is:
+    A G ! "TrainStable_4_1_10_29_25_24_15"?
+  end.
+Property BART-PT-002-ReachabilityFireability-02
+  "Automatically generated"
+  is:
+    E F "TrainDecc_2_1_3_4_2_1_6"?
+  end.
+Property BART-PT-002-ReachabilityFireability-03
+  "Automatically generated"
+  is:
+    A G ! "TrainAcc_3_1_19_16_15_10"?
+  end.
+Property BART-PT-002-ReachabilityFireability-04
+  "Automatically generated"
+  is:
+    E F "TrainAcc_3_2_20_17_16_10"?
+  end.
+Property BART-PT-002-ReachabilityFireability-05
+  "Automatically generated"
+  is:
+    E F (((((("TrainAcc_2_1_39_37_36_6"?) & ((("TrainStable_3_1_6_10_7_6_10"?) & ("TrainAcc_1_1_20_19_18_3"?))))) & ("TrainStable_1_2_1_20_19_18_3"?))) & (! (((("TrainAcc_1_2_23_22_21_3"?) & ("TrainAcc_3_2_20_17_16_10"?))) | ((("TrainAcc_2_1_21_19_18_6"?) | ("TrainAcc_2_1_31_29_28_6"?))))))
+  end.
+Property BART-PT-002-ReachabilityFireability-06
+  "Automatically generated"
+  is:
+    A G ! ! ((! "TrainAcc_3_2_27_24_23_10"?) | (! "AtStation_2_23"?))
+  end.
+Property BART-PT-002-ReachabilityFireability-07
+  "Automatically generated"
+  is:
+    A G ((((((! "TrainStable_4_1_10_25_21_20_15"?) | ((("TrainStable_1_2_1_19_18_17_3"?) | ("TrainStable_1_2_1_20_19_18_3"?))))) | ("AtStation_2_31"?))) | ((((((("TrainAcc_2_1_23_21_20_6"?) & ("TrainAcc_2_1_38_36_35_6"?))) & ("TrainStable_1_1_1_26_25_24_3"?))) | (! "AtStation_2_6"?))))
+  end.
+Property BART-PT-002-ReachabilityFireability-08
+  "Automatically generated"
+  is:
+    A G ! "TrainAcc_3_1_33_30_29_10"?
+  end.
+Property BART-PT-002-ReachabilityFireability-09
+  "Automatically generated"
+  is:
+    E F "TrainDecc_2_1_3_4_2_1_6"?
+  end.
+Property BART-PT-002-ReachabilityFireability-10
+  "Automatically generated"
+  is:
+    A G ((((! ! "AtStation_2_28"?) | (! "TrainAcc_3_2_33_30_29_10"?))) | ((((((("TrainStable_2_1_3_8_6_5_6"?) | ("AtStation_1_16"?))) & ((("AtStation_2_35"?) | ("TrainStable_3_1_6_11_8_7_10"?))))) & (((! "TrainStable_2_1_3_9_7_6_6"?) | ((("AtStation_2_12"?) & ("TrainAcc_1_2_38_37_36_3"?))))))))
+  end.
+Property BART-PT-002-ReachabilityFireability-11
+  "Automatically generated"
+  is:
+    E F (("TrainAcc_1_1_20_19_18_3"?) & ((("AtStation_1_5"?) & (((! "TrainStable_4_2_10_27_23_22_15"?) | ((("TrainAcc_2_1_37_35_34_6"?) | ("AtStation_2_13"?))))))))
+  end.
+Property BART-PT-002-ReachabilityFireability-12
+  "Automatically generated"
+  is:
+    A G ! (((("TrainAcc_3_2_35_32_31_10"?) & ("TrainDecc_2_2_3_4_2_1_6"?))) & ((((("TrainAcc_2_2_24_22_21_6"?) & ("TrainStable_4_2_10_15_11_10_15"?))) & ((("TrainDecc_2_1_3_4_2_1_6"?) & ("TrainStable_1_2_1_25_24_23_3"?))))))
+  end.
+Property BART-PT-002-ReachabilityFireability-13
+  "Automatically generated"
+  is:
+    E F "TrainStable_4_1_10_29_25_24_15"?
+  end.
+Property BART-PT-002-ReachabilityFireability-14
+  "Automatically generated"
+  is:
+    E F (((((((("TrainAcc_2_2_12_10_9_6"?) & ("TrainStable_1_2_1_33_32_31_3"?))) | ((("TrainAcc_3_2_36_33_32_10"?) | ("TrainStable_2_2_3_9_7_6_6"?))))) & ((("TrainAcc_2_1_23_21_20_6"?) & (! "AtStation_2_16"?))))) & (! ! "TrainAcc_3_2_19_16_15_10"?))
+  end.
+Property BART-PT-002-ReachabilityFireability-15
+  "Automatically generated"
+  is:
+    A G ((! (("TrainAcc_3_1_29_26_25_10"?) & ((("TrainStable_1_1_1_27_26_25_3"?) | ("TrainStable_2_2_3_6_4_3_6"?))))) | ((((("TrainAcc_1_2_14_13_12_3"?) & ((("TrainAcc_3_2_31_28_27_10"?) | ("AtStation_1_8"?))))) & ((((("TrainAcc_1_1_21_20_19_3"?) & ("TrainStable_4_2_10_28_24_23_15"?))) & ("TrainStable_1_1_1_34_33_32_3"?))))))
+  end.

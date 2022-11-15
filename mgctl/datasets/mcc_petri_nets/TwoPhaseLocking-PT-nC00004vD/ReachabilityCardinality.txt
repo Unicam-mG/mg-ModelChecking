@@ -1,0 +1,80 @@
+Property 2PhLockVParam-ReachabilityCardinality-00
+  "Automatically generated"
+  is:
+    A G ((#tokens("Clients")) <= (#tokens("Clients")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-01
+  "Automatically generated"
+  is:
+    A G ((! ((((#tokens("haveB")) <= (#tokens("resB")))) & (((#tokens("resA")) <= (#tokens("Clients")))))) & (((! ((2) <= (#tokens("resA")))) & (((#tokens("haveA2")) <= (#tokens("haveA")))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-02
+  "Automatically generated"
+  is:
+    A G ((((((((#tokens("resB")) <= (#tokens("haveA2andB")))) | (((1) <= (#tokens("resA")))))) & (((((#tokens("haveA")) <= (#tokens("resA")))) & (((#tokens("haveA2")) <= (#tokens("haveAandB")))))))) | (((((((#tokens("haveA2")) <= (#tokens("haveB")))) | (((3) <= (#tokens("haveA2andB")))))) | (((((3) <= (#tokens("haveA2andB")))) & (((3) <= (#tokens("haveB")))))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-03
+  "Automatically generated"
+  is:
+    E F ((#tokens("haveB")) <= (#tokens("resA")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-04
+  "Automatically generated"
+  is:
+    E F ((((((1) <= (#tokens("haveB")))) & (! ((3) <= (#tokens("haveB")))))) & (((((((1) <= (#tokens("Clients")))) & (((#tokens("haveB")) <= (#tokens("resB")))))) & (((((2) <= (#tokens("haveA2andB")))) & (((#tokens("haveA")) <= (#tokens("haveA2andB")))))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-05
+  "Automatically generated"
+  is:
+    E F ((1) <= (#tokens("haveA")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-06
+  "Automatically generated"
+  is:
+    A G ((2) <= (#tokens("haveA2andB")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-07
+  "Automatically generated"
+  is:
+    A G ! ((3) <= (#tokens("haveAandB")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-08
+  "Automatically generated"
+  is:
+    A G ((! ! ((#tokens("Clients")) <= (#tokens("haveAandB")))) | (! ((#tokens("resA")) <= (#tokens("resA")))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-09
+  "Automatically generated"
+  is:
+    E F ((((((((#tokens("haveA2andB")) <= (#tokens("haveA2andB")))) | (((1) <= (#tokens("haveAandB")))))) & (((((1) <= (#tokens("resA")))) & (((#tokens("haveA")) <= (#tokens("haveA2andB")))))))) & (((((3) <= (#tokens("haveB")))) | (((((1) <= (#tokens("haveB")))) | (((3) <= (#tokens("haveAandB")))))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-10
+  "Automatically generated"
+  is:
+    E F ! ((((#tokens("Clients")) <= (#tokens("haveB")))) & (((((#tokens("haveAandB")) <= (#tokens("haveA2andB")))) & (((#tokens("haveAandB")) <= (#tokens("haveA2andB")))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-11
+  "Automatically generated"
+  is:
+    E F ((((2) <= (#tokens("haveAandB")))) | (((! ((1) <= (#tokens("resA")))) | (! ((1) <= (#tokens("Clients")))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-12
+  "Automatically generated"
+  is:
+    E F ((((#tokens("Clients")) <= (#tokens("resA")))) & (((((((2) <= (#tokens("Clients")))) | (((#tokens("resA")) <= (#tokens("haveAandB")))))) & (! ((2) <= (#tokens("haveA2")))))))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-13
+  "Automatically generated"
+  is:
+    A G ! ! ((#tokens("haveA2andB")) <= (#tokens("haveAandB")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-14
+  "Automatically generated"
+  is:
+    A G ! ((#tokens("haveAandB")) <= (#tokens("haveA2")))
+  end.
+Property 2PhLockVParam-ReachabilityCardinality-15
+  "Automatically generated"
+  is:
+    A G ! ((2) <= (#tokens("haveAandB")))
+  end.

@@ -1,0 +1,80 @@
+Property Philosophers-PT-000005-00
+  "Automatically generated"
+  is:
+    A (((2) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) | F (((0) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) & !((0) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))) | X (F X ((2) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) | G ((1) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))))
+  end.
+Property Philosophers-PT-000005-01
+  "Automatically generated"
+  is:
+    A G !X G (!F (((1) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5"))) & ((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))) U (((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) | ((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))))
+  end.
+Property Philosophers-PT-000005-02
+  "Automatically generated"
+  is:
+    A X F (X G ((3) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4"))) U G ((#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5"))))
+  end.
+Property Philosophers-PT-000005-03
+  "Automatically generated"
+  is:
+    A (!G !((#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5"))) & G (G ((3) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4"))) U X !((1) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))))
+  end.
+Property Philosophers-PT-000005-04
+  "Automatically generated"
+  is:
+    A X !(((1) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) & X F X (((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))) & F ((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))) & F G ((2) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))))
+  end.
+Property Philosophers-PT-000005-05
+  "Automatically generated"
+  is:
+    A (((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) | G ((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))) | G !(((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) & X F ((2) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))))
+  end.
+Property Philosophers-PT-000005-06
+  "Automatically generated"
+  is:
+    A ((((1) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5"))) U ((0) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))) U (((0) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5"))) | G X X G ((0) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))))
+  end.
+Property Philosophers-PT-000005-07
+  "Automatically generated"
+  is:
+    A (((#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))) & G F (((1) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5"))) & ((1) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))) & G (((1) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))) & ((#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4"))))))
+  end.
+Property Philosophers-PT-000005-08
+  "Automatically generated"
+  is:
+    A X F G X ((#tokens("Fork_2")) <= (#tokens("Eat_1")))
+  end.
+Property Philosophers-PT-000005-09
+  "Automatically generated"
+  is:
+    A (!((2) <= (#tokens("Catch2_1"))) & G ((#tokens("Eat_1")) <= (#tokens("Think_1"))))
+  end.
+Property Philosophers-PT-000005-10
+  "Automatically generated"
+  is:
+    A X !((((#tokens("Think_5")) <= (#tokens("Eat_1"))) | X ((#tokens("Catch2_3")) <= (#tokens("Catch1_3")))) U F X (F ((#tokens("Think_1")) <= (#tokens("Fork_3"))) U (((#tokens("Think_1")) <= (#tokens("Fork_3"))) & ((#tokens("Fork_5")) <= (#tokens("Catch2_1"))))))
+  end.
+Property Philosophers-PT-000005-11
+  "Automatically generated"
+  is:
+    A F (F (((2) <= (#tokens("Catch1_3"))) | ((3) <= (#tokens("Catch1_4"))) | (!((2) <= (#tokens("Catch1_3"))) & F !((#tokens("Think_2")) <= (#tokens("Catch1_5"))))) U F ((3) <= (#tokens("Catch1_4"))))
+  end.
+Property Philosophers-PT-000005-12
+  "Automatically generated"
+  is:
+    A F ((3) <= (#tokens("Fork_3")))
+  end.
+Property Philosophers-PT-000005-13
+  "Automatically generated"
+  is:
+    A F (((#tokens("Catch1_5")) <= (#tokens("Think_3"))) | F X X !((#tokens("Fork_2")) <= (#tokens("Catch2_1"))))
+  end.
+Property Philosophers-PT-000005-14
+  "Automatically generated"
+  is:
+    A X !F (!((0) <= (#tokens("Catch2_3"))) | F G F ((2) <= (#tokens("Catch1_4"))))
+  end.
+Property Philosophers-PT-000005-15
+  "Automatically generated"
+  is:
+    A !(((#tokens("Catch1_1")) <= (#tokens("Eat_3"))) U (!((#tokens("Catch2_5")) <= (#tokens("Eat_2"))) & (G ((#tokens("Catch2_5")) <= (#tokens("Eat_2"))) | G !X ((#tokens("Catch1_1")) <= (#tokens("Eat_3"))))))
+  end.

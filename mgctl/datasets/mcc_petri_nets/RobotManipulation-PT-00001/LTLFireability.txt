@@ -1,0 +1,80 @@
+Property RobotManipulation-PT-00001-00
+  "Automatically generated"
+  is:
+    A X F G ("p_relSC"? | !G F "p_start"?)
+  end.
+Property RobotManipulation-PT-00001-01
+  "Automatically generated"
+  is:
+    A (!F !X "p_started"? | X !(("p_sop"? & "p_started"?) | G "p_start"?))
+  end.
+Property RobotManipulation-PT-00001-02
+  "Automatically generated"
+  is:
+    A (!(G F "r_stops"? & X "p_move"?) U G ("p_move"? & "r_stops"?))
+  end.
+Property RobotManipulation-PT-00001-03
+  "Automatically generated"
+  is:
+    A F X F ("p_started"? & "p_sop"?)
+  end.
+Property RobotManipulation-PT-00001-04
+  "Automatically generated"
+  is:
+    A F G F ("p_started"? & !G ("r_begin_move"? | X ("p_start"? U "p_started"?)))
+  end.
+Property RobotManipulation-PT-00001-05
+  "Automatically generated"
+  is:
+    A (!(!"r_end_move"? | "r_starts"?) | X !(("r_end_move"? & "p_start"?) | G X "p_start"?))
+  end.
+Property RobotManipulation-PT-00001-06
+  "Automatically generated"
+  is:
+    A (G ("p_started"? | "p_intoSC"?) U X (X "p_intoSC"? | X ("p_start"? | "r_begin_move"?)))
+  end.
+Property RobotManipulation-PT-00001-07
+  "Automatically generated"
+  is:
+    A (F "r_end_move"? & G (F "p_move"? U ("p_move"? & "r_end_move"?)))
+  end.
+Property RobotManipulation-PT-00001-08
+  "Automatically generated"
+  is:
+    A G X !(("r_begin_move"? | (X "p_started"? U "r_starts"?)) & (F "p_started"? | X "r_end_move"?))
+  end.
+Property RobotManipulation-PT-00001-09
+  "Automatically generated"
+  is:
+    A (X "p_move"? | F "p_relSC"? | (!"p_relSC"? & X "r_end_move"?))
+  end.
+Property RobotManipulation-PT-00001-10
+  "Automatically generated"
+  is:
+    A G !F "r_stops"?
+  end.
+Property RobotManipulation-PT-00001-11
+  "Automatically generated"
+  is:
+    A F (G F !"p_started"? U ("p_moved"? | G "p_relSC"?))
+  end.
+Property RobotManipulation-PT-00001-12
+  "Automatically generated"
+  is:
+    A (X ("r_end_move"? | G "r_end_move"?) & G F !F !X "p_moved"?)
+  end.
+Property RobotManipulation-PT-00001-13
+  "Automatically generated"
+  is:
+    A (F G F (X "r_stops"? U F "p_intoSC"?) & G "p_start"?)
+  end.
+Property RobotManipulation-PT-00001-14
+  "Automatically generated"
+  is:
+    A ("p_move"? | (F ("r_end_move"? | X "p_moved"?) & !F "p_move"?))
+  end.
+Property RobotManipulation-PT-00001-15
+  "Automatically generated"
+  is:
+    A !(("p_move"? U X F "p_relSC"?) | G F !("p_moved"? U "r_starts"?))
+  end.

@@ -1,0 +1,80 @@
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-00
+  "Automatically generated"
+  is:
+    E F ((! "srG"?) & ((((((("mfU"?) | ("srA"?))) & ((("mrF"?) | ("ssG"?))))) & (((! "srA"?) & ((("crG"?) | ("mrR"?))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-01
+  "Automatically generated"
+  is:
+    E F (((("srR"?) & ((("msA"?) & ((("srR"?) | ("mfU"?))))))) & ((((("crG"?) | ((("ssF"?) & ("mfU"?))))) & ("ssG"?))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-02
+  "Automatically generated"
+  is:
+    A G ! (("srF"?) & ((("csF"?) & ((("mrF"?) & ("srR"?))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-03
+  "Automatically generated"
+  is:
+    A G (((((((("srR"?) | ("srA"?))) | ((("crA"?) & ("ssR"?))))) | (! (("srG"?) | ("srF"?))))) | (! (((("ssR"?) | ("ssG"?))) & ("srR"?))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-04
+  "Automatically generated"
+  is:
+    E F ! ((! (("ssG"?) | ("ssG"?))) | (((! "mfU"?) | ("mfU"?))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-05
+  "Automatically generated"
+  is:
+    E F (("ssF"?) & ((((((("crA"?) & ("srF"?))) & ((("maU"?) & ("mrR"?))))) | ((((("mrF"?) & ("mfU"?))) & ((("ssF"?) | ("srR"?))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-06
+  "Automatically generated"
+  is:
+    E F ((! (((("csF"?) & ("ssA"?))) | (! "srG"?))) & (((! ! "crA"?) & ((((("ssG"?) | ("crA"?))) & ((("srF"?) | ("ssG"?))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-07
+  "Automatically generated"
+  is:
+    A G (((((((("msA"?) | ("ssG"?))) | (! "ssA"?))) | ("ssA"?))) | (! (((("srG"?) | ("srF"?))) & ("mrF"?))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-08
+  "Automatically generated"
+  is:
+    A G ! (((("msA"?) & (! "ssG"?))) & ((("crG"?) & ("srG"?))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-09
+  "Automatically generated"
+  is:
+    A G (((("csR"?) | (((! "crA"?) & ((("srA"?) | ("msA"?))))))) | (((! ! "csF"?) | (! (("srA"?) & ("maU"?))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-10
+  "Automatically generated"
+  is:
+    E F (((("srA"?) & ("ssA"?))) & ("msG"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-11
+  "Automatically generated"
+  is:
+    A G ((((! (("srF"?) | ("msG"?))) | (! (("msA"?) & ("ssA"?))))) | (! (("srA"?) & ((("srF"?) | ("csF"?))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-12
+  "Automatically generated"
+  is:
+    E F (((((("mfU"?) & (! "mrF"?))) & ((("csF"?) | ((("msG"?) | ("srR"?))))))) & ((("csR"?) & (! ! "ssA"?))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-13
+  "Automatically generated"
+  is:
+    A G ((! (((("ssG"?) | ("csR"?))) | ((("srF"?) | ("ssA"?))))) | ((((((("srR"?) & ("mrF"?))) | (! "srF"?))) | (! (("msG"?) & ("msA"?))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-14
+  "Automatically generated"
+  is:
+    E F (((((((("msG"?) | ("ssF"?))) | ("csR"?))) & ((((("crA"?) & ("ssR"?))) & ((("msG"?) & ("msG"?))))))) & ("crG"?))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityFireability-15
+  "Automatically generated"
+  is:
+    A G ((((! "srF"?) | (! ! "ssR"?))) & (((((! "msG"?) | ((("crG"?) | ("ssA"?))))) | ((((("mfU"?) | ("mfU"?))) | (! "mrR"?))))))
+  end.

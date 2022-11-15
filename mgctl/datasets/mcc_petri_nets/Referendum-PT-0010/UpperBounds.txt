@@ -1,0 +1,80 @@
+Property Referendum-PT-0010-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("ready")
+  end.
+Property Referendum-PT-0010-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("ready")
+  end.
+Property Referendum-PT-0010-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("ready")
+  end.
+Property Referendum-PT-0010-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10")
+  end.
+Property Referendum-PT-0010-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")
+  end.
+Property Referendum-PT-0010-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")
+  end.
+Property Referendum-PT-0010-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10")
+  end.
+Property Referendum-PT-0010-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10")
+  end.
+Property Referendum-PT-0010-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("voted_no_6")
+  end.
+Property Referendum-PT-0010-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("voted_yes_8")
+  end.
+Property Referendum-PT-0010-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("voted_no_1")
+  end.
+Property Referendum-PT-0010-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("voted_yes_6")
+  end.
+Property Referendum-PT-0010-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("voting_5")
+  end.
+Property Referendum-PT-0010-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("voting_4")
+  end.
+Property Referendum-PT-0010-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("voting_2")
+  end.
+Property Referendum-PT-0010-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("voting_7")
+  end.

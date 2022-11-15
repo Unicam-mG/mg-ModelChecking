@@ -1,0 +1,80 @@
+Property HouseConstruction-PT-00005-00
+  "Automatically generated"
+  is:
+    A G (X "t4"? U (X "t13"? U "t2"?))
+  end.
+Property HouseConstruction-PT-00005-01
+  "Automatically generated"
+  is:
+    A (F (!"t4"? U "t12"?) U ("t12"? | G "t13"?))
+  end.
+Property HouseConstruction-PT-00005-02
+  "Automatically generated"
+  is:
+    A (G "t11"? U X (G !("t9"? U F "t9"?) U "t8"?))
+  end.
+Property HouseConstruction-PT-00005-03
+  "Automatically generated"
+  is:
+    A !F "t18"?
+  end.
+Property HouseConstruction-PT-00005-04
+  "Automatically generated"
+  is:
+    A !X ("t6"? & "t3"? & X X ("t3"? & "t6"? & G X "t6"?))
+  end.
+Property HouseConstruction-PT-00005-05
+  "Automatically generated"
+  is:
+    A X (!"t14"? & F X F "t14"?)
+  end.
+Property HouseConstruction-PT-00005-06
+  "Automatically generated"
+  is:
+    A (F "t6"? & G X ("t14"? & G "t14"? & X "t7"?))
+  end.
+Property HouseConstruction-PT-00005-07
+  "Automatically generated"
+  is:
+    A !G F (G "t9"? & (G !"t2"? U "t14"?))
+  end.
+Property HouseConstruction-PT-00005-08
+  "Automatically generated"
+  is:
+    A G "t6"?
+  end.
+Property HouseConstruction-PT-00005-09
+  "Automatically generated"
+  is:
+    A (("t18"? U "t1"?) U (("t6"? & "t4"?) U F "t18"?))
+  end.
+Property HouseConstruction-PT-00005-10
+  "Automatically generated"
+  is:
+    A ("t10"? | G "t17"?)
+  end.
+Property HouseConstruction-PT-00005-11
+  "Automatically generated"
+  is:
+    A G ("t1"? | !"t2"? | X F X (G !"t8"? U G "t8"?))
+  end.
+Property HouseConstruction-PT-00005-12
+  "Automatically generated"
+  is:
+    A X X F G X X "t9"?
+  end.
+Property HouseConstruction-PT-00005-13
+  "Automatically generated"
+  is:
+    A X (G "t3"? & X G F "t17"?)
+  end.
+Property HouseConstruction-PT-00005-14
+  "Automatically generated"
+  is:
+    A X ("t8"? | F G !"t8"?)
+  end.
+Property HouseConstruction-PT-00005-15
+  "Automatically generated"
+  is:
+    A F (G (("t12"? | "t9"?) U F "t6"?) & X ("t12"? & G X "t10"?))
+  end.

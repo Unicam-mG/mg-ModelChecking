@@ -1,0 +1,80 @@
+Property RobotManipulation-PT-00002-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("p_sc")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("p_rdy")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("initialized")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("r_active")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("r_moving")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("r_active")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("initialized")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("access")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("off")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("move")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("p_i1")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("access")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("p_rel")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("initialized")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("move")
+  end.
+Property RobotManipulation-PT-00002-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("r_active")
+  end.

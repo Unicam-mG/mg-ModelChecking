@@ -1,0 +1,80 @@
+Property Philosophers-PT-000005-ReachabilityCardinality-00
+  "Automatically generated"
+  is:
+    A G ! ((((((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")))) & (((1) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))))) & (((((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))) | (((2) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-01
+  "Automatically generated"
+  is:
+    E F ! ((((((#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))) | (((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))))) | (((3) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-02
+  "Automatically generated"
+  is:
+    A G ! ((((((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))) & (((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))))) | (((((#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))) & (((2) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-03
+  "Automatically generated"
+  is:
+    A G ((((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")))) & (((1) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-04
+  "Automatically generated"
+  is:
+    E F ! ((((((1) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))) | (((2) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))))) | (((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-05
+  "Automatically generated"
+  is:
+    A G ((((! ((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))) & (((((#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))) & (((#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))))))) | (((! ((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))) & (((((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))) & (((2) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))))))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-06
+  "Automatically generated"
+  is:
+    E F ((((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))) & (((((3) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))) | (((((2) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))) & (((1) <= (#tokens("Fork_1", "Fork_2", "Fork_3", "Fork_4", "Fork_5")))))))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-07
+  "Automatically generated"
+  is:
+    A G ((! ((((3) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))) & (((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")))))) | (! ((((#tokens("Think_1", "Think_2", "Think_3", "Think_4", "Think_5")) <= (#tokens("Eat_1", "Eat_3", "Eat_2", "Eat_5", "Eat_4")))) & (((#tokens("Catch1_1", "Catch1_2", "Catch1_3", "Catch1_5", "Catch1_4")) <= (#tokens("Catch2_2", "Catch2_1", "Catch2_4", "Catch2_3", "Catch2_5")))))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-08
+  "Automatically generated"
+  is:
+    E F ((((! ((#tokens("Catch1_1")) <= (#tokens("Eat_3")))) | (((1) <= (#tokens("Fork_5")))))) | (! ((#tokens("Fork_2")) <= (#tokens("Catch2_3")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-09
+  "Automatically generated"
+  is:
+    E F ! ! ((((2) <= (#tokens("Catch2_5")))) & (((3) <= (#tokens("Catch2_3")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-10
+  "Automatically generated"
+  is:
+    A G ((#tokens("Catch2_2")) <= (#tokens("Eat_1")))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-11
+  "Automatically generated"
+  is:
+    A G ((((((((#tokens("Catch2_1")) <= (#tokens("Catch2_4")))) & (((1) <= (#tokens("Think_3")))))) | (((((#tokens("Eat_2")) <= (#tokens("Eat_4")))) & (((1) <= (#tokens("Catch1_4")))))))) & (((#tokens("Catch2_4")) <= (#tokens("Catch2_5")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-12
+  "Automatically generated"
+  is:
+    A G ! ((((((2) <= (#tokens("Catch2_3")))) & (((3) <= (#tokens("Fork_3")))))) | (! ((#tokens("Think_1")) <= (#tokens("Think_5")))))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-13
+  "Automatically generated"
+  is:
+    E F ! ((#tokens("Think_2")) <= (#tokens("Fork_1")))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-14
+  "Automatically generated"
+  is:
+    E F ! ! ((#tokens("Eat_1")) <= (#tokens("Eat_1")))
+  end.
+Property Philosophers-PT-000005-ReachabilityCardinality-15
+  "Automatically generated"
+  is:
+    E F ((1) <= (#tokens("Catch1_1")))
+  end.

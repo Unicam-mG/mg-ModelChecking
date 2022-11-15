@@ -1,0 +1,427 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="Referendum-PT-0010" type="http://www.pnml.org/version-2009/grammar/ptnet">
+    <page id="page0">
+      <name>
+        <text>DefaultPage</text>
+      </name>
+      <place id="ready">
+        <name>
+          <text>ready</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="voted_no_1">
+        <name>
+          <text>voted_no_1</text>
+        </name>
+      </place>
+      <place id="voted_no_2">
+        <name>
+          <text>voted_no_2</text>
+        </name>
+      </place>
+      <place id="voted_no_3">
+        <name>
+          <text>voted_no_3</text>
+        </name>
+      </place>
+      <place id="voted_no_4">
+        <name>
+          <text>voted_no_4</text>
+        </name>
+      </place>
+      <place id="voted_no_5">
+        <name>
+          <text>voted_no_5</text>
+        </name>
+      </place>
+      <place id="voted_no_6">
+        <name>
+          <text>voted_no_6</text>
+        </name>
+      </place>
+      <place id="voted_no_7">
+        <name>
+          <text>voted_no_7</text>
+        </name>
+      </place>
+      <place id="voted_no_8">
+        <name>
+          <text>voted_no_8</text>
+        </name>
+      </place>
+      <place id="voted_no_9">
+        <name>
+          <text>voted_no_9</text>
+        </name>
+      </place>
+      <place id="voted_no_10">
+        <name>
+          <text>voted_no_10</text>
+        </name>
+      </place>
+      <place id="voted_yes_1">
+        <name>
+          <text>voted_yes_1</text>
+        </name>
+      </place>
+      <place id="voted_yes_2">
+        <name>
+          <text>voted_yes_2</text>
+        </name>
+      </place>
+      <place id="voted_yes_3">
+        <name>
+          <text>voted_yes_3</text>
+        </name>
+      </place>
+      <place id="voted_yes_4">
+        <name>
+          <text>voted_yes_4</text>
+        </name>
+      </place>
+      <place id="voted_yes_5">
+        <name>
+          <text>voted_yes_5</text>
+        </name>
+      </place>
+      <place id="voted_yes_6">
+        <name>
+          <text>voted_yes_6</text>
+        </name>
+      </place>
+      <place id="voted_yes_7">
+        <name>
+          <text>voted_yes_7</text>
+        </name>
+      </place>
+      <place id="voted_yes_8">
+        <name>
+          <text>voted_yes_8</text>
+        </name>
+      </place>
+      <place id="voted_yes_9">
+        <name>
+          <text>voted_yes_9</text>
+        </name>
+      </place>
+      <place id="voted_yes_10">
+        <name>
+          <text>voted_yes_10</text>
+        </name>
+      </place>
+      <place id="voting_1">
+        <name>
+          <text>voting_1</text>
+        </name>
+      </place>
+      <place id="voting_2">
+        <name>
+          <text>voting_2</text>
+        </name>
+      </place>
+      <place id="voting_3">
+        <name>
+          <text>voting_3</text>
+        </name>
+      </place>
+      <place id="voting_4">
+        <name>
+          <text>voting_4</text>
+        </name>
+      </place>
+      <place id="voting_5">
+        <name>
+          <text>voting_5</text>
+        </name>
+      </place>
+      <place id="voting_6">
+        <name>
+          <text>voting_6</text>
+        </name>
+      </place>
+      <place id="voting_7">
+        <name>
+          <text>voting_7</text>
+        </name>
+      </place>
+      <place id="voting_8">
+        <name>
+          <text>voting_8</text>
+        </name>
+      </place>
+      <place id="voting_9">
+        <name>
+          <text>voting_9</text>
+        </name>
+      </place>
+      <place id="voting_10">
+        <name>
+          <text>voting_10</text>
+        </name>
+      </place>
+      <transition id="start_0">
+        <name>
+          <text>start_0</text>
+        </name>
+      </transition>
+      <transition id="no_0">
+        <name>
+          <text>no_0</text>
+        </name>
+      </transition>
+      <transition id="no_1">
+        <name>
+          <text>no_1</text>
+        </name>
+      </transition>
+      <transition id="no_2">
+        <name>
+          <text>no_2</text>
+        </name>
+      </transition>
+      <transition id="no_3">
+        <name>
+          <text>no_3</text>
+        </name>
+      </transition>
+      <transition id="no_4">
+        <name>
+          <text>no_4</text>
+        </name>
+      </transition>
+      <transition id="no_5">
+        <name>
+          <text>no_5</text>
+        </name>
+      </transition>
+      <transition id="no_6">
+        <name>
+          <text>no_6</text>
+        </name>
+      </transition>
+      <transition id="no_7">
+        <name>
+          <text>no_7</text>
+        </name>
+      </transition>
+      <transition id="no_8">
+        <name>
+          <text>no_8</text>
+        </name>
+      </transition>
+      <transition id="no_9">
+        <name>
+          <text>no_9</text>
+        </name>
+      </transition>
+      <transition id="yes_0">
+        <name>
+          <text>yes_0</text>
+        </name>
+      </transition>
+      <transition id="yes_1">
+        <name>
+          <text>yes_1</text>
+        </name>
+      </transition>
+      <transition id="yes_2">
+        <name>
+          <text>yes_2</text>
+        </name>
+      </transition>
+      <transition id="yes_3">
+        <name>
+          <text>yes_3</text>
+        </name>
+      </transition>
+      <transition id="yes_4">
+        <name>
+          <text>yes_4</text>
+        </name>
+      </transition>
+      <transition id="yes_5">
+        <name>
+          <text>yes_5</text>
+        </name>
+      </transition>
+      <transition id="yes_6">
+        <name>
+          <text>yes_6</text>
+        </name>
+      </transition>
+      <transition id="yes_7">
+        <name>
+          <text>yes_7</text>
+        </name>
+      </transition>
+      <transition id="yes_8">
+        <name>
+          <text>yes_8</text>
+        </name>
+      </transition>
+      <transition id="yes_9">
+        <name>
+          <text>yes_9</text>
+        </name>
+      </transition>
+      <arc id="cId-765550240445679749554" source="ready" target="start_0">
+      </arc>
+      <arc id="cId-766211234161850130355" source="start_0" target="voting_1">
+      </arc>
+      <arc id="cId-766211234161850130356" source="start_0" target="voting_2">
+      </arc>
+      <arc id="cId-766211234161850130357" source="start_0" target="voting_3">
+      </arc>
+      <arc id="cId-766211234161850130358" source="start_0" target="voting_4">
+      </arc>
+      <arc id="cId-766211234161850130359" source="start_0" target="voting_5">
+      </arc>
+      <arc id="cId-766211234161850130360" source="start_0" target="voting_6">
+      </arc>
+      <arc id="cId-766211234161850130361" source="start_0" target="voting_7">
+      </arc>
+      <arc id="cId-766211234161850130362" source="start_0" target="voting_8">
+      </arc>
+      <arc id="cId-766211234161850130363" source="start_0" target="voting_9">
+      </arc>
+      <arc id="cId-766211234161850130364" source="start_0" target="voting_10">
+      </arc>
+      <arc id="cId-766211234161850130365" source="voting_1" target="no_0">
+      </arc>
+      <arc id="cId-766211234161850130366" source="voting_2" target="no_1">
+      </arc>
+      <arc id="cId-766211234161850130367" source="voting_3" target="no_2">
+      </arc>
+      <arc id="cId-766211234161850130368" source="voting_4" target="no_3">
+      </arc>
+      <arc id="cId-766211234161850130369" source="voting_5" target="no_4">
+      </arc>
+      <arc id="cId-766211234161850130370" source="voting_6" target="no_5">
+      </arc>
+      <arc id="cId-766211234161850130371" source="voting_7" target="no_6">
+      </arc>
+      <arc id="cId-766211234161850130372" source="voting_8" target="no_7">
+      </arc>
+      <arc id="cId-766211234161850130373" source="voting_9" target="no_8">
+      </arc>
+      <arc id="cId-766211234161850130374" source="voting_10" target="no_9">
+      </arc>
+      <arc id="cId-766211234161850130375" source="no_0" target="voted_no_1">
+      </arc>
+      <arc id="cId-766211234161850130376" source="no_1" target="voted_no_2">
+      </arc>
+      <arc id="cId-766211234161850130377" source="no_2" target="voted_no_3">
+      </arc>
+      <arc id="cId-766211234161850130378" source="no_3" target="voted_no_4">
+      </arc>
+      <arc id="cId-766211234161850130379" source="no_4" target="voted_no_5">
+      </arc>
+      <arc id="cId-766211234161850130380" source="no_5" target="voted_no_6">
+      </arc>
+      <arc id="cId-767037475770192194481" source="no_6" target="voted_no_7">
+      </arc>
+      <arc id="cId-767037475770192194482" source="no_7" target="voted_no_8">
+      </arc>
+      <arc id="cId-767037475770192194483" source="no_8" target="voted_no_9">
+      </arc>
+      <arc id="cId-767037475770192194484" source="no_9" target="voted_no_10">
+      </arc>
+      <arc id="cId-767037475770192194485" source="voting_1" target="yes_0">
+      </arc>
+      <arc id="cId-767037475770192194486" source="voting_2" target="yes_1">
+      </arc>
+      <arc id="cId-767037475770192194487" source="voting_3" target="yes_2">
+      </arc>
+      <arc id="cId-767037475770192194488" source="voting_4" target="yes_3">
+      </arc>
+      <arc id="cId-767037475770192194489" source="voting_5" target="yes_4">
+      </arc>
+      <arc id="cId-767037475770192194490" source="voting_6" target="yes_5">
+      </arc>
+      <arc id="cId-767037475770192194491" source="voting_7" target="yes_6">
+      </arc>
+      <arc id="cId-767037475770192194492" source="voting_8" target="yes_7">
+      </arc>
+      <arc id="cId-767037475770192194493" source="voting_9" target="yes_8">
+      </arc>
+      <arc id="cId-767037475770192194494" source="voting_10" target="yes_9">
+      </arc>
+      <arc id="cId-767037475770192194495" source="yes_0" target="voted_yes_1">
+      </arc>
+      <arc id="cId-767037475770192194496" source="yes_1" target="voted_yes_2">
+      </arc>
+      <arc id="cId-767037475770192194497" source="yes_2" target="voted_yes_3">
+      </arc>
+      <arc id="cId-767037475770192194498" source="yes_3" target="voted_yes_4">
+      </arc>
+      <arc id="cId-767037475770192194499" source="yes_4" target="voted_yes_5">
+      </arc>
+      <arc id="cId-7670374757701921944100" source="yes_5" target="voted_yes_6">
+      </arc>
+      <arc id="cId-7670374757701921944101" source="yes_6" target="voted_yes_7">
+      </arc>
+      <arc id="cId-7670374757701921944102" source="yes_7" target="voted_yes_8">
+      </arc>
+      <arc id="cId-7670374757701921944103" source="yes_8" target="voted_yes_9">
+      </arc>
+      <arc id="cId-7670374757701921944104" source="yes_9" target="voted_yes_10">
+      </arc>
+     <toolspecific tool="nupn" version="1.1">
+      <size places="31" transitions="21" arcs="51"/>
+      <structure units="11" root="u0" safe="true">
+       <unit id="u0">
+        <places/>
+        <subunits>u1 u2 u3 u4 u5 u6 u7 u8 u9 u10</subunits>
+       </unit>
+       <unit id="u1">
+        <places>voted_no_10 voted_yes_10 voting_10</places>
+        <subunits/>
+       </unit>
+       <unit id="u2">
+        <places>voted_no_9 voted_yes_9 voting_9</places>
+        <subunits/>
+       </unit>
+       <unit id="u3">
+        <places>voted_no_8 voted_yes_8 voting_8</places>
+        <subunits/>
+       </unit>
+       <unit id="u4">
+        <places>voted_no_7 voted_yes_7 voting_7</places>
+        <subunits/>
+       </unit>
+       <unit id="u5">
+        <places>voted_no_6 voted_yes_6 voting_6</places>
+        <subunits/>
+       </unit>
+       <unit id="u6">
+        <places>voted_no_5 voted_yes_5 voting_5</places>
+        <subunits/>
+       </unit>
+       <unit id="u7">
+        <places>voted_no_4 voted_yes_4 voting_4</places>
+        <subunits/>
+       </unit>
+       <unit id="u8">
+        <places>voted_no_3 voted_yes_3 voting_3</places>
+        <subunits/>
+       </unit>
+       <unit id="u9">
+        <places>voted_no_2 voted_yes_2 voting_2</places>
+        <subunits/>
+       </unit>
+       <unit id="u10">
+        <places>voted_no_1 voted_yes_1 voting_1 ready</places>
+        <subunits/>
+       </unit>
+      </structure>
+     </toolspecific>
+    </page>
+    <name>
+      <text>Referendum-PT-010</text>
+    </name>
+  </net>
+</pnml>

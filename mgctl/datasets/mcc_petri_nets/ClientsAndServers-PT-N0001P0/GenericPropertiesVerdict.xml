@@ -1,0 +1,87 @@
+<toolspecific tool="propertiesverdict" version="2.0">
+  <modelreference modelname="ClientsAndServers"/>
+  <verdict category="GENERIC" reference="ORDINARY" value="true">
+    <explanation>No explanation</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SIMPLE_FREE_CHOICE" value="false">
+    <explanation>4 arcs are not simple free choice, e.g., the arc from place Mi (which has 2 outgoing transitions) to transition mrF (which has 2 input places)</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="EXTENDED_FREE_CHOICE" value="false">
+    <explanation>transitions mrF and mrR share a common input place Mi, but only the former transition has input place SF</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="STATE_MACHINE" value="false">
+    <explanation>18 transitions are not of a state machine, e.g., transition ssF</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="MARKED_GRAPH" value="false">
+    <explanation>2 places are not of a marked graph, e.g., place Mi</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="CONNECTED" value="true">
+    <explanation>confirmed by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="STRONGLY_CONNECTED" value="true">
+    <explanation>stated by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SOURCE_PLACE" value="false">
+    <explanation>confirmed by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SINK_PLACE" value="false">
+    <explanation>confirmed by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SOURCE_TRANSITION" value="false">
+    <explanation>confirmed by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SINK_TRANSITION" value="false">
+    <explanation>confirmed by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="LOOP_FREE" value="true">
+    <explanation>stated by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="CONSERVATIVE" value="false">
+    <explanation>18 transitions are not conservative, e.g., transition ssF</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SUBCONSERVATIVE" value="false">
+    <explanation>9 transitions are not subconservative, e.g., transition ssF</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="NESTED_UNITS" value="false">
+    <explanation>No explanation</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="SAFE" value="false">
+    <explanation>in the initial marking, some places have several tokens; confirmed by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="DEAD_PLACES" value="false">
+    <explanation>stated by CAESARBDD version 3.3 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="DEAD_TRANSITIONS" value="false">
+    <explanation>stated by CAESARBDD version 2.7 on all 20 instances</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="DEADLOCK" value="unknown">
+    <explanation>depends on the initial marking</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="REVERSIBLE" value="unknown">
+    <explanation>No explanation</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+  <verdict category="GENERIC" reference="LIVE" value="unknown">
+    <explanation>No explanation</explanation>
+    <statedby tool="MCC" version="2020" date="2020-01-02T11:59:10.407+01:00" reference="https://mcc.lip6.fr/pdf/ClientsAndServers-form.pdf"/>
+  </verdict>
+</toolspecific>

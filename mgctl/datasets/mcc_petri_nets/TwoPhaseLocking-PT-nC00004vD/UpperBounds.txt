@@ -1,0 +1,80 @@
+Property 2PhLockVParam-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("Clients")
+  end.
+Property 2PhLockVParam-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("Clients")
+  end.
+Property 2PhLockVParam-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("haveB")
+  end.
+Property 2PhLockVParam-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("Clients")
+  end.
+Property 2PhLockVParam-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("resB")
+  end.
+Property 2PhLockVParam-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("resA")
+  end.
+Property 2PhLockVParam-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("haveAandB")
+  end.
+Property 2PhLockVParam-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("haveA2")
+  end.
+Property 2PhLockVParam-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("haveB")
+  end.
+Property 2PhLockVParam-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("haveAandB")
+  end.
+Property 2PhLockVParam-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("haveB")
+  end.
+Property 2PhLockVParam-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("resA")
+  end.
+Property 2PhLockVParam-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("haveA2")
+  end.
+Property 2PhLockVParam-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("resA")
+  end.
+Property 2PhLockVParam-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("haveAandB")
+  end.
+Property 2PhLockVParam-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("haveA2andB")
+  end.

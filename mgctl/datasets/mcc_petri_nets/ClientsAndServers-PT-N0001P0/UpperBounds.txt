@@ -1,0 +1,80 @@
+Property ClientsAndServers-PT-N0001P0-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("Cb")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("CwA")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("SA")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("SwG")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("SA")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("CF")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("SwG")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("Si")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("SF")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("Mi")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("CwA")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("SpG")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("StF")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("StR")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("SR")
+  end.
+Property ClientsAndServers-PT-N0001P0-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("SpG")
+  end.

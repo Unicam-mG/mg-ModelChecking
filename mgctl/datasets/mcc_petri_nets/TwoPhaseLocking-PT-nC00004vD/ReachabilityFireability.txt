@@ -1,0 +1,80 @@
+Property 2PhLockVParam-ReachabilityFireability-00
+  "Automatically generated"
+  is:
+    A G (((("relA2"?) | (! (("relB"?) & ("lockB"?))))) | (! (("relA"?) | ("relB"?))))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-01
+  "Automatically generated"
+  is:
+    E F (((((("relB"?) & ((("lockB"?) & ("relA2"?))))) | ("lockA"?))) & ("lockB"?))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-02
+  "Automatically generated"
+  is:
+    E F ! "lockA2"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-03
+  "Automatically generated"
+  is:
+    A G ! "lockA"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-04
+  "Automatically generated"
+  is:
+    A G (("lockB"?) & ((("relB"?) | (! (("relA"?) & ("lockA"?))))))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-05
+  "Automatically generated"
+  is:
+    A G ! (("lockA"?) & (! (("relA"?) | ("lockA"?))))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-06
+  "Automatically generated"
+  is:
+    A G ! "lockA2"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-07
+  "Automatically generated"
+  is:
+    A G ((! (((("relA"?) & ("lockB"?))) & ("relA2"?))) & ((("lockA2"?) & (((! "relA2"?) & ((("relA"?) | ("lockA2"?))))))))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-08
+  "Automatically generated"
+  is:
+    A G ! "lockB"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-09
+  "Automatically generated"
+  is:
+    E F "lockA2"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-10
+  "Automatically generated"
+  is:
+    E F "lockB"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-11
+  "Automatically generated"
+  is:
+    E F ((! ! (("relA2"?) | ("lockA"?))) | ((((("lockA"?) | ("lockB"?))) & (! (("lockA"?) | ("lockA"?))))))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-12
+  "Automatically generated"
+  is:
+    E F ! (("relA"?) | ((("relB"?) | ((("lockA2"?) & ("relB"?))))))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-13
+  "Automatically generated"
+  is:
+    E F ! "relA"?
+  end.
+Property 2PhLockVParam-ReachabilityFireability-14
+  "Automatically generated"
+  is:
+    A G ((((! (("lockA2"?) & ("relA"?))) | ("relB"?))) & ("lockA2"?))
+  end.
+Property 2PhLockVParam-ReachabilityFireability-15
+  "Automatically generated"
+  is:
+    A G (((("relA"?) | (! (("lockA"?) & ("relB"?))))) & ("lockA2"?))
+  end.

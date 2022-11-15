@@ -1,0 +1,80 @@
+Property RobotManipulation-PT-00001-ReachabilityCardinality-00
+  "Automatically generated"
+  is:
+    E F ! ((((1) <= (#tokens("r_active")))) & (((#tokens("p_sc")) <= (#tokens("initialize")))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-01
+  "Automatically generated"
+  is:
+    E F ! ((3) <= (#tokens("p_m")))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-02
+  "Automatically generated"
+  is:
+    E F ((((! ((1) <= (#tokens("off")))) | (! ((3) <= (#tokens("p_m")))))) | (((! ((#tokens("p_m")) <= (#tokens("initialize")))) & (((((#tokens("initialize")) <= (#tokens("r_stopped")))) & (((#tokens("p_m")) <= (#tokens("r_stopped")))))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-03
+  "Automatically generated"
+  is:
+    A G ! ((((((2) <= (#tokens("r_moving")))) & (((3) <= (#tokens("r_moving")))))) | (((((#tokens("initialize")) <= (#tokens("p_rel")))) | (((1) <= (#tokens("r_stopped")))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-04
+  "Automatically generated"
+  is:
+    A G ((! ((#tokens("r_stopped")) <= (#tokens("p_sc")))) | (((((#tokens("r_moving")) <= (#tokens("p_sc")))) | (! ((3) <= (#tokens("p_i1")))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-05
+  "Automatically generated"
+  is:
+    E F ! ((3) <= (#tokens("initialized")))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-06
+  "Automatically generated"
+  is:
+    A G ((! ((((2) <= (#tokens("move")))) & (((#tokens("r_active")) <= (#tokens("move")))))) & (((! ((1) <= (#tokens("r_active")))) | (((3) <= (#tokens("r_stopped")))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-07
+  "Automatically generated"
+  is:
+    A G ((((#tokens("initialize")) <= (#tokens("move")))) & (((3) <= (#tokens("move")))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-08
+  "Automatically generated"
+  is:
+    E F ((((#tokens("p_sc")) <= (#tokens("moved")))) & (((((((#tokens("off")) <= (#tokens("off")))) | (((#tokens("r_active")) <= (#tokens("p_i2")))))) | (((((3) <= (#tokens("p_rel")))) | (((#tokens("moved")) <= (#tokens("p_m")))))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-09
+  "Automatically generated"
+  is:
+    E F ! ((3) <= (#tokens("p_sc")))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-10
+  "Automatically generated"
+  is:
+    E F ! ((((((#tokens("access")) <= (#tokens("p_rdy")))) & (((1) <= (#tokens("off")))))) & (((#tokens("p_rdy")) <= (#tokens("initialized")))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-11
+  "Automatically generated"
+  is:
+    A G ! ((! ((#tokens("r_moving")) <= (#tokens("p_sc")))) & (((((1) <= (#tokens("p_sc")))) | (((3) <= (#tokens("off")))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-12
+  "Automatically generated"
+  is:
+    E F ((1) <= (#tokens("r_active")))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-13
+  "Automatically generated"
+  is:
+    E F ((1) <= (#tokens("moved")))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-14
+  "Automatically generated"
+  is:
+    A G ! ((((((2) <= (#tokens("r_stopped")))) & (((1) <= (#tokens("move")))))) | (((((1) <= (#tokens("access")))) & (((#tokens("r_active")) <= (#tokens("initialize")))))))
+  end.
+Property RobotManipulation-PT-00001-ReachabilityCardinality-15
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("r_moving")))
+  end.

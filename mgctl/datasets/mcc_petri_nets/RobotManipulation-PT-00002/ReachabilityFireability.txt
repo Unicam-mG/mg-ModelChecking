@@ -1,0 +1,80 @@
+Property RobotManipulation-PT-00002-ReachabilityFireability-00
+  "Automatically generated"
+  is:
+    E F (("p_move"?) & (! (((("p_start"?) & ("p_started"?))) | ("p_moved"?))))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-01
+  "Automatically generated"
+  is:
+    E F ! ! "p_move"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-02
+  "Automatically generated"
+  is:
+    A G (((((("p_start"?) & (! "p_sop"?))) | (! ! "r_end_move"?))) & ("r_starts"?))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-03
+  "Automatically generated"
+  is:
+    E F "r_starts"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-04
+  "Automatically generated"
+  is:
+    E F ((! (("r_begin_move"?) & ((("p_relSC"?) | ("p_moved"?))))) | (((! ! "p_moved"?) | ("r_begin_move"?))))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-05
+  "Automatically generated"
+  is:
+    E F (((("r_end_move"?) | ((("p_move"?) | ("r_begin_move"?))))) & ((("r_end_move"?) & (((! "p_sop"?) | (! "p_move"?))))))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-06
+  "Automatically generated"
+  is:
+    E F "p_relSC"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-07
+  "Automatically generated"
+  is:
+    A G "p_started"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-08
+  "Automatically generated"
+  is:
+    E F ! (((((("p_relSC"?) & ("p_sop"?))) | ("p_relSC"?))) | (((! "p_start"?) | ((("p_started"?) | ("p_sop"?))))))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-09
+  "Automatically generated"
+  is:
+    E F "p_intoSC"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-10
+  "Automatically generated"
+  is:
+    E F "p_intoSC"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-11
+  "Automatically generated"
+  is:
+    A G ! ((! "r_end_move"?) | ("r_starts"?))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-12
+  "Automatically generated"
+  is:
+    A G ((((((! "p_relSC"?) | ((("p_moved"?) & ("p_started"?))))) | ("p_relSC"?))) & ((((((("p_move"?) | ("p_move"?))) & ((("p_intoSC"?) & ("p_start"?))))) & ("p_moved"?))))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-13
+  "Automatically generated"
+  is:
+    A G "r_stops"?
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-14
+  "Automatically generated"
+  is:
+    A G (("r_end_move"?) & (! ((! "p_sop"?) & (! "r_end_move"?))))
+  end.
+Property RobotManipulation-PT-00002-ReachabilityFireability-15
+  "Automatically generated"
+  is:
+    E F (("r_end_move"?) | ("p_sop"?))
+  end.

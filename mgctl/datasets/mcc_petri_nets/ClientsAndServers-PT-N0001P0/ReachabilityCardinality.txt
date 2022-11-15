@@ -1,0 +1,80 @@
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-00
+  "Automatically generated"
+  is:
+    E F ((((((((1) <= (#tokens("SF")))) & (((3) <= (#tokens("Uf")))))) & (((((#tokens("CR")) <= (#tokens("SF")))) & (((2) <= (#tokens("MwU")))))))) & (((((2) <= (#tokens("StF")))) & (((((3) <= (#tokens("Cb")))) & (((1) <= (#tokens("SwG")))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-01
+  "Automatically generated"
+  is:
+    A G ((! ((3) <= (#tokens("CG")))) | (! ((((#tokens("MwU")) <= (#tokens("SwA")))) & (((3) <= (#tokens("SF")))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-02
+  "Automatically generated"
+  is:
+    A G ((((1) <= (#tokens("SR")))) | (((#tokens("SR")) <= (#tokens("CR")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-03
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("SpA")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-04
+  "Automatically generated"
+  is:
+    A G ((! ((#tokens("CR")) <= (#tokens("MtF")))) | (((((#tokens("StR")) <= (#tokens("CwA")))) | (((((#tokens("StF")) <= (#tokens("SF")))) | (((3) <= (#tokens("SpG")))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-05
+  "Automatically generated"
+  is:
+    E F ((((((#tokens("SwA")) <= (#tokens("CF")))) | (((((1) <= (#tokens("SwG")))) | (((3) <= (#tokens("CR")))))))) & (((((((2) <= (#tokens("StF")))) & (((1) <= (#tokens("Si")))))) & (((((#tokens("Mi")) <= (#tokens("Mi")))) | (((1) <= (#tokens("CA")))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-06
+  "Automatically generated"
+  is:
+    E F ((((! ((#tokens("SF")) <= (#tokens("CG")))) & (((2) <= (#tokens("MpG")))))) & (((((((#tokens("SwG")) <= (#tokens("MwU")))) | (((3) <= (#tokens("CR")))))) | (! ((1) <= (#tokens("SwG")))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-07
+  "Automatically generated"
+  is:
+    A G ((((! ((2) <= (#tokens("MpA")))) & (! ((2) <= (#tokens("MtF")))))) | (((! ((#tokens("SR")) <= (#tokens("SG")))) | (((((#tokens("Ci")) <= (#tokens("Ci")))) | (((3) <= (#tokens("SpA")))))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-08
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("CF")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-09
+  "Automatically generated"
+  is:
+    E F ((2) <= (#tokens("CA")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-10
+  "Automatically generated"
+  is:
+    A G ((! ! ((#tokens("SpA")) <= (#tokens("SR")))) | (! ((((#tokens("Cb")) <= (#tokens("CG")))) & (((2) <= (#tokens("MtF")))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-11
+  "Automatically generated"
+  is:
+    A G ! ((3) <= (#tokens("CA")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-12
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("SwG")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-13
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("SA")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-14
+  "Automatically generated"
+  is:
+    E F ((#tokens("Mi")) <= (#tokens("SpG")))
+  end.
+Property ClientsAndServers-PT-N0001P0-ReachabilityCardinality-15
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("Si")))
+  end.

@@ -1,0 +1,80 @@
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-00
+  "Automatically generated"
+  is:
+    A G ((((! ((#tokens("p1")) <= (#tokens("p4")))) & (((#tokens("p8")) <= (#tokens("p11")))))) | (((! ((#tokens("p5")) <= (#tokens("p7")))) | (! ((#tokens("p4")) <= (#tokens("p11")))))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-01
+  "Automatically generated"
+  is:
+    E F ((! ((((#tokens("p9")) <= (#tokens("p7")))) | (((2) <= (#tokens("p11")))))) & (((((((#tokens("p3")) <= (#tokens("p3")))) & (((1) <= (#tokens("p2")))))) & (((((#tokens("p4")) <= (#tokens("p12")))) & (((2) <= (#tokens("p9")))))))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-02
+  "Automatically generated"
+  is:
+    E F ((((#tokens("p6")) <= (#tokens("p7")))) | (((#tokens("p6")) <= (#tokens("p11")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-03
+  "Automatically generated"
+  is:
+    E F ((((((((#tokens("p12")) <= (#tokens("p12")))) | (((3) <= (#tokens("p5")))))) & (((((2) <= (#tokens("p6")))) | (((1) <= (#tokens("p0")))))))) & (((((((#tokens("p2")) <= (#tokens("p4")))) & (((3) <= (#tokens("p12")))))) & (! ((1) <= (#tokens("p6")))))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-04
+  "Automatically generated"
+  is:
+    E F ! ((! ((#tokens("p11")) <= (#tokens("p9")))) | (((((#tokens("p5")) <= (#tokens("p10")))) | (((1) <= (#tokens("p6")))))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-05
+  "Automatically generated"
+  is:
+    A G ((! ((1) <= (#tokens("p1")))) | (! ((2) <= (#tokens("p0")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-06
+  "Automatically generated"
+  is:
+    E F ! ((#tokens("p8")) <= (#tokens("p8")))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-07
+  "Automatically generated"
+  is:
+    A G ((#tokens("p11")) <= (#tokens("p4")))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-08
+  "Automatically generated"
+  is:
+    E F ((((3) <= (#tokens("p2")))) & (((#tokens("p9")) <= (#tokens("p1")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-09
+  "Automatically generated"
+  is:
+    A G ((((((2) <= (#tokens("p12")))) & (! ((#tokens("p0")) <= (#tokens("p3")))))) | (((1) <= (#tokens("p6")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-10
+  "Automatically generated"
+  is:
+    E F ! ((! ((3) <= (#tokens("p5")))) & (! ((2) <= (#tokens("p2")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-11
+  "Automatically generated"
+  is:
+    E F ((2) <= (#tokens("p0")))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-12
+  "Automatically generated"
+  is:
+    A G ((((3) <= (#tokens("p6")))) & (((#tokens("p7")) <= (#tokens("p6")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-13
+  "Automatically generated"
+  is:
+    A G ((#tokens("p8")) <= (#tokens("p8")))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-14
+  "Automatically generated"
+  is:
+    E F ((((! ((#tokens("p3")) <= (#tokens("p4")))) & (((((#tokens("p0")) <= (#tokens("p11")))) & (((1) <= (#tokens("p8")))))))) & (((#tokens("p1")) <= (#tokens("p10")))))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-ReachabilityCardinality-15
+  "Automatically generated"
+  is:
+    E F ((3) <= (#tokens("p8")))
+  end.

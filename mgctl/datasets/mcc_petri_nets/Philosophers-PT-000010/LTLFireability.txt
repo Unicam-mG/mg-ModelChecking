@@ -1,0 +1,80 @@
+Property Philosophers-PT-000010-00
+  "Automatically generated"
+  is:
+    A (F ("FF1b_1", "FF1b_6", "FF1b_7", "FF1b_8", "FF1b_9", "FF1b_2", "FF1b_3", "FF1b_4", "FF1b_5", "FF1b_10")? | G (!("FF1a_3", "FF1a_2", "FF1a_1", "FF1a_7", "FF1a_6", "FF1a_5", "FF1a_4", "FF1a_10", "FF1a_9", "FF1a_8")? | ("FF1b_1", "FF1b_6", "FF1b_7", "FF1b_8", "FF1b_9", "FF1b_2", "FF1b_3", "FF1b_4", "FF1b_5", "FF1b_10")?))
+  end.
+Property Philosophers-PT-000010-01
+  "Automatically generated"
+  is:
+    A G !X G X (F (("FF2a_4", "FF2a_5", "FF2a_6", "FF2a_7", "FF2a_1", "FF2a_2", "FF2a_3", "FF2a_9", "FF2a_8", "FF2a_10")? & ("End_1", "End_3", "End_2", "End_10", "End_8", "End_9", "End_6", "End_7", "End_4", "End_5")?) U !("End_1", "End_3", "End_2", "End_10", "End_8", "End_9", "End_6", "End_7", "End_4", "End_5")?)
+  end.
+Property Philosophers-PT-000010-02
+  "Automatically generated"
+  is:
+    A F (("FF2b_3", "FF2b_2", "FF2b_5", "FF2b_4", "FF2b_1", "FF2b_10", "FF2b_7", "FF2b_6", "FF2b_9", "FF2b_8")? | !G F X (("FF1a_3", "FF1a_2", "FF1a_1", "FF1a_7", "FF1a_6", "FF1a_5", "FF1a_4", "FF1a_10", "FF1a_9", "FF1a_8")? & F (("End_1", "End_3", "End_2", "End_10", "End_8", "End_9", "End_6", "End_7", "End_4", "End_5")? | !("End_1", "End_3", "End_2", "End_10", "End_8", "End_9", "End_6", "End_7", "End_4", "End_5")?)))
+  end.
+Property Philosophers-PT-000010-03
+  "Automatically generated"
+  is:
+    A X !G F G ("FF2b_3", "FF2b_2", "FF2b_5", "FF2b_4", "FF2b_1", "FF2b_10", "FF2b_7", "FF2b_6", "FF2b_9", "FF2b_8")?
+  end.
+Property Philosophers-PT-000010-04
+  "Automatically generated"
+  is:
+    A F X G X G F (("FF1a_3", "FF1a_2", "FF1a_1", "FF1a_7", "FF1a_6", "FF1a_5", "FF1a_4", "FF1a_10", "FF1a_9", "FF1a_8")? & X ("FF2a_4", "FF2a_5", "FF2a_6", "FF2a_7", "FF2a_1", "FF2a_2", "FF2a_3", "FF2a_9", "FF2a_8", "FF2a_10")? & F ("FF2a_4", "FF2a_5", "FF2a_6", "FF2a_7", "FF2a_1", "FF2a_2", "FF2a_3", "FF2a_9", "FF2a_8", "FF2a_10")?)
+  end.
+Property Philosophers-PT-000010-05
+  "Automatically generated"
+  is:
+    A G ("FF1b_1", "FF1b_6", "FF1b_7", "FF1b_8", "FF1b_9", "FF1b_2", "FF1b_3", "FF1b_4", "FF1b_5", "FF1b_10")?
+  end.
+Property Philosophers-PT-000010-06
+  "Automatically generated"
+  is:
+    A (!(("FF1a_3", "FF1a_2", "FF1a_1", "FF1a_7", "FF1a_6", "FF1a_5", "FF1a_4", "FF1a_10", "FF1a_9", "FF1a_8")? & ("FF2a_4", "FF2a_5", "FF2a_6", "FF2a_7", "FF2a_1", "FF2a_2", "FF2a_3", "FF2a_9", "FF2a_8", "FF2a_10")?) | (G ("FF1a_3", "FF1a_2", "FF1a_1", "FF1a_7", "FF1a_6", "FF1a_5", "FF1a_4", "FF1a_10", "FF1a_9", "FF1a_8")? U ("FF2b_3", "FF2b_2", "FF2b_5", "FF2b_4", "FF2b_1", "FF2b_10", "FF2b_7", "FF2b_6", "FF2b_9", "FF2b_8")?))
+  end.
+Property Philosophers-PT-000010-07
+  "Automatically generated"
+  is:
+    A !(("FF2a_4", "FF2a_5", "FF2a_6", "FF2a_7", "FF2a_1", "FF2a_2", "FF2a_3", "FF2a_9", "FF2a_8", "FF2a_10")? U G (X ("FF2b_3", "FF2b_2", "FF2b_5", "FF2b_4", "FF2b_1", "FF2b_10", "FF2b_7", "FF2b_6", "FF2b_9", "FF2b_8")? & (("FF2b_3", "FF2b_2", "FF2b_5", "FF2b_4", "FF2b_1", "FF2b_10", "FF2b_7", "FF2b_6", "FF2b_9", "FF2b_8")? U ("FF1a_3", "FF1a_2", "FF1a_1", "FF1a_7", "FF1a_6", "FF1a_5", "FF1a_4", "FF1a_10", "FF1a_9", "FF1a_8")?)))
+  end.
+Property Philosophers-PT-000010-08
+  "Automatically generated"
+  is:
+    A F (!"FF1a_7"? & !"FF1b_6"? & X ("End_3"? & G "FF1a_2"?) & X "End_3"?)
+  end.
+Property Philosophers-PT-000010-09
+  "Automatically generated"
+  is:
+    A G ("FF1a_8"? | X G !X "End_1"?)
+  end.
+Property Philosophers-PT-000010-10
+  "Automatically generated"
+  is:
+    A G !F ("FF1b_9"? & ("FF2b_2"? | ("FF1a_3"? & ("FF1a_3"? | ("FF2b_9"? & G "FF2b_9"?)))))
+  end.
+Property Philosophers-PT-000010-11
+  "Automatically generated"
+  is:
+    A F ("FF1b_1"? & F "FF2b_3"?)
+  end.
+Property Philosophers-PT-000010-12
+  "Automatically generated"
+  is:
+    A !G ("FF1b_10"? | G "FF2b_1"?)
+  end.
+Property Philosophers-PT-000010-13
+  "Automatically generated"
+  is:
+    A F ("FF1a_4"? | !G ("FF1a_4"? U ("FF2a_6"? | "FF1a_6"? | !"FF1a_4"?)))
+  end.
+Property Philosophers-PT-000010-14
+  "Automatically generated"
+  is:
+    A (F "FF1a_7"? & F (G !"FF1a_6"? | ("FF1a_7"? U G ("FF2b_10"? & "FF1a_6"?))))
+  end.
+Property Philosophers-PT-000010-15
+  "Automatically generated"
+  is:
+    A ("FF2a_10"? | (F "FF1b_9"? & F !"FF2b_8"? & G !X "FF1b_9"?))
+  end.

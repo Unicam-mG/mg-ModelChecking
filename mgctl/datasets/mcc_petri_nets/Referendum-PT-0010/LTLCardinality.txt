@@ -1,0 +1,80 @@
+Property Referendum-PT-0010-00
+  "Automatically generated"
+  is:
+    A F !X (!((1) <= (#tokens("ready"))) | !G ((2) <= (#tokens("ready"))) | X ((3) <= (#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10"))))
+  end.
+Property Referendum-PT-0010-01
+  "Automatically generated"
+  is:
+    A (X !X (((1) <= (#tokens("ready"))) U !G !((3) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")))) U ((#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10")) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10"))))
+  end.
+Property Referendum-PT-0010-02
+  "Automatically generated"
+  is:
+    A G X G ((1) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10")))
+  end.
+Property Referendum-PT-0010-03
+  "Automatically generated"
+  is:
+    A G ((2) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")))
+  end.
+Property Referendum-PT-0010-04
+  "Automatically generated"
+  is:
+    A F G (((1) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10"))) | (!((1) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10"))) & G F (((1) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10"))) & F ((#tokens("ready")) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10"))))))
+  end.
+Property Referendum-PT-0010-05
+  "Automatically generated"
+  is:
+    A (G X ((#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")) <= (#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10"))) U (((#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")) <= (#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10"))) & X X (((#tokens("ready")) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10"))) | ((1) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10"))))))
+  end.
+Property Referendum-PT-0010-06
+  "Automatically generated"
+  is:
+    A X ((!((3) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10"))) & F (((#tokens("ready")) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10"))) | ((3) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10"))) | ((#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10")) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10"))))) U ((#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10")) <= (#tokens("voted_no_1", "voted_no_2", "voted_no_3", "voted_no_4", "voted_no_5", "voted_no_6", "voted_no_7", "voted_no_8", "voted_no_9", "voted_no_10"))))
+  end.
+Property Referendum-PT-0010-07
+  "Automatically generated"
+  is:
+    A X (F !((#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10")) <= (#tokens("ready"))) U (((1) <= (#tokens("voting_1", "voting_2", "voting_3", "voting_4", "voting_5", "voting_6", "voting_7", "voting_8", "voting_9", "voting_10"))) | ((0) <= (#tokens("voted_yes_1", "voted_yes_2", "voted_yes_3", "voted_yes_4", "voted_yes_5", "voted_yes_6", "voted_yes_7", "voted_yes_8", "voted_yes_9", "voted_yes_10")))))
+  end.
+Property Referendum-PT-0010-08
+  "Automatically generated"
+  is:
+    A G ((3) <= (#tokens("voted_no_1")))
+  end.
+Property Referendum-PT-0010-09
+  "Automatically generated"
+  is:
+    A F X (((0) <= (#tokens("voted_yes_9"))) & ((2) <= (#tokens("voting_7"))))
+  end.
+Property Referendum-PT-0010-10
+  "Automatically generated"
+  is:
+    A G !(((3) <= (#tokens("voted_no_8"))) U X X X X F (((#tokens("ready")) <= (#tokens("voted_yes_7"))) & G ((#tokens("voted_no_1")) <= (#tokens("voted_yes_2")))))
+  end.
+Property Referendum-PT-0010-11
+  "Automatically generated"
+  is:
+    A F G X (F (((#tokens("voted_yes_10")) <= (#tokens("ready"))) U !G X ((2) <= (#tokens("voted_yes_10")))) U !F !((2) <= (#tokens("voted_yes_10"))))
+  end.
+Property Referendum-PT-0010-12
+  "Automatically generated"
+  is:
+    A X !((!((3) <= (#tokens("ready"))) | F X ((#tokens("ready")) <= (#tokens("voting_4")))) & !(!((#tokens("voted_no_1")) <= (#tokens("voting_3"))) & F ((#tokens("voted_no_1")) <= (#tokens("voting_3")))))
+  end.
+Property Referendum-PT-0010-13
+  "Automatically generated"
+  is:
+    A G (F !G ((3) <= (#tokens("voted_no_1"))) | G !G ((#tokens("voting_6")) <= (#tokens("voted_no_10"))))
+  end.
+Property Referendum-PT-0010-14
+  "Automatically generated"
+  is:
+    A F (G ((#tokens("voted_yes_5")) <= (#tokens("ready"))) & G ((#tokens("voted_no_1")) <= (#tokens("voted_yes_2"))))
+  end.
+Property Referendum-PT-0010-15
+  "Automatically generated"
+  is:
+    A G F G !X (G ((#tokens("voted_no_6")) <= (#tokens("voting_9"))) | X X (G !((1) <= (#tokens("voting_5"))) U ((0) <= (#tokens("voted_no_8")))))
+  end.

@@ -1,0 +1,80 @@
+Property Dekker-PT-015-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("p1/8")
+  end.
+Property Dekker-PT-015-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("p3/9")
+  end.
+Property Dekker-PT-015-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("p3/14")
+  end.
+Property Dekker-PT-015-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("flag=0/9")
+  end.
+Property Dekker-PT-015-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("p0/1")
+  end.
+Property Dekker-PT-015-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("p0/5")
+  end.
+Property Dekker-PT-015-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("p0/9")
+  end.
+Property Dekker-PT-015-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("p1/3")
+  end.
+Property Dekker-PT-015-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("p0/6")
+  end.
+Property Dekker-PT-015-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("flag=0/6")
+  end.
+Property Dekker-PT-015-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("p3/1")
+  end.
+Property Dekker-PT-015-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("p0/12")
+  end.
+Property Dekker-PT-015-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("flag=1/1")
+  end.
+Property Dekker-PT-015-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("flag=1/13")
+  end.
+Property Dekker-PT-015-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("flag=1/13")
+  end.
+Property Dekker-PT-015-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("flag=0/11")
+  end.

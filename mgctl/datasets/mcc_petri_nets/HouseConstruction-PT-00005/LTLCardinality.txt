@@ -1,0 +1,80 @@
+Property HouseConstruction-PT-00005-00
+  "Automatically generated"
+  is:
+    A G X F (((1) <= (#tokens("p11"))) & X (((1) <= (#tokens("p4"))) & F ((1) <= (#tokens("p4")))))
+  end.
+Property HouseConstruction-PT-00005-01
+  "Automatically generated"
+  is:
+    A F !G (F (((#tokens("p16")) <= (#tokens("p15"))) | ((2) <= (#tokens("p26")))) U F ((2) <= (#tokens("p26"))))
+  end.
+Property HouseConstruction-PT-00005-02
+  "Automatically generated"
+  is:
+    A X ((((1) <= (#tokens("p9"))) | (F ((0) <= (#tokens("p5"))) & G ((3) <= (#tokens("p22"))))) & (((1) <= (#tokens("p9"))) U X ((3) <= (#tokens("p22")))))
+  end.
+Property HouseConstruction-PT-00005-03
+  "Automatically generated"
+  is:
+    A (X !X F X X (F !((0) <= (#tokens("p15"))) U !((#tokens("p17")) <= (#tokens("p15")))) U G ((#tokens("p17")) <= (#tokens("p15"))))
+  end.
+Property HouseConstruction-PT-00005-04
+  "Automatically generated"
+  is:
+    A X (F (G ((2) <= (#tokens("p16"))) & G F ((2) <= (#tokens("p5")))) U !(((2) <= (#tokens("p16"))) | ((#tokens("p27")) <= (#tokens("p9")))))
+  end.
+Property HouseConstruction-PT-00005-05
+  "Automatically generated"
+  is:
+    A (F G ((#tokens("p5")) <= (#tokens("p9"))) U F ((0) <= (#tokens("p6"))))
+  end.
+Property HouseConstruction-PT-00005-06
+  "Automatically generated"
+  is:
+    A !(F !((2) <= (#tokens("p5"))) | !F X X X ((2) <= (#tokens("p5"))))
+  end.
+Property HouseConstruction-PT-00005-07
+  "Automatically generated"
+  is:
+    A G X F X F !(!((2) <= (#tokens("p19"))) & G (((2) <= (#tokens("p11"))) & !((#tokens("p5")) <= (#tokens("p6")))))
+  end.
+Property HouseConstruction-PT-00005-08
+  "Automatically generated"
+  is:
+    A ((!G ((3) <= (#tokens("p9"))) U (((#tokens("p5")) <= (#tokens("p11"))) & ((#tokens("p9")) <= (#tokens("p22"))) & !G ((0) <= (#tokens("p26"))))) U ((#tokens("p5")) <= (#tokens("p11"))))
+  end.
+Property HouseConstruction-PT-00005-09
+  "Automatically generated"
+  is:
+    A (F ((#tokens("p4")) <= (#tokens("p26"))) U F X ((#tokens("p1")) <= (#tokens("p21"))))
+  end.
+Property HouseConstruction-PT-00005-10
+  "Automatically generated"
+  is:
+    A ((((#tokens("p23")) <= (#tokens("p26"))) | G ((1) <= (#tokens("p11")))) & (((3) <= (#tokens("p15"))) U (((3) <= (#tokens("p15"))) | !((#tokens("p23")) <= (#tokens("p26"))))))
+  end.
+Property HouseConstruction-PT-00005-11
+  "Automatically generated"
+  is:
+    A !(G (((1) <= (#tokens("p12"))) U F ((3) <= (#tokens("p23")))) & F !X ((#tokens("p2")) <= (#tokens("p18"))))
+  end.
+Property HouseConstruction-PT-00005-12
+  "Automatically generated"
+  is:
+    A X ((G ((#tokens("p3")) <= (#tokens("p20"))) U (X ((#tokens("p19")) <= (#tokens("p21"))) U ((#tokens("p3")) <= (#tokens("p20"))))) & G (((1) <= (#tokens("p16"))) | ((#tokens("p19")) <= (#tokens("p21")))))
+  end.
+Property HouseConstruction-PT-00005-13
+  "Automatically generated"
+  is:
+    A (X F (((#tokens("p25")) <= (#tokens("p17"))) | ((#tokens("p12")) <= (#tokens("p17")))) U F G ((#tokens("p25")) <= (#tokens("p17"))))
+  end.
+Property HouseConstruction-PT-00005-14
+  "Automatically generated"
+  is:
+    A (X G ((#tokens("p25")) <= (#tokens("p8"))) & F (((#tokens("p25")) <= (#tokens("p8"))) & X ((#tokens("p5")) <= (#tokens("p19")))))
+  end.
+Property HouseConstruction-PT-00005-15
+  "Automatically generated"
+  is:
+    A (X G ((#tokens("p19")) <= (#tokens("p25"))) & X G F (((#tokens("p5")) <= (#tokens("p12"))) & F (((3) <= (#tokens("p19"))) | G X ((2) <= (#tokens("p20"))))))
+  end.

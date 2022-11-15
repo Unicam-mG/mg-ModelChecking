@@ -1,0 +1,80 @@
+Property Referendum-PT-0010-00
+  "Automatically generated"
+  is:
+    A (("no_0", "no_1", "no_2", "no_3", "no_4", "no_5", "no_6", "no_7", "no_8", "no_9")? & ("start_0")? & G X !X X (("start_0")? | G X ("no_0", "no_1", "no_2", "no_3", "no_4", "no_5", "no_6", "no_7", "no_8", "no_9")?))
+  end.
+Property Referendum-PT-0010-01
+  "Automatically generated"
+  is:
+    A (("yes_0", "yes_1", "yes_2", "yes_3", "yes_4", "yes_5", "yes_6", "yes_7", "yes_8", "yes_9")? | G ("start_0")?)
+  end.
+Property Referendum-PT-0010-02
+  "Automatically generated"
+  is:
+    A (F ("start_0")? | X X ("start_0")?)
+  end.
+Property Referendum-PT-0010-03
+  "Automatically generated"
+  is:
+    A G X !G (X G X ("start_0")? | F X F ("start_0")?)
+  end.
+Property Referendum-PT-0010-04
+  "Automatically generated"
+  is:
+    A G X X F X ("no_0", "no_1", "no_2", "no_3", "no_4", "no_5", "no_6", "no_7", "no_8", "no_9")?
+  end.
+Property Referendum-PT-0010-05
+  "Automatically generated"
+  is:
+    A (("yes_0", "yes_1", "yes_2", "yes_3", "yes_4", "yes_5", "yes_6", "yes_7", "yes_8", "yes_9")? & !X !(X G X (("no_0", "no_1", "no_2", "no_3", "no_4", "no_5", "no_6", "no_7", "no_8", "no_9")? U X ("yes_0", "yes_1", "yes_2", "yes_3", "yes_4", "yes_5", "yes_6", "yes_7", "yes_8", "yes_9")?) U G ("yes_0", "yes_1", "yes_2", "yes_3", "yes_4", "yes_5", "yes_6", "yes_7", "yes_8", "yes_9")?))
+  end.
+Property Referendum-PT-0010-06
+  "Automatically generated"
+  is:
+    A !X F (!("start_0")? & ("no_0", "no_1", "no_2", "no_3", "no_4", "no_5", "no_6", "no_7", "no_8", "no_9")?)
+  end.
+Property Referendum-PT-0010-07
+  "Automatically generated"
+  is:
+    A (X (!F ("no_0", "no_1", "no_2", "no_3", "no_4", "no_5", "no_6", "no_7", "no_8", "no_9")? | X F !G ("start_0")?) U ("yes_0", "yes_1", "yes_2", "yes_3", "yes_4", "yes_5", "yes_6", "yes_7", "yes_8", "yes_9")?)
+  end.
+Property Referendum-PT-0010-08
+  "Automatically generated"
+  is:
+    A F X !("yes_2"? U (F "start_0"? | F G F !"yes_1"?))
+  end.
+Property Referendum-PT-0010-09
+  "Automatically generated"
+  is:
+    A !(G X (!"no_6"? & "yes_6"?) U "no_6"?)
+  end.
+Property Referendum-PT-0010-10
+  "Automatically generated"
+  is:
+    A F G ("yes_2"? & F "yes_8"? & !F G "no_8"?)
+  end.
+Property Referendum-PT-0010-11
+  "Automatically generated"
+  is:
+    A G F G !F !X ("start_0"? | X X !"yes_3"?)
+  end.
+Property Referendum-PT-0010-12
+  "Automatically generated"
+  is:
+    A X !("start_0"? & ((G "no_4"? | G !"no_4"?) U F "no_4"?))
+  end.
+Property Referendum-PT-0010-13
+  "Automatically generated"
+  is:
+    A (G ("start_0"? & G !"no_3"?) U X "no_5"?)
+  end.
+Property Referendum-PT-0010-14
+  "Automatically generated"
+  is:
+    A (X "no_8"? | F "no_8"?)
+  end.
+Property Referendum-PT-0010-15
+  "Automatically generated"
+  is:
+    A (X X (X "no_8"? U "yes_6"?) U "yes_6"?)
+  end.

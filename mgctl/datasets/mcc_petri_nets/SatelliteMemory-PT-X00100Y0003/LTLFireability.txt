@@ -1,0 +1,80 @@
+Property SatelliteMemory-PT-X00100Y0003-00
+  "Automatically generated"
+  is:
+    A !G (G !F "t8"? U G "t1"?)
+  end.
+Property SatelliteMemory-PT-X00100Y0003-01
+  "Automatically generated"
+  is:
+    A G X G (X G ("t1"? & "t3"?) U G X "t1"?)
+  end.
+Property SatelliteMemory-PT-X00100Y0003-02
+  "Automatically generated"
+  is:
+    A F G X (F "t3"? | G (F "t0"? U X (F "t3"? U "t2"?)))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-03
+  "Automatically generated"
+  is:
+    A X F ((("t7"? | X X "t6"?) U "t7"?) | X G X G "t7"?)
+  end.
+Property SatelliteMemory-PT-X00100Y0003-04
+  "Automatically generated"
+  is:
+    A ("t5"? & (G X F X "t5"? U F "t6"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-05
+  "Automatically generated"
+  is:
+    A X !X G ("t3"? | X G "t4"?)
+  end.
+Property SatelliteMemory-PT-X00100Y0003-06
+  "Automatically generated"
+  is:
+    A F ("t1"? | G ("t1"? & X X F G "t5"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-07
+  "Automatically generated"
+  is:
+    A X !F !("t9"? | X "t2"? | F "t2"?)
+  end.
+Property SatelliteMemory-PT-X00100Y0003-08
+  "Automatically generated"
+  is:
+    A (!"t0"? U ("t4"? & !X ("t5"? U !"t4"?)))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-09
+  "Automatically generated"
+  is:
+    A (("t6"? | F ("t6"? & F "t9"?)) U (F "t6"? | G "t7"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-10
+  "Automatically generated"
+  is:
+    A G F ("t9"? & G X !(G "t7"? | F "t7"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-11
+  "Automatically generated"
+  is:
+    A (F "t5"? & (("t6"? | G X ("t5"? & "t1"?)) U "t1"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-12
+  "Automatically generated"
+  is:
+    A ((!"t6"? U !"t3"?) U (G "t7"? U "t7"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-13
+  "Automatically generated"
+  is:
+    A F !X (F !"t8"? & ("t7"? | F "t7"? | F !"t7"?))
+  end.
+Property SatelliteMemory-PT-X00100Y0003-14
+  "Automatically generated"
+  is:
+    A G !(("t3"? U "t8"?) U X "t0"?)
+  end.
+Property SatelliteMemory-PT-X00100Y0003-15
+  "Automatically generated"
+  is:
+    A X !(!("t3"? | !"t0"?) U !G ("t3"? & X !"t3"?))
+  end.

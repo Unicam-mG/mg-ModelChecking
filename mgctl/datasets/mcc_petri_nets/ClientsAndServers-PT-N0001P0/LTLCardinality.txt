@@ -1,0 +1,80 @@
+Property ClientsAndServers-PT-N0001P0-00
+  "Automatically generated"
+  is:
+    A (((1) <= (#tokens("SR"))) & ((0) <= (#tokens("MwU"))) & G ((1) <= (#tokens("SR"))))
+  end.
+Property ClientsAndServers-PT-N0001P0-01
+  "Automatically generated"
+  is:
+    A F G (G ((0) <= (#tokens("Uf"))) & X ((0) <= (#tokens("Uf"))))
+  end.
+Property ClientsAndServers-PT-N0001P0-02
+  "Automatically generated"
+  is:
+    A (X F ((2) <= (#tokens("CG"))) | X X !F ((#tokens("StR")) <= (#tokens("Uf"))))
+  end.
+Property ClientsAndServers-PT-N0001P0-03
+  "Automatically generated"
+  is:
+    A (F (((#tokens("Si")) <= (#tokens("MtF"))) & F ((#tokens("CwG")) <= (#tokens("StF")))) | !(!((3) <= (#tokens("Cb"))) | G (((3) <= (#tokens("Cb"))) & F ((3) <= (#tokens("Cb"))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-04
+  "Automatically generated"
+  is:
+    A F !(((#tokens("StR")) <= (#tokens("MtF"))) | G !((#tokens("Ci")) <= (#tokens("SA"))))
+  end.
+Property ClientsAndServers-PT-N0001P0-05
+  "Automatically generated"
+  is:
+    A (X X ((#tokens("Mi")) <= (#tokens("Uf"))) & (((#tokens("Mi")) <= (#tokens("Uf"))) | ((0) <= (#tokens("MpA"))) | F X ((3) <= (#tokens("CwG")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-06
+  "Automatically generated"
+  is:
+    A !((((#tokens("CG")) <= (#tokens("CwG"))) & X ((1) <= (#tokens("SR")))) U (((#tokens("SA")) <= (#tokens("SR"))) | (G ((#tokens("CG")) <= (#tokens("CwG"))) U ((#tokens("SA")) <= (#tokens("SR"))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-07
+  "Automatically generated"
+  is:
+    A X !F G F G ((((#tokens("CA")) <= (#tokens("Si"))) | X ((2) <= (#tokens("Ci")))) U (((#tokens("CwG")) <= (#tokens("MpA"))) & G ((#tokens("CF")) <= (#tokens("Cb")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-08
+  "Automatically generated"
+  is:
+    A G X X X (((#tokens("Si")) <= (#tokens("CwG"))) | (((#tokens("Si")) <= (#tokens("CwG"))) & !((#tokens("SwA")) <= (#tokens("CR")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-09
+  "Automatically generated"
+  is:
+    A X G X ((((1) <= (#tokens("Ci"))) & ((#tokens("SwG")) <= (#tokens("SR")))) | (((#tokens("SG")) <= (#tokens("Si"))) & !(F ((1) <= (#tokens("Ci"))) U ((1) <= (#tokens("Ci"))))))
+  end.
+Property ClientsAndServers-PT-N0001P0-10
+  "Automatically generated"
+  is:
+    A (F !G ((#tokens("Uf")) <= (#tokens("CA"))) | G !F ((#tokens("Cb")) <= (#tokens("StF"))))
+  end.
+Property ClientsAndServers-PT-N0001P0-11
+  "Automatically generated"
+  is:
+    A (!G X ((1) <= (#tokens("MpA"))) | G (((1) <= (#tokens("MpA"))) & X X F !((#tokens("Cb")) <= (#tokens("CwA")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-12
+  "Automatically generated"
+  is:
+    A !F (X ((2) <= (#tokens("SwA"))) & ((G F ((1) <= (#tokens("Cb"))) | F ((2) <= (#tokens("SwA")))) U X ((#tokens("MwU")) <= (#tokens("SpA")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-13
+  "Automatically generated"
+  is:
+    A G (((#tokens("MtF")) <= (#tokens("Cb"))) | F ((#tokens("CR")) <= (#tokens("Ci"))) | F (F ((0) <= (#tokens("MpA"))) & X G ((3) <= (#tokens("CA")))))
+  end.
+Property ClientsAndServers-PT-N0001P0-14
+  "Automatically generated"
+  is:
+    A ((((3) <= (#tokens("SpG"))) & X ((#tokens("Uf")) <= (#tokens("MpA")))) | F G X X ((0) <= (#tokens("MtF"))))
+  end.
+Property ClientsAndServers-PT-N0001P0-15
+  "Automatically generated"
+  is:
+    A (X ((1) <= (#tokens("MwU"))) U G ((((1) <= (#tokens("MwU"))) | ((#tokens("CG")) <= (#tokens("SF")))) U ((1) <= (#tokens("CA")))))
+  end.

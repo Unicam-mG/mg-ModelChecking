@@ -1,0 +1,80 @@
+Property BART-PT-002-00
+  "Automatically generated"
+  is:
+    A (((0) <= (#tokens("TrainState_1_1_7"))) | (!F ((3) <= (#tokens("TrainState_2_3_7"))) U ((#tokens("TrainState_1_2_38")) <= (#tokens("NewDistTable_27_3_24")))))
+  end.
+Property BART-PT-002-01
+  "Automatically generated"
+  is:
+    A F G X G (((2) <= (#tokens("TrainState_2_1_32"))) | F (((1) <= (#tokens("TrainState_2_1_19"))) & G ((1) <= (#tokens("TrainState_2_1_28")))))
+  end.
+Property BART-PT-002-02
+  "Automatically generated"
+  is:
+    A (!(F X ((1) <= (#tokens("TrainState_1_1_14"))) U (((#tokens("TrainState_2_1_26")) <= (#tokens("TrainState_1_4_21"))) U ((1) <= (#tokens("NewDistTable_11_2_9"))))) & (((3) <= (#tokens("NewDistTable_33_3_30"))) U !((3) <= (#tokens("NewDistTable_33_3_30")))))
+  end.
+Property BART-PT-002-03
+  "Automatically generated"
+  is:
+    A F (((#tokens("TrainState_1_2_11")) <= (#tokens("TrainState_2_4_20"))) | X G F ((1) <= (#tokens("NewDistTable_35_3_32"))) | (F ((1) <= (#tokens("NewDistTable_35_3_32"))) U ((#tokens("TrainState_2_4_11")) <= (#tokens("TrainState_1_2_27")))))
+  end.
+Property BART-PT-002-04
+  "Automatically generated"
+  is:
+    A (X X !(((#tokens("TrainState_2_3_34")) <= (#tokens("NewDistTable_31_5_26"))) | F ((#tokens("NewDistTable_7_3_4")) <= (#tokens("TrainState_1_3_11")))) | X (((#tokens("NewDistTable_6_2_4")) <= (#tokens("TrainState_2_3_20"))) | (((1) <= (#tokens("NewDistTable_13_5_8"))) U !((#tokens("NewDistTable_7_3_4")) <= (#tokens("TrainState_1_3_11"))))))
+  end.
+Property BART-PT-002-05
+  "Automatically generated"
+  is:
+    A X X F X G (X ((2) <= (#tokens("TrainState_2_4_25"))) | ((X ((3) <= (#tokens("NewDistTable_36_3_33"))) & F ((#tokens("TrainState_2_1_3")) <= (#tokens("TrainState_2_3_8")))) U ((3) <= (#tokens("NewDistTable_36_3_33")))))
+  end.
+Property BART-PT-002-06
+  "Automatically generated"
+  is:
+    A (X ((1) <= (#tokens("NewDistTable_22_5_17"))) & X G ((#tokens("TrainState_1_2_10")) <= (#tokens("TrainState_1_2_27"))))
+  end.
+Property BART-PT-002-07
+  "Automatically generated"
+  is:
+    A F !(G X F ((2) <= (#tokens("TrainState_1_1_9"))) | !(((#tokens("TrainState_1_3_26")) <= (#tokens("TrainState_1_4_33"))) | X ((3) <= (#tokens("NewDistTable_7_4_3")))))
+  end.
+Property BART-PT-002-08
+  "Automatically generated"
+  is:
+    A (G X (((3) <= (#tokens("NewDistTable_17_5_12"))) | X ((#tokens("TrainState_1_3_20")) <= (#tokens("TrainState_2_0_0")))) | X G (!((#tokens("NewDistTable_34_2_32")) <= (#tokens("TrainState_1_1_32"))) & G ((2) <= (#tokens("NewDistTable_18_1_17")))))
+  end.
+Property BART-PT-002-09
+  "Automatically generated"
+  is:
+    A F (((#tokens("DistStation_17")) <= (#tokens("NewDistTable_20_4_16"))) & !X ((#tokens("DistStation_17")) <= (#tokens("NewDistTable_20_4_16"))))
+  end.
+Property BART-PT-002-10
+  "Automatically generated"
+  is:
+    A (((#tokens("NewDistTable_24_1_23")) <= (#tokens("TrainState_2_4_25"))) U F G !X ((#tokens("TrainState_2_3_8")) <= (#tokens("NewDistTable_35_3_32"))))
+  end.
+Property BART-PT-002-11
+  "Automatically generated"
+  is:
+    A F X ((#tokens("TrainState_2_3_25")) <= (#tokens("NewDistTable_38_2_36")))
+  end.
+Property BART-PT-002-12
+  "Automatically generated"
+  is:
+    A X X (((#tokens("TrainState_1_2_19")) <= (#tokens("NewDistTable_13_3_10"))) U ((#tokens("TrainState_2_4_20")) <= (#tokens("TrainState_1_1_8"))))
+  end.
+Property BART-PT-002-13
+  "Automatically generated"
+  is:
+    A G (((#tokens("TrainState_1_1_13")) <= (#tokens("NewDistTable_31_2_29"))) & ((1) <= (#tokens("NewDistTable_10_2_8"))))
+  end.
+Property BART-PT-002-14
+  "Automatically generated"
+  is:
+    A F G (((#tokens("NewDistTable_23_3_20")) <= (#tokens("NewDistTable_18_4_14"))) & ((1) <= (#tokens("TrainState_2_3_24"))) & F G (((1) <= (#tokens("NewDistTable_16_3_13"))) | !(G ((#tokens("NewDistTable_23_3_20")) <= (#tokens("NewDistTable_18_4_14"))) U ((1) <= (#tokens("NewDistTable_16_3_13"))))))
+  end.
+Property BART-PT-002-15
+  "Automatically generated"
+  is:
+    A G (X G X (((0) <= (#tokens("DistStation_14"))) | (G ((1) <= (#tokens("TrainState_1_4_20"))) U ((3) <= (#tokens("TrainState_1_3_17"))))) | X !((#tokens("NewDistTable_23_5_18")) <= (#tokens("NewDistTable_18_4_14"))))
+  end.

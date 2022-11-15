@@ -1,0 +1,80 @@
+Property Dekker-PT-015-00
+  "Automatically generated"
+  is:
+    A !G ((((1) <= (#tokens("flag_1_7"))) | ((#tokens("p3_6")) <= (#tokens("p3_1")))) & F (((#tokens("p0_13")) <= (#tokens("p1_13"))) | F X ((3) <= (#tokens("flag_0_11")))))
+  end.
+Property Dekker-PT-015-01
+  "Automatically generated"
+  is:
+    A G !F G (((#tokens("flag_1_11")) <= (#tokens("p1_1"))) | F !((#tokens("p1_8")) <= (#tokens("p3_5"))) | G F ((#tokens("p1_7")) <= (#tokens("flag_0_2"))))
+  end.
+Property Dekker-PT-015-02
+  "Automatically generated"
+  is:
+    A X X (F ((1) <= (#tokens("flag_1_11"))) & G ((#tokens("p3_7")) <= (#tokens("p1_6"))))
+  end.
+Property Dekker-PT-015-03
+  "Automatically generated"
+  is:
+    A G (((1) <= (#tokens("p1_6"))) & X !F G (((1) <= (#tokens("flag_1_9"))) U ((2) <= (#tokens("flag_0_5")))))
+  end.
+Property Dekker-PT-015-04
+  "Automatically generated"
+  is:
+    A ((!((0) <= (#tokens("p3_5"))) & X ((1) <= (#tokens("p3_14"))) & G ((1) <= (#tokens("p3_14")))) | X F ((#tokens("flag_1_0")) <= (#tokens("p3_10"))))
+  end.
+Property Dekker-PT-015-05
+  "Automatically generated"
+  is:
+    A X !F ((1) <= (#tokens("p3_7")))
+  end.
+Property Dekker-PT-015-06
+  "Automatically generated"
+  is:
+    A ((((1) <= (#tokens("p0_5"))) U (((1) <= (#tokens("p0_5"))) | ((1) <= (#tokens("p1_1"))))) | F (G (((#tokens("p0_4")) <= (#tokens("flag_0_10"))) | (((1) <= (#tokens("p0_5"))) & ((1) <= (#tokens("p1_1"))))) U ((1) <= (#tokens("p1_1")))))
+  end.
+Property Dekker-PT-015-07
+  "Automatically generated"
+  is:
+    A ((G ((0) <= (#tokens("p0_14"))) U G (((0) <= (#tokens("p0_14"))) U !((#tokens("p1_12")) <= (#tokens("p1_6"))))) U ((3) <= (#tokens("p0_8"))))
+  end.
+Property Dekker-PT-015-08
+  "Automatically generated"
+  is:
+    A (!G ((1) <= (#tokens("p1_2"))) | (F X F ((3) <= (#tokens("flag_0_6"))) & !(((3) <= (#tokens("flag_0_6"))) U !((#tokens("flag_1_13")) <= (#tokens("flag_0_2"))))))
+  end.
+Property Dekker-PT-015-09
+  "Automatically generated"
+  is:
+    A F X F X !X (((0) <= (#tokens("flag_0_4"))) & ((#tokens("flag_0_1")) <= (#tokens("flag_1_7"))))
+  end.
+Property Dekker-PT-015-10
+  "Automatically generated"
+  is:
+    A F (F (((3) <= (#tokens("flag_1_4"))) | F ((#tokens("flag_1_6")) <= (#tokens("p0_11")))) U G !((3) <= (#tokens("flag_1_4"))))
+  end.
+Property Dekker-PT-015-11
+  "Automatically generated"
+  is:
+    A G !(((#tokens("flag_1_3")) <= (#tokens("p1_10"))) | X ((!((#tokens("p1_9")) <= (#tokens("flag_0_0"))) & X X F ((#tokens("p1_9")) <= (#tokens("flag_0_0")))) U ((1) <= (#tokens("p3_12")))))
+  end.
+Property Dekker-PT-015-12
+  "Automatically generated"
+  is:
+    A !(((3) <= (#tokens("p1_10"))) & (((1) <= (#tokens("flag_0_8"))) | G ((#tokens("p3_8")) <= (#tokens("p1_3")))))
+  end.
+Property Dekker-PT-015-13
+  "Automatically generated"
+  is:
+    A G (X X G (((3) <= (#tokens("p1_12"))) & ((#tokens("p0_8")) <= (#tokens("p3_12")))) & G X (((3) <= (#tokens("p1_12"))) | ((#tokens("p0_8")) <= (#tokens("p3_12")))))
+  end.
+Property Dekker-PT-015-14
+  "Automatically generated"
+  is:
+    A F (F G (((#tokens("p1_14")) <= (#tokens("p1_13"))) & X ((#tokens("p1_14")) <= (#tokens("p1_13")))) & F ((#tokens("p1_14")) <= (#tokens("p1_13"))))
+  end.
+Property Dekker-PT-015-15
+  "Automatically generated"
+  is:
+    A X G (((#tokens("flag_1_2")) <= (#tokens("flag_1_3"))) | G X F G F X ((#tokens("flag_1_2")) <= (#tokens("flag_1_3"))))
+  end.

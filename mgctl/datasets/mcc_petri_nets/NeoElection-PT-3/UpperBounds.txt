@@ -1,0 +1,80 @@
+Property NeoElection-PT-3-UpperBounds-00
+  "Automatically generated"
+  is:
+    bound("polling_0", "polling_1", "polling_2", "polling_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-01
+  "Automatically generated"
+  is:
+    bound("poll__waitingMessage_0", "poll__waitingMessage_1", "poll__waitingMessage_2", "poll__waitingMessage_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-02
+  "Automatically generated"
+  is:
+    bound("poll__networl_0_0_AskP_0", "poll__networl_0_0_AskP_1", "poll__networl_0_0_AskP_2", "poll__networl_0_0_AskP_3", "poll__networl_0_0_AnsP_0", "poll__networl_0_0_AnsP_1", "poll__networl_0_0_AnsP_2", "poll__networl_0_0_AnsP_3", "poll__networl_0_0_RI_0", "poll__networl_0_0_RI_1", "poll__networl_0_0_RI_2", "poll__networl_0_0_RI_3", "poll__networl_0_0_AI_0", "poll__networl_0_0_AI_1", "poll__networl_0_0_AI_2", "poll__networl_0_0_AI_3", "poll__networl_0_0_AnnP_0", "poll__networl_0_0_AnnP_1", "poll__networl_0_0_AnnP_2", "poll__networl_0_0_AnnP_3", "poll__networl_0_0_RP_0", "poll__networl_0_0_RP_1", "poll__networl_0_0_RP_2", "poll__networl_0_0_RP_3", "poll__networl_0_1_AskP_0", "poll__networl_0_1_AskP_1", "poll__networl_0_1_AskP_2", "poll__networl_0_1_AskP_3", "poll__networl_0_1_AnsP_0", "poll__networl_0_1_AnsP_1", "poll__networl_0_1_AnsP_2", "poll__networl_0_1_AnsP_3", "poll__networl_0_1_RI_0", "poll__networl_0_1_RI_1", "poll__networl_0_1_RI_2", "poll__networl_0_1_RI_3", "poll__networl_0_1_AI_0", "poll__networl_0_1_AI_1", "poll__networl_0_1_AI_2", "poll__networl_0_1_AI_3", "poll__networl_0_1_AnnP_0", "poll__networl_0_1_AnnP_1", "poll__networl_0_1_AnnP_2", "poll__networl_0_1_AnnP_3", "poll__networl_0_1_RP_0", "poll__networl_0_1_RP_1", "poll__networl_0_1_RP_2", "poll__networl_0_1_RP_3", "poll__networl_0_2_AskP_0", "poll__networl_0_2_AskP_1", "poll__networl_0_2_AskP_2", "poll__networl_0_2_AskP_3", "poll__networl_0_2_AnsP_0", "poll__networl_0_2_AnsP_1", "poll__networl_0_2_AnsP_2", "poll__networl_0_2_AnsP_3", "poll__networl_0_2_RI_0", "poll__networl_0_2_RI_1", "poll__networl_0_2_RI_2", "poll__networl_0_2_RI_3", "poll__networl_0_2_AI_0", "poll__networl_0_2_AI_1", "poll__networl_0_2_AI_2", "poll__networl_0_2_AI_3", "poll__networl_0_2_AnnP_0", "poll__networl_0_2_AnnP_1", "poll__networl_0_2_AnnP_2", "poll__networl_0_2_AnnP_3", "poll__networl_0_2_RP_0", "poll__networl_0_2_RP_1", "poll__networl_0_2_RP_2", "poll__networl_0_2_RP_3", "poll__networl_0_3_AskP_0", "poll__networl_0_3_AskP_1", "poll__networl_0_3_AskP_2", "poll__networl_0_3_AskP_3", "poll__networl_0_3_AnsP_0", "poll__networl_0_3_AnsP_1", "poll__networl_0_3_AnsP_2", "poll__networl_0_3_AnsP_3", "poll__networl_0_3_RI_0", "poll__networl_0_3_RI_1", "poll__networl_0_3_RI_2", "poll__networl_0_3_RI_3", "poll__networl_0_3_AI_0", "poll__networl_0_3_AI_1", "poll__networl_0_3_AI_2", "poll__networl_0_3_AI_3", "poll__networl_0_3_AnnP_0", "poll__networl_0_3_AnnP_1", "poll__networl_0_3_AnnP_2", "poll__networl_0_3_AnnP_3", "poll__networl_0_3_RP_0", "poll__networl_0_3_RP_1", "poll__networl_0_3_RP_2", "poll__networl_0_3_RP_3", "poll__networl_1_0_AskP_0", "poll__networl_1_0_AskP_1", "poll__networl_1_0_AskP_2", "poll__networl_1_0_AskP_3", "poll__networl_1_0_AnsP_0", "poll__networl_1_0_AnsP_1", "poll__networl_1_0_AnsP_2", "poll__networl_1_0_AnsP_3", "poll__networl_1_0_RI_0", "poll__networl_1_0_RI_1", "poll__networl_1_0_RI_2", "poll__networl_1_0_RI_3", "poll__networl_1_0_AI_0", "poll__networl_1_0_AI_1", "poll__networl_1_0_AI_2", "poll__networl_1_0_AI_3", "poll__networl_1_0_AnnP_0", "poll__networl_1_0_AnnP_1", "poll__networl_1_0_AnnP_2", "poll__networl_1_0_AnnP_3", "poll__networl_1_0_RP_0", "poll__networl_1_0_RP_1", "poll__networl_1_0_RP_2", "poll__networl_1_0_RP_3", "poll__networl_1_1_AskP_0", "poll__networl_1_1_AskP_1", "poll__networl_1_1_AskP_2", "poll__networl_1_1_AskP_3", "poll__networl_1_1_AnsP_0", "poll__networl_1_1_AnsP_1", "poll__networl_1_1_AnsP_2", "poll__networl_1_1_AnsP_3", "poll__networl_1_1_RI_0", "poll__networl_1_1_RI_1", "poll__networl_1_1_RI_2", "poll__networl_1_1_RI_3", "poll__networl_1_1_AI_0", "poll__networl_1_1_AI_1", "poll__networl_1_1_AI_2", "poll__networl_1_1_AI_3", "poll__networl_1_1_AnnP_0", "poll__networl_1_1_AnnP_1", "poll__networl_1_1_AnnP_2", "poll__networl_1_1_AnnP_3", "poll__networl_1_1_RP_0", "poll__networl_1_1_RP_1", "poll__networl_1_1_RP_2", "poll__networl_1_1_RP_3", "poll__networl_1_2_AskP_0", "poll__networl_1_2_AskP_1", "poll__networl_1_2_AskP_2", "poll__networl_1_2_AskP_3", "poll__networl_1_2_AnsP_0", "poll__networl_1_2_AnsP_1", "poll__networl_1_2_AnsP_2", "poll__networl_1_2_AnsP_3", "poll__networl_1_2_RI_0", "poll__networl_1_2_RI_1", "poll__networl_1_2_RI_2", "poll__networl_1_2_RI_3", "poll__networl_1_2_AI_0", "poll__networl_1_2_AI_1", "poll__networl_1_2_AI_2", "poll__networl_1_2_AI_3", "poll__networl_1_2_AnnP_0", "poll__networl_1_2_AnnP_1", "poll__networl_1_2_AnnP_2", "poll__networl_1_2_AnnP_3", "poll__networl_1_2_RP_0", "poll__networl_1_2_RP_1", "poll__networl_1_2_RP_2", "poll__networl_1_2_RP_3", "poll__networl_1_3_AskP_0", "poll__networl_1_3_AskP_1", "poll__networl_1_3_AskP_2", "poll__networl_1_3_AskP_3", "poll__networl_1_3_AnsP_0", "poll__networl_1_3_AnsP_1", "poll__networl_1_3_AnsP_2", "poll__networl_1_3_AnsP_3", "poll__networl_1_3_RI_0", "poll__networl_1_3_RI_1", "poll__networl_1_3_RI_2", "poll__networl_1_3_RI_3", "poll__networl_1_3_AI_0", "poll__networl_1_3_AI_1", "poll__networl_1_3_AI_2", "poll__networl_1_3_AI_3", "poll__networl_1_3_AnnP_0", "poll__networl_1_3_AnnP_1", "poll__networl_1_3_AnnP_2", "poll__networl_1_3_AnnP_3", "poll__networl_1_3_RP_0", "poll__networl_1_3_RP_1", "poll__networl_1_3_RP_2", "poll__networl_1_3_RP_3", "poll__networl_2_0_AskP_0", "poll__networl_2_0_AskP_1", "poll__networl_2_0_AskP_2", "poll__networl_2_0_AskP_3", "poll__networl_2_0_AnsP_0", "poll__networl_2_0_AnsP_1", "poll__networl_2_0_AnsP_2", "poll__networl_2_0_AnsP_3", "poll__networl_2_0_RI_0", "poll__networl_2_0_RI_1", "poll__networl_2_0_RI_2", "poll__networl_2_0_RI_3", "poll__networl_2_0_AI_0", "poll__networl_2_0_AI_1", "poll__networl_2_0_AI_2", "poll__networl_2_0_AI_3", "poll__networl_2_0_AnnP_0", "poll__networl_2_0_AnnP_1", "poll__networl_2_0_AnnP_2", "poll__networl_2_0_AnnP_3", "poll__networl_2_0_RP_0", "poll__networl_2_0_RP_1", "poll__networl_2_0_RP_2", "poll__networl_2_0_RP_3", "poll__networl_2_1_AskP_0", "poll__networl_2_1_AskP_1", "poll__networl_2_1_AskP_2", "poll__networl_2_1_AskP_3", "poll__networl_2_1_AnsP_0", "poll__networl_2_1_AnsP_1", "poll__networl_2_1_AnsP_2", "poll__networl_2_1_AnsP_3", "poll__networl_2_1_RI_0", "poll__networl_2_1_RI_1", "poll__networl_2_1_RI_2", "poll__networl_2_1_RI_3", "poll__networl_2_1_AI_0", "poll__networl_2_1_AI_1", "poll__networl_2_1_AI_2", "poll__networl_2_1_AI_3", "poll__networl_2_1_AnnP_0", "poll__networl_2_1_AnnP_1", "poll__networl_2_1_AnnP_2", "poll__networl_2_1_AnnP_3", "poll__networl_2_1_RP_0", "poll__networl_2_1_RP_1", "poll__networl_2_1_RP_2", "poll__networl_2_1_RP_3", "poll__networl_2_2_AskP_0", "poll__networl_2_2_AskP_1", "poll__networl_2_2_AskP_2", "poll__networl_2_2_AskP_3", "poll__networl_2_2_AnsP_0", "poll__networl_2_2_AnsP_1", "poll__networl_2_2_AnsP_2", "poll__networl_2_2_AnsP_3", "poll__networl_2_2_RI_0", "poll__networl_2_2_RI_1", "poll__networl_2_2_RI_2", "poll__networl_2_2_RI_3", "poll__networl_2_2_AI_0", "poll__networl_2_2_AI_1", "poll__networl_2_2_AI_2", "poll__networl_2_2_AI_3", "poll__networl_2_2_AnnP_0", "poll__networl_2_2_AnnP_1", "poll__networl_2_2_AnnP_2", "poll__networl_2_2_AnnP_3", "poll__networl_2_2_RP_0", "poll__networl_2_2_RP_1", "poll__networl_2_2_RP_2", "poll__networl_2_2_RP_3", "poll__networl_2_3_AskP_0", "poll__networl_2_3_AskP_1", "poll__networl_2_3_AskP_2", "poll__networl_2_3_AskP_3", "poll__networl_2_3_AnsP_0", "poll__networl_2_3_AnsP_1", "poll__networl_2_3_AnsP_2", "poll__networl_2_3_AnsP_3", "poll__networl_2_3_RI_0", "poll__networl_2_3_RI_1", "poll__networl_2_3_RI_2", "poll__networl_2_3_RI_3", "poll__networl_2_3_AI_0", "poll__networl_2_3_AI_1", "poll__networl_2_3_AI_2", "poll__networl_2_3_AI_3", "poll__networl_2_3_AnnP_0", "poll__networl_2_3_AnnP_1", "poll__networl_2_3_AnnP_2", "poll__networl_2_3_AnnP_3", "poll__networl_2_3_RP_0", "poll__networl_2_3_RP_1", "poll__networl_2_3_RP_2", "poll__networl_2_3_RP_3", "poll__networl_3_0_AskP_0", "poll__networl_3_0_AskP_1", "poll__networl_3_0_AskP_2", "poll__networl_3_0_AskP_3", "poll__networl_3_0_AnsP_0", "poll__networl_3_0_AnsP_1", "poll__networl_3_0_AnsP_2", "poll__networl_3_0_AnsP_3", "poll__networl_3_0_RI_0", "poll__networl_3_0_RI_1", "poll__networl_3_0_RI_2", "poll__networl_3_0_RI_3", "poll__networl_3_0_AI_0", "poll__networl_3_0_AI_1", "poll__networl_3_0_AI_2", "poll__networl_3_0_AI_3", "poll__networl_3_0_AnnP_0", "poll__networl_3_0_AnnP_1", "poll__networl_3_0_AnnP_2", "poll__networl_3_0_AnnP_3", "poll__networl_3_0_RP_0", "poll__networl_3_0_RP_1", "poll__networl_3_0_RP_2", "poll__networl_3_0_RP_3", "poll__networl_3_1_AskP_0", "poll__networl_3_1_AskP_1", "poll__networl_3_1_AskP_2", "poll__networl_3_1_AskP_3", "poll__networl_3_1_AnsP_0", "poll__networl_3_1_AnsP_1", "poll__networl_3_1_AnsP_2", "poll__networl_3_1_AnsP_3", "poll__networl_3_1_RI_0", "poll__networl_3_1_RI_1", "poll__networl_3_1_RI_2", "poll__networl_3_1_RI_3", "poll__networl_3_1_AI_0", "poll__networl_3_1_AI_1", "poll__networl_3_1_AI_2", "poll__networl_3_1_AI_3", "poll__networl_3_1_AnnP_0", "poll__networl_3_1_AnnP_1", "poll__networl_3_1_AnnP_2", "poll__networl_3_1_AnnP_3", "poll__networl_3_1_RP_0", "poll__networl_3_1_RP_1", "poll__networl_3_1_RP_2", "poll__networl_3_1_RP_3", "poll__networl_3_2_AskP_0", "poll__networl_3_2_AskP_1", "poll__networl_3_2_AskP_2", "poll__networl_3_2_AskP_3", "poll__networl_3_2_AnsP_0", "poll__networl_3_2_AnsP_1", "poll__networl_3_2_AnsP_2", "poll__networl_3_2_AnsP_3", "poll__networl_3_2_RI_0", "poll__networl_3_2_RI_1", "poll__networl_3_2_RI_2", "poll__networl_3_2_RI_3", "poll__networl_3_2_AI_0", "poll__networl_3_2_AI_1", "poll__networl_3_2_AI_2", "poll__networl_3_2_AI_3", "poll__networl_3_2_AnnP_0", "poll__networl_3_2_AnnP_1", "poll__networl_3_2_AnnP_2", "poll__networl_3_2_AnnP_3", "poll__networl_3_2_RP_0", "poll__networl_3_2_RP_1", "poll__networl_3_2_RP_2", "poll__networl_3_2_RP_3", "poll__networl_3_3_AskP_0", "poll__networl_3_3_AskP_1", "poll__networl_3_3_AskP_2", "poll__networl_3_3_AskP_3", "poll__networl_3_3_AnsP_0", "poll__networl_3_3_AnsP_1", "poll__networl_3_3_AnsP_2", "poll__networl_3_3_AnsP_3", "poll__networl_3_3_RI_0", "poll__networl_3_3_RI_1", "poll__networl_3_3_RI_2", "poll__networl_3_3_RI_3", "poll__networl_3_3_AI_0", "poll__networl_3_3_AI_1", "poll__networl_3_3_AI_2", "poll__networl_3_3_AI_3", "poll__networl_3_3_AnnP_0", "poll__networl_3_3_AnnP_1", "poll__networl_3_3_AnnP_2", "poll__networl_3_3_AnnP_3", "poll__networl_3_3_RP_0", "poll__networl_3_3_RP_1", "poll__networl_3_3_RP_2", "poll__networl_3_3_RP_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-03
+  "Automatically generated"
+  is:
+    bound("crashed_0", "crashed_1", "crashed_2", "crashed_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-04
+  "Automatically generated"
+  is:
+    bound("stage_0_NEG", "stage_0_PRIM", "stage_0_SEC", "stage_1_NEG", "stage_1_PRIM", "stage_1_SEC", "stage_2_NEG", "stage_2_PRIM", "stage_2_SEC", "stage_3_NEG", "stage_3_PRIM", "stage_3_SEC")
+  end.
+Property NeoElection-PT-3-UpperBounds-05
+  "Automatically generated"
+  is:
+    bound("masterState_0_F_0", "masterState_0_F_1", "masterState_0_F_2", "masterState_0_F_3", "masterState_0_T_0", "masterState_0_T_1", "masterState_0_T_2", "masterState_0_T_3", "masterState_1_F_0", "masterState_1_F_1", "masterState_1_F_2", "masterState_1_F_3", "masterState_1_T_0", "masterState_1_T_1", "masterState_1_T_2", "masterState_1_T_3", "masterState_2_F_0", "masterState_2_F_1", "masterState_2_F_2", "masterState_2_F_3", "masterState_2_T_0", "masterState_2_T_1", "masterState_2_T_2", "masterState_2_T_3", "masterState_3_F_0", "masterState_3_F_1", "masterState_3_F_2", "masterState_3_F_3", "masterState_3_T_0", "masterState_3_T_1", "masterState_3_T_2", "masterState_3_T_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-06
+  "Automatically generated"
+  is:
+    bound("electionFailed_0", "electionFailed_1", "electionFailed_2", "electionFailed_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-07
+  "Automatically generated"
+  is:
+    bound("sendAnnPs__broadcasting_0_1", "sendAnnPs__broadcasting_0_2", "sendAnnPs__broadcasting_0_3", "sendAnnPs__broadcasting_1_1", "sendAnnPs__broadcasting_1_2", "sendAnnPs__broadcasting_1_3", "sendAnnPs__broadcasting_2_1", "sendAnnPs__broadcasting_2_2", "sendAnnPs__broadcasting_2_3", "sendAnnPs__broadcasting_3_1", "sendAnnPs__broadcasting_3_2", "sendAnnPs__broadcasting_3_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-08
+  "Automatically generated"
+  is:
+    bound("network_1_2_AnnP_2")
+  end.
+Property NeoElection-PT-3-UpperBounds-09
+  "Automatically generated"
+  is:
+    bound("negotiation_2_2_CO")
+  end.
+Property NeoElection-PT-3-UpperBounds-10
+  "Automatically generated"
+  is:
+    bound("poll__networl_1_1_RI_1")
+  end.
+Property NeoElection-PT-3-UpperBounds-11
+  "Automatically generated"
+  is:
+    bound("poll__networl_0_3_RP_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-12
+  "Automatically generated"
+  is:
+    bound("network_1_3_RP_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-13
+  "Automatically generated"
+  is:
+    bound("poll__networl_1_1_AnsP_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-14
+  "Automatically generated"
+  is:
+    bound("network_0_0_RP_3")
+  end.
+Property NeoElection-PT-3-UpperBounds-15
+  "Automatically generated"
+  is:
+    bound("network_2_2_RP_1")
+  end.
