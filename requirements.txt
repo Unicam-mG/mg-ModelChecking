@@ -1,4 +1,7 @@
 libmg
+numpy
+scipy
+spektral
 networkx
 pymodelchecking
 regex
