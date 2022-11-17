@@ -1,4 +1,4 @@
-libmg
+git+https://github.com/Unicam-mG/mG.git
 numpy
 scipy
 spektral
