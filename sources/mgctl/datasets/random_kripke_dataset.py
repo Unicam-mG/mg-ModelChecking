@@ -7,12 +7,12 @@ import itertools
 from spektral.data import Dataset
 from pyModelChecking import Kripke
 
-from mgctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
+from sources.mgctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
 
 
 def generate_random_graph(max_possible_nodes, max_edges_per_node, force_max):
     """
-    Generates a random weakly-connected directedgraph with or without deadlock that can be considered an LTS for some system
+    Generates a random weakly-connected digraph with or without deadlock that can be considered an LTS for some system
     :param max_possible_nodes: Sets an upper bound to the number of nodes to generate.  Must be >= 2
     :param max_edges_per_node: Sets an upper bound to the number of outgoing edges for any given node. Must be >= 1
     :param force_max: Generate max nodes
@@ -76,15 +76,15 @@ def networkx_to_lts(g, initial_state, graph_labels):
     graph_labels = iter(graph_labels)
     aut_header = 'des (' + str(initial_state) + ',' + str(g.size()) + ',' + str(g.order()) + ')\n'
     adj_list = list(nx.generate_adjlist(g))
-    aut_edges = [row.split() for row in adj_list]
-    aut_edges = ['(' + row[0] + ',\"' + next(graph_labels) + '\",' + i + ')\n' for row in aut_edges for i in row[1:]]
-    aut_edges = ''.join(aut_edges)
+    edges_list = [row.split() for row in adj_list]
+    edges_list = ['(' + row[0] + ',\"' + next(graph_labels) + '\",' + i + ')\n' for row in edges_list for i in row[1:]]
+    aut_edges = ''.join(edges_list)
     return aut_header + aut_edges
 
 
 class RandomKripkeDataset(Dataset):
-    def __init__(self, examples, max_possible_nodes, max_edges_per_node, atomic_propositions_set, formulae=None, name=None, skip_model_checking=False, probabilistic=False,
-                 **kwargs):
+    def __init__(self, examples, max_possible_nodes, max_edges_per_node, atomic_propositions_set, formulae=None,
+                 name=None, skip_model_checking=False, probabilistic=False, **kwargs):
         self.examples = examples
         self.max_possible_nodes = max_possible_nodes
         self.max_edges_per_node = max_edges_per_node

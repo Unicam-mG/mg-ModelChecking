@@ -3,7 +3,7 @@ addopts = '--cov=mgctl'
 testpaths = ['tests',]
 
 [tool.mypy]
-mypy_path = 'mgctl'
+mypy_path = 'sources'
 check_untyped_defs = true
 ignore_missing_imports = true
 no_implicit_optional = true

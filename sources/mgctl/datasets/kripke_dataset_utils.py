@@ -3,7 +3,7 @@ import numpy as np
 from pyModelChecking import CTL
 from scipy.sparse import coo_matrix
 from spektral.data import Graph
-from mgctl.utils import get_np_data_type
+from sources.mgctl.utils import get_np_data_type
 
 
 def ctl_to_mu_formulae(CTL_formulae):
@@ -25,13 +25,13 @@ def ctl_to_mu_formulae(CTL_formulae):
             if isinstance(sub_phi, CTL.X):
                 return '<true>' + to_mu_calculus(sub_phi.subformula(0))
             elif isinstance(sub_phi, CTL.G):
-                var = vars.pop()
+                var = var_names.pop()
                 return 'nu ' + var + '.(' + to_mu_calculus(sub_phi.subformula(0)) + ' && <true>' + var + ')'
             elif isinstance(sub_phi, CTL.F):
-                var = vars.pop()
+                var = var_names.pop()
                 return 'mu ' + var + '.(' + to_mu_calculus(sub_phi.subformula(0)) + ' || <true>' + var + ')'
             elif isinstance(sub_phi, CTL.U):
-                var = vars.pop()
+                var = var_names.pop()
                 return 'mu ' + var + '.(' + to_mu_calculus(sub_phi.subformula(1)) + ' || (' + to_mu_calculus(
                     sub_phi.subformula(0)) + ' && <true>' + var + '))'
         elif isinstance(phi, CTL.A):
@@ -39,13 +39,13 @@ def ctl_to_mu_formulae(CTL_formulae):
             if isinstance(sub_phi, CTL.X):
                 return '[true]' + to_mu_calculus(sub_phi.subformula(0))
             elif isinstance(sub_phi, CTL.G):
-                var = vars.pop()
+                var = var_names.pop()
                 return 'nu ' + var + '.(' + to_mu_calculus(sub_phi.subformula(0)) + ' && [true]' + var + ')'
             elif isinstance(sub_phi, CTL.F):
-                var = vars.pop()
+                var = var_names.pop()
                 return 'mu ' + var + '.(' + to_mu_calculus(sub_phi.subformula(0)) + ' || [true]' + var + ')'
             elif isinstance(sub_phi, CTL.U):
-                var = vars.pop()
+                var = var_names.pop()
                 return 'mu ' + var + '.(' + to_mu_calculus(sub_phi.subformula(1)) + ' || (' + to_mu_calculus(
                     sub_phi.subformula(0)) + ' && [true]' + var + '))'
         else:
@@ -55,8 +55,8 @@ def ctl_to_mu_formulae(CTL_formulae):
     mu_formulae = []
     for formula in CTL_formulae:
         parsed_formula = parser(formula)
-        vars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-                'V', 'W', 'X', 'Y', 'Z']
+        var_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+                     'U', 'V', 'W', 'X', 'Y', 'Z']
         mu_formulae.append(to_mu_calculus(parsed_formula))
     return mu_formulae
 
@@ -76,12 +76,12 @@ def create_graphs(kripke_structure, atomic_propositions_set, formulae, skip_mode
             for label in labels:
                 x[i][atomic_propositions_set.index(label)] = 1
     else:
-        x = []
+        tmp_x = []
         for i in range(n_nodes):
             labels = kripke_structure.labels(i)
             indices = [atomic_propositions_set.index(label) for label in labels]
-            x.append([sum(2 ** idx for idx in indices)])
-        x = np.array(x, dtype=get_np_data_type(atomic_propositions_set))
+            tmp_x.append([sum(2 ** idx for idx in indices)])
+        x = np.array(tmp_x, dtype=get_np_data_type(atomic_propositions_set))
 
     print("Generating adjacency matrix")
     # Initialize empty sparse adjacency matrix

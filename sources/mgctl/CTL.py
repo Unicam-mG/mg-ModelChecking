@@ -4,9 +4,9 @@ from pyModelChecking import CTL, Bool
 from libmg.layers import PsiLocal, Sigma, Phi
 from libmg.compiler import GNNCompiler, FixPointConfig, Bottom, Top, CompilationConfig
 
-from mgctl.utils import to_one_hot, get_tf_data_type
+from sources.mgctl.utils import to_one_hot, get_tf_data_type
 
-## Broadcast setup ##
+# Broadcast setup
 false = PsiLocal(lambda x: tf.zeros((tf.shape(x)[0], 1), dtype=tf.bool))
 true = PsiLocal(lambda x: tf.ones((tf.shape(x)[0], 1), dtype=tf.bool))
 And = PsiLocal(lambda x: tf.math.reduce_all(x, axis=1, keepdims=True))
@@ -31,11 +31,11 @@ def to_mG(expr):
             return '(' + _to_mG(phi.subformula(0)) + ' ; not)'
         elif isinstance(phi, CTL.Or):
             # check for equal terms and keep order
-            sub_formulas = sorted(set(phi.subformulas()), key=lambda x: phi.subformulas().index(x))
+            sub_formulas = list(set(phi.subformulas()))
             return '((' + ' || '.join([_to_mG(sub_formula) for sub_formula in sub_formulas]) + ') ; or)'
         elif isinstance(phi, CTL.And):
             # check for equal terms and keep order
-            sub_formulas = sorted(set(phi.subformulas()), key=lambda x: phi.subformulas().index(x))
+            sub_formulas = list(set(phi.subformulas()))
             return '((' + ' || '.join([_to_mG(sub_formula) for sub_formula in sub_formulas]) + ') ; and)'
         elif isinstance(phi, CTL.Imply):
             return _to_mG(CTL.Or(CTL.Not(phi.subformula(0)), phi.subformula(1)))

@@ -62,7 +62,8 @@ class MUCRL2Performance(PerformanceTest):
             formulae = ctl_to_mu_formulae(formulae)
         for formula in formulae or dataset.mu_calculus_formulae:
             for lts in dataset.labelled_transition_systems:
-                _, pbes_time, exec_time = MUCRL2Performance.model_check_lts(lts, dataset.atomic_proposition_set, formula)
+                _, pbes_time, exec_time = MUCRL2Performance.model_check_lts(lts, dataset.atomic_proposition_set,
+                                                                            formula)
                 tot_pbes_time += pbes_time
                 tot_exec_time += exec_time
         print("Using mCRL2", tot_pbes_time, tot_exec_time, sep=' ')
@@ -72,7 +73,7 @@ class MUCRL2Performance(PerformanceTest):
 class PyModelCheckingPerformance(PerformanceTest):
     def __call__(self, dataset, formulae=None):
         parser = Parser()
-        tot = 0
+        tot = 0.0
         for formula in formulae or dataset.formulae:
             phi = parser(formula)
             for kripke_structure in dataset.kripke_structures:
@@ -102,7 +103,7 @@ class CTLModelPerformance(PerformanceTest):
             model, compile_time = self.model_constructor(dataset, dataset.formulae)
             models.append(model)
             total_compile_time = compile_time
-        tot = 0
+        tot = 0.0
         for x, y in loader.load():
             for model in models:
                 start = time.perf_counter()
@@ -131,7 +132,7 @@ class CTLPredictPerformance(PerformanceTest):
             model, compile_time = self.model_constructor(dataset, dataset.formulae)
             models.append(model)
             total_compile_time = compile_time
-        tot = 0
+        tot = 0.0
         for model in models:
             start = time.perf_counter()
             model.predict(loader.load(), steps=loader.steps_per_epoch)
@@ -146,7 +147,10 @@ if __name__ == '__main__':
     dataset = PetriNetDataset(dataset_name, MCCTypes.FIREABILITY, skip_model_checking=True)
     preset = Preset(single=True, edges=False)
     save_output_to_csv([dataset],
-                       [CTLPredictPerformance(lambda dataset, formulas: build_model(dataset, formulas, config=preset.suggested_config, optimize='predict', return_compilation_time=True),
+                       [CTLPredictPerformance(lambda dataset, formulas: build_model(dataset, formulas,
+                                                                                    config=preset.suggested_config,
+                                                                                    optimize='predict',
+                                                                                    return_compilation_time=True),
                                               lambda dataset: preset.suggested_loader(dataset, epochs=1), split=False),
                         ],
                        ['split predict compile', 'split predict exe', 'full predict compile', 'full predict exe'],

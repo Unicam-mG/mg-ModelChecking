@@ -1,6 +1,8 @@
 import os
 import pathlib
 import pickle
+from typing import Dict, List
+
 import numpy as np
 import regex
 from enum import Enum, auto
@@ -9,7 +11,7 @@ from spektral.data import Dataset
 from snakes.pnml import loads
 from snakes.nets import StateGraph
 
-from mgctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
+from sources.mgctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
 
 
 class MCCTypes(Enum):
@@ -18,7 +20,7 @@ class MCCTypes(Enum):
 
 
 def pn_to_kripke(ts, stuttering, atomic_propositions_type: MCCTypes):
-    L = {}
+    L: Dict[str, List[str]] = {}
     R = []
     if atomic_propositions_type is MCCTypes.FIREABILITY:
         for i in ts:

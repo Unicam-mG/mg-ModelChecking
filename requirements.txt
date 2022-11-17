@@ -2,6 +2,8 @@ git+https://github.com/Unicam-mG/mG.git
 numpy
 scipy
 spektral
+tensorflow
+tensorflow-gpu
 networkx
 pymodelchecking
 regex
