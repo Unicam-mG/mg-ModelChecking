@@ -1,5 +1,5 @@
 [tool.pytest.ini_options]
-addopts = '--cov=mgctl'
+addopts = '--cov=sources'
 testpaths = ['tests',]
 
 [tool.mypy]

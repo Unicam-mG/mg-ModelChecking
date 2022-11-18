@@ -4,6 +4,7 @@ scipy
 spektral
 tensorflow
 tensorflow-gpu
+gudhi
 networkx
 pymodelchecking
 regex

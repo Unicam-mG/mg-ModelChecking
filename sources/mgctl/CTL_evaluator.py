@@ -1,10 +1,12 @@
 import os
 import subprocess
 import time
+
+from libmg.compiler import CompilationConfig
+from libmg.loaders import SingleGraphLoader
 from pyModelChecking import CTL
 from pyModelChecking.CTL import Parser
 
-from libmg.compiler import Preset
 from libmg.evaluator import save_output_to_csv, PerformanceTest
 from CTL import build_model
 from datasets.kripke_dataset_utils import ctl_to_mu_formulae
@@ -145,13 +147,12 @@ class CTLPredictPerformance(PerformanceTest):
 if __name__ == '__main__':
     dataset_name = "Philosophers-PT-000005"
     dataset = PetriNetDataset(dataset_name, MCCTypes.FIREABILITY, skip_model_checking=True)
-    preset = Preset(single=True, edges=False)
     save_output_to_csv([dataset],
                        [CTLPredictPerformance(lambda dataset, formulas: build_model(dataset, formulas,
-                                                                                    config=preset.suggested_config,
+                                                                                    config=CompilationConfig.xa_config,
                                                                                     optimize='predict',
                                                                                     return_compilation_time=True),
-                                              lambda dataset: preset.suggested_loader(dataset, epochs=1), split=False),
+                                              lambda dataset: SingleGraphLoader(dataset, epochs=1), split=False),
                         ],
                        ['split predict compile', 'split predict exe', 'full predict compile', 'full predict exe'],
                        dataset_name + "_updated")
