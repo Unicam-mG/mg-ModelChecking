@@ -9,8 +9,8 @@ from pyModelChecking.CTL import Parser
 
 from libmg.evaluator import save_output_to_csv, PerformanceTest
 from CTL import build_model
-from datasets.kripke_dataset_utils import ctl_to_mu_formulae
-from datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
+from sources.datasets.dataset_utils import ctl_to_mu_formulae
+from sources.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
 
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = "0"

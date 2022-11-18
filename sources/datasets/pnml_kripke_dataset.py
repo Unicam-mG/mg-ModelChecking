@@ -11,7 +11,7 @@ from spektral.data import Dataset
 from snakes.pnml import loads
 from snakes.nets import StateGraph
 
-from sources.mgctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
+from sources.datasets.dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
 
 
 class MCCTypes(Enum):

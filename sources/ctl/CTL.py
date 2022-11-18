@@ -4,7 +4,7 @@ from pyModelChecking import CTL, Bool
 from libmg.layers import PsiLocal, Sigma, Phi
 from libmg.compiler import GNNCompiler, FixPointConfig, Bottom, Top, CompilationConfig
 
-from sources.mgctl.utils import to_one_hot, get_tf_data_type
+from sources.datasets.dataset_utils import to_one_hot, get_tf_data_type
 
 # Broadcast setup
 false = PsiLocal(lambda x: tf.zeros((tf.shape(x)[0], 1), dtype=tf.bool))

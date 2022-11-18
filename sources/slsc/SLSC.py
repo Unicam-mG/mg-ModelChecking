@@ -1,7 +1,7 @@
 import tensorflow as tf
 import tensorflow_addons as tfa
 from lark import Lark, Transformer
-from sources.mgslsc.utils import to_one_hot, get_tf_data_type
+from sources.datasets.dataset_utils import to_one_hot, get_tf_data_type
 from libmg.layers import PsiLocal, Phi, Sigma
 from libmg.compiler import GNNCompiler, FixPointConfig, Bottom, Top, CompilationConfig
 

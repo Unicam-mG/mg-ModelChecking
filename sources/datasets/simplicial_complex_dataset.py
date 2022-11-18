@@ -10,7 +10,7 @@ from scipy.sparse import coo_matrix
 from spektral.data import Dataset, Graph
 from spektral.utils import reorder
 
-from sources.mgslsc.utils import get_np_data_type
+from sources.datasets.dataset_utils import get_np_data_type
 
 
 class AdjacencyRelation(Enum):
