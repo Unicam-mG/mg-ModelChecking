@@ -1,6 +1,6 @@
 import os
 import tensorflow as tf
-from sources.slsc.SLSC import build_model
+from sources.logics.slsc.SLSC import build_model
 from sources.datasets.simplicial_complex_dataset import SimplicialComplexDataset, AdjacencyRelation, \
     random_maximal_simplicial_complex
 from libmg import MultipleGraphLoader

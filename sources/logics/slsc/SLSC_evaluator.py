@@ -1,7 +1,7 @@
 import string
 
 from libmg import PredictPerformance, CallPerformance
-from sources.slsc.SLSC import build_model
+from sources.logics.slsc.SLSC import build_model
 from sources.datasets.simplicial_complex_dataset import AdjacencyRelation, random_maximal_simplicial_complex, \
     SimplicialComplexDataset
 from libmg import MultipleGraphLoader

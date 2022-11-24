@@ -1,9 +1,11 @@
 import tensorflow as tf
 import tensorflow_addons as tfa
 from lark import Lark, Transformer
-from sources.datasets.dataset_utils import to_one_hot, get_tf_data_type
-from libmg import PsiLocal, Phi, Sigma
+from libmg import Phi, Sigma
 from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
+
+from sources.datasets.dataset_utils import get_tf_data_type
+from sources.logics.propositional_logic.propositional_logic import true, false, And, Or, Not, make_atomic_propositions
 
 slsc_grammar = r"""
         ?s_formula: "true"                              -> true
@@ -22,11 +24,6 @@ slsc_grammar = r"""
         %ignore WS
         """
 
-false = PsiLocal(lambda x: tf.zeros((tf.shape(x)[0], 1), dtype=tf.bool))
-true = PsiLocal(lambda x: tf.ones((tf.shape(x)[0], 1), dtype=tf.bool))
-And = PsiLocal(lambda x: tf.math.reduce_all(x, axis=1, keepdims=True))
-Or = PsiLocal(lambda x: tf.math.reduce_any(x, axis=1, keepdims=True))
-Not = PsiLocal(lambda x: tf.math.logical_not(x))
 p3 = Phi(lambda i, e, j: j)
 Max = Sigma(lambda m, i, n, x: tf.cast(tf.math.segment_max(tf.cast(m, tf.uint8), i), tf.bool))
 
@@ -67,16 +64,11 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
     if n_atomic_propositions > 64:
         data_type = tf.uint8
         data_size = n_atomic_propositions
-        funcs = {atom_prop: PsiLocal(lambda x, v=atom_prop: tf.cast(
-            tf.math.reduce_sum(x * to_one_hot(v, dataset.atomic_proposition_set, data_type), axis=1, keepdims=True),
-            dtype=tf.bool))
-                 for atom_prop in dataset.atomic_proposition_set}
+        funcs = make_atomic_propositions(dataset.atomic_proposition_set, 'one_hot', data_type)
     else:
         data_type = get_tf_data_type(dataset.atomic_proposition_set)
         data_size = 1
-        funcs = {atom_prop: PsiLocal(lambda x, v=atom_prop: tf.cast(
-            tf.bitwise.bitwise_and(x, to_one_hot(v, dataset.atomic_proposition_set, data_type)), tf.bool))
-                 for atom_prop in dataset.atomic_proposition_set}
+        funcs = make_atomic_propositions(dataset.atomic_proposition_set, 'bitstring', data_type)
     compiler = GNNCompiler(psi_functions={'true': true, 'false': false,
                                           'not': Not, 'and': And, 'or': Or} | funcs,
                            sigma_functions={
