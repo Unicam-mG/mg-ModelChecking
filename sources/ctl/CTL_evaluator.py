@@ -2,12 +2,12 @@ import os
 import subprocess
 import time
 
-from libmg.compiler import CompilationConfig
-from libmg.loaders import SingleGraphLoader
+from libmg import CompilationConfig
+from libmg import SingleGraphLoader
 from pyModelChecking import CTL
 from pyModelChecking.CTL import Parser
 
-from libmg.evaluator import save_output_to_csv, PerformanceTest
+from libmg import save_output_to_csv, PerformanceTest
 from CTL import build_model
 from sources.datasets.dataset_utils import ctl_to_mu_formulae
 from sources.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes

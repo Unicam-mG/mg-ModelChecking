@@ -7,9 +7,9 @@ import numpy as np
 import regex
 from enum import Enum, auto
 from pyModelChecking import Kripke
-from spektral.data import Dataset
 from snakes.pnml import loads
 from snakes.nets import StateGraph
+from libmg import Dataset
 
 from sources.datasets.dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
 
@@ -98,7 +98,7 @@ class PetriNetDataset(Dataset):
         self._atomic_propositions_set = get_atomic_propositions_from_petri_net(os.path.join(self.model_folder,
                                                                                             'model.pnml'))
         self._mu_formulae = ctl_to_mu_formulae(self._formulae)
-        super().__init__(**kwargs)
+        super().__init__(self.string_params, **kwargs)
 
     def download(self):
         os.makedirs(self.path)
@@ -160,10 +160,6 @@ class PetriNetDataset(Dataset):
         return os.path.join(self.path, 'lts')
 
     @property
-    def name(self):
-        return self.string_params
-
-    @property
     def kripke_structures(self):
         for file in os.scandir(self.kripke_path):
             with open(file.path, 'rb') as f:
@@ -186,10 +182,3 @@ class PetriNetDataset(Dataset):
     @property
     def atomic_proposition_set(self):
         return self._atomic_propositions_set
-
-
-if __name__ == '__main__':
-    dataset = PetriNetDataset("TwoPhaseLocking-PT-nC00004vD", MCCTypes.FIREABILITY)
-    print(dataset[0].x)
-    print(dataset[0].a)
-    print(dataset[0].y)

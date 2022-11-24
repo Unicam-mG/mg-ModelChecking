@@ -7,8 +7,9 @@ import random
 from enum import auto, Enum
 from gudhi.simplex_tree import SimplexTree
 from scipy.sparse import coo_matrix
-from spektral.data import Dataset, Graph
+from spektral.data import Graph
 from spektral.utils import reorder
+from libmg import Dataset
 
 from sources.datasets.dataset_utils import get_np_data_type
 
@@ -63,8 +64,7 @@ class SimplicialComplexDataset(Dataset):
         self._atomic_propositions_set = sorted(atomic_propositions_set)
         self.simplices = simplices
         self.adjacency_relation = adjacency_relation
-        self._name = name
-        super().__init__(**kwargs)
+        super().__init__(name, **kwargs)
 
     def download(self):
         os.makedirs(self.path)
@@ -129,16 +129,5 @@ class SimplicialComplexDataset(Dataset):
         return os.path.join(super().path, self.name)
 
     @property
-    def name(self):
-        return self._name
-
-    @property
     def atomic_proposition_set(self):
         return self._atomic_propositions_set
-
-
-if __name__ == '__main__':
-    dataset = SimplicialComplexDataset('randomtest11', ['a', 'b', 'c'], {(0, 1, 2): 'a'},
-                                       AdjacencyRelation.LOWER_ADJACENCY)
-    print(dataset[0].n_nodes)
-    print(dataset[0].n_edges)

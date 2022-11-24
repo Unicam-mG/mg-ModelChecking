@@ -3,7 +3,7 @@ import tensorflow as tf
 from sources.slsc.SLSC import build_model
 from sources.datasets.simplicial_complex_dataset import SimplicialComplexDataset, AdjacencyRelation, \
     random_maximal_simplicial_complex
-from libmg.loaders import MultipleGraphLoader
+from libmg import MultipleGraphLoader
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = "0"
 

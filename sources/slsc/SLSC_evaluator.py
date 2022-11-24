@@ -1,10 +1,10 @@
 import string
 
-from libmg.evaluator import PredictPerformance, CallPerformance
+from libmg import PredictPerformance, CallPerformance
 from sources.slsc.SLSC import build_model
 from sources.datasets.simplicial_complex_dataset import AdjacencyRelation, random_maximal_simplicial_complex, \
     SimplicialComplexDataset
-from libmg.loaders import MultipleGraphLoader
+from libmg import MultipleGraphLoader
 
 if __name__ == '__main__':
     dataset = SimplicialComplexDataset('testing_dataset9', list(string.ascii_lowercase),

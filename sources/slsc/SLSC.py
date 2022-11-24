@@ -2,8 +2,8 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 from lark import Lark, Transformer
 from sources.datasets.dataset_utils import to_one_hot, get_tf_data_type
-from libmg.layers import PsiLocal, Phi, Sigma
-from libmg.compiler import GNNCompiler, FixPointConfig, Bottom, Top, CompilationConfig
+from libmg import PsiLocal, Phi, Sigma
+from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
 
 slsc_grammar = r"""
         ?s_formula: "true"                              -> true
@@ -80,13 +80,13 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
     compiler = GNNCompiler(psi_functions={'true': true, 'false': false,
                                           'not': Not, 'and': And, 'or': Or} | funcs,
                            sigma_functions={
-                               'or': lambda m, i, n, x: tf.cast(
+                               'or': Sigma(lambda m, i, n, x: tf.cast(
                                    tf.math.unsorted_segment_max(tf.cast(m, tf.uint8), i, n),
-                                   tf.bool)},
+                                   tf.bool))},
                            phi_functions={},
-                           bottoms={'b': FixPointConfig(Bottom(1, False))},
-                           tops={'b': FixPointConfig(Top(1, True))},
-                           config=config(data_type, data_size, tf.uint8))
+                           bottoms={'b': FixPointConfig(1, False)},
+                           tops={'b': FixPointConfig(1, True)},
+                           config=config(NodeConfig(data_type, data_size), tf.uint8))
     if formulae is None:
         expr = " || ".join([to_mG(formula) for formula in dataset.formulae])
     else:

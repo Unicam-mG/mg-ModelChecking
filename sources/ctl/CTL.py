@@ -1,8 +1,8 @@
 import tensorflow as tf
 import tensorflow_addons as tfa
 from pyModelChecking import CTL, Bool
-from libmg.layers import PsiLocal, Sigma, Phi
-from libmg.compiler import GNNCompiler, FixPointConfig, Bottom, Top, CompilationConfig
+from libmg import PsiLocal, Sigma, Phi
+from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
 
 from sources.datasets.dataset_utils import to_one_hot, get_tf_data_type
 
@@ -89,9 +89,9 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
                                           'not': Not, 'and': And, 'or': Or} | funcs,
                            sigma_functions={'or': Max},
                            phi_functions={'p3': p3},
-                           bottoms={'b': FixPointConfig(Bottom(1, False))},
-                           tops={'b': FixPointConfig(Top(1, True))},
-                           config=config(data_type, data_size, tf.uint8))
+                           bottoms={'b': FixPointConfig(1, False)},
+                           tops={'b': FixPointConfig(1, True)},
+                           config=config(NodeConfig(data_type, data_size), tf.uint8))
     if formulae is None:
         expr = " || ".join([to_mG(formula) for formula in dataset.formulae])
     else:

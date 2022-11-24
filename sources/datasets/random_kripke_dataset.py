@@ -4,8 +4,8 @@ import networkx as nx
 import numpy as np
 import pickle
 import itertools
-from spektral.data import Dataset
 from pyModelChecking import Kripke
+from libmg import Dataset
 
 from sources.datasets.dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
 
@@ -91,13 +91,12 @@ class RandomKripkeDataset(Dataset):
         self._atomic_propositions_set = sorted(atomic_propositions_set)
         self._formulae = formulae or []
         self._mu_formulae = ctl_to_mu_formulae(self._formulae)
-        self._name = name
         self.skip_model_checking = skip_model_checking or not formulae or probabilistic
         self.probabilistic = probabilistic
-        self.string_params = '_'.join([str(self.name), str(self.examples), str(self.max_possible_nodes),
+        self.string_params = '_'.join([name, str(self.examples), str(self.max_possible_nodes),
                                        str(self.max_edges_per_node), str(self.probabilistic),
                                        str(self.skip_model_checking)])
-        super().__init__(**kwargs)
+        super().__init__(name, **kwargs)
 
     def download(self):
         os.makedirs(self.path)
@@ -153,10 +152,6 @@ class RandomKripkeDataset(Dataset):
         return os.path.join(self.path, 'lts')
 
     @property
-    def name(self):
-        return self._name
-
-    @property
     def kripke_structures(self):
         for file in os.scandir(self.kripke_path):
             with open(file.path, 'rb') as f:
@@ -179,14 +174,3 @@ class RandomKripkeDataset(Dataset):
     @property
     def atomic_proposition_set(self):
         return self._atomic_propositions_set
-
-
-if __name__ == '__main__':
-    dataset = RandomKripkeDataset(1, 10, 16, ['a', 'b', 'c'], ['a', 'b', 'c'], None, False, False)
-    print(list(dataset.kripke_structures))
-    print(list(dataset.labelled_transition_systems))
-    print(dataset.formulae)
-    print(dataset.mu_calculus_formulae)
-    print(dataset[0].x)
-    a = dataset[0].a
-    print(a)
