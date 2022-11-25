@@ -1,7 +1,7 @@
 import tensorflow as tf
 from libmg import PsiLocal
 
-from sources.datasets.dataset_utils import to_one_hot
+from sources.dataset_utils import to_one_hot
 
 false = PsiLocal(lambda x: tf.zeros((tf.shape(x)[0], 1), dtype=tf.bool))
 true = PsiLocal(lambda x: tf.ones((tf.shape(x)[0], 1), dtype=tf.bool))

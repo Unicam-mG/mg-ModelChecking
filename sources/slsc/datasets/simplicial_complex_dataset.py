@@ -11,7 +11,7 @@ from spektral.data import Graph
 from spektral.utils import reorder
 from libmg import Dataset
 
-from sources.datasets.dataset_utils import get_np_data_type
+from sources.dataset_utils import get_np_data_type
 
 
 class AdjacencyRelation(Enum):

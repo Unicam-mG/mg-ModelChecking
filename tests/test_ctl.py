@@ -3,9 +3,9 @@ import tensorflow as tf
 
 from libmg import CompilationConfig
 from libmg import MultipleGraphLoader, SingleGraphLoader
-from sources.logics.ctl.CTL import build_model
-from sources.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
-from sources.datasets.random_kripke_dataset import RandomKripkeDataset
+from sources.ctl.CTL import build_model
+from sources.ctl.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
+from sources.ctl.datasets.random_kripke_dataset import RandomKripkeDataset
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = "0"
 
 

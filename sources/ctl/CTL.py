@@ -4,8 +4,8 @@ from pyModelChecking import CTL, Bool
 from libmg import Sigma, Phi
 from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
 
-from sources.datasets.dataset_utils import get_tf_data_type
-from sources.logics.propositional_logic.propositional_logic import true, false, And, Or, Not, make_atomic_propositions
+from sources.dataset_utils import get_tf_data_type
+from sources.propositional_logic import true, false, And, Or, Not, make_atomic_propositions
 
 # Broadcast setup
 p3 = Phi(lambda i, e, j: j)
