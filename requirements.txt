@@ -9,3 +9,5 @@ networkx
 pymodelchecking
 regex
 snakes
+git+https://github.com/moves-rwth/pycarl.git
+git+https://github.com/moves-rwth/stormpy.git@1.7.0
