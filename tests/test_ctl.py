@@ -56,7 +56,6 @@ class PetriNetTest(tf.test.TestCase):
         d_loader = SingleGraphLoader(self.dataset, epochs=1)
         for inputs, y in d_loader.load():
             for i in range(len(models)):
-                print(i)
                 outputs = models[i](inputs)
                 self.assertAllEqual(outputs, y[:, i:i+1])
 
