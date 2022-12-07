@@ -9,7 +9,7 @@ from pyModelChecking.CTL import Parser
 
 from libmg import save_output_to_csv, PerformanceTest
 from CTL import build_model
-from sources.dataset_utils import ctl_to_mu_formulae
+from sources.ctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae
 from sources.ctl.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
 
 

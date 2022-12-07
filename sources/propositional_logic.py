@@ -3,11 +3,11 @@ from libmg import PsiLocal
 
 from sources.dataset_utils import to_one_hot
 
-false = PsiLocal(lambda x: tf.zeros((tf.shape(x)[0], 1), dtype=tf.bool))
-true = PsiLocal(lambda x: tf.ones((tf.shape(x)[0], 1), dtype=tf.bool))
-And = PsiLocal(lambda x: tf.math.reduce_all(x, axis=1, keepdims=True))
-Or = PsiLocal(lambda x: tf.math.reduce_any(x, axis=1, keepdims=True))
-Not = PsiLocal(lambda x: tf.math.logical_not(x))
+b_false = PsiLocal(lambda x: tf.zeros((tf.shape(x)[0], 1), dtype=tf.bool))
+b_true = PsiLocal(lambda x: tf.ones((tf.shape(x)[0], 1), dtype=tf.bool))
+b_and = PsiLocal(lambda x: tf.math.reduce_all(x, axis=1, keepdims=True))
+b_or = PsiLocal(lambda x: tf.math.reduce_any(x, axis=1, keepdims=True))
+b_not = PsiLocal(lambda x: tf.math.logical_not(x))
 
 
 def make_atomic_propositions(atomic_proposition_set, mode, data_type):

@@ -7,7 +7,7 @@ import itertools
 from pyModelChecking import Kripke
 from libmg import Dataset
 
-from sources.dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
+from sources.ctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae, get_graphs, create_graphs
 
 
 def generate_random_graph(max_possible_nodes, max_edges_per_node, force_max):

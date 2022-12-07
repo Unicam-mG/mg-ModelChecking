@@ -46,6 +46,7 @@ def dtmc_to_graph(dtmc, formula, qualitative):
 
     print("Generating y feature vector")
     properties = stormpy.parse_properties(formula)
+    # f = properties[0].raw_formula
     result = stormpy.model_checking(dtmc, properties[0])
     assert result.result_for_all_states
     tmp_y = [[result.at(i)] for i in range(n_nodes)]

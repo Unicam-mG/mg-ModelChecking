@@ -1,11 +1,11 @@
 import tensorflow as tf
 import tensorflow_addons as tfa
 from pyModelChecking import CTL, Bool
-from libmg import Sigma, Phi
+from libmg import Sigma, Phi, FunctionDict
 from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
 
 from sources.dataset_utils import get_tf_data_type
-from sources.propositional_logic import true, false, And, Or, Not, make_atomic_propositions
+from sources.propositional_logic import b_true, b_false, b_and, b_or, b_not, make_atomic_propositions
 
 # Broadcast setup
 p3 = Phi(lambda i, e, j: j)
@@ -76,10 +76,10 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
         data_type = get_tf_data_type(dataset.atomic_proposition_set)
         data_size = 1
         funcs = make_atomic_propositions(dataset.atomic_proposition_set, 'bitstring', data_type)
-    compiler = GNNCompiler(psi_functions={'true': true, 'false': false,
-                                          'not': Not, 'and': And, 'or': Or} | funcs,
-                           sigma_functions={'or': Max},
-                           phi_functions={'p3': p3},
+    compiler = GNNCompiler(psi_functions=FunctionDict({'true': b_true, 'false': b_false,
+                                                       'not': b_not, 'and': b_and, 'or': b_or} | funcs),
+                           sigma_functions=FunctionDict({'or': Max}),
+                           phi_functions=FunctionDict({'p3': p3}),
                            bottoms={'b': FixPointConfig(1, False)},
                            tops={'b': FixPointConfig(1, True)},
                            config=config(NodeConfig(data_type, data_size), tf.uint8))
