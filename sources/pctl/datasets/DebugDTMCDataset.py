@@ -38,7 +38,7 @@ def dtmc_to_graph(dtmc, formula, qualitative):
         for action in state.actions:
             for transition in action.transitions:
                 data.append(1)
-                rows.append(state)
+                rows.append(state.id)
                 cols.append(transition.column)
                 tmp_e.append([transition.value()])
     e = np.array(tmp_e, dtype=np.float32)
@@ -56,34 +56,68 @@ def dtmc_to_graph(dtmc, formula, qualitative):
 
 
 class DebugDTMCDataset(Dataset):
-    def __init__(self, formula, qualitative):
+    def __init__(self, formula, qualitative, ex=1):
         self.formula = formula
         self.qualitative = qualitative
+        self.ex = ex
         super().__init__('debug')
 
     def read(self):
-        builder = stormpy.SparseMatrixBuilder(rows=4, columns=4, entries=6, force_dimensions=False,
-                                              has_custom_row_grouping=False)
-        builder.add_next_value(row=0, column=1, value=1)
-        builder.add_next_value(row=1, column=1, value=0.01)
-        builder.add_next_value(row=1, column=2, value=0.01)
-        builder.add_next_value(row=1, column=3, value=0.98)
-        builder.add_next_value(row=2, column=0, value=1)
-        builder.add_next_value(row=3, column=3, value=1)
-        transition_matrix = builder.build()
+        if self.ex == 1:
+            builder = stormpy.SparseMatrixBuilder(rows=4, columns=4, entries=6, force_dimensions=False,
+                                                  has_custom_row_grouping=False)
+            builder.add_next_value(row=0, column=1, value=1)
+            builder.add_next_value(row=1, column=1, value=0.01)
+            builder.add_next_value(row=1, column=2, value=0.01)
+            builder.add_next_value(row=1, column=3, value=0.98)
+            builder.add_next_value(row=2, column=0, value=1)
+            builder.add_next_value(row=3, column=3, value=1)
+            transition_matrix = builder.build()
 
-        state_labeling = stormpy.storage.StateLabeling(4)
-        labels = {'try', 'succ', 'fail'}
-        for label in labels:
-            state_labeling.add_label(label)
+            state_labeling = stormpy.storage.StateLabeling(4)
+            labels = {'try', 'succ', 'fail'}
+            for label in labels:
+                state_labeling.add_label(label)
 
-        state_labeling.add_label_to_state('try', 1)
-        state_labeling.add_label_to_state('fail', 2)
-        state_labeling.add_label_to_state('succ', 3)
+            state_labeling.add_label_to_state('try', 1)
+            state_labeling.add_label_to_state('fail', 2)
+            state_labeling.add_label_to_state('succ', 3)
 
-        components = stormpy.SparseModelComponents(transition_matrix=transition_matrix, state_labeling=state_labeling)
-        dtmc = stormpy.storage.SparseDtmc(components)
-        return dtmc_to_graph(dtmc, self.formula, self.qualitative)
+            components = stormpy.SparseModelComponents(transition_matrix=transition_matrix, state_labeling=state_labeling)
+            dtmc = stormpy.storage.SparseDtmc(components)
+            return dtmc_to_graph(dtmc, self.formula, self.qualitative)
+        else:
+            builder = stormpy.SparseMatrixBuilder(rows=4, columns=4, entries=6, force_dimensions=False,
+                                                  has_custom_row_grouping=False)
+            builder.add_next_value(row=0, column=1, value=1)
+            builder.add_next_value(row=1, column=0, value=0.5)
+            builder.add_next_value(row=1, column=2, value=0.5)
+            builder.add_next_value(row=2, column=1, value=0.5)
+            builder.add_next_value(row=2, column=3, value=0.5)
+            builder.add_next_value(row=3, column=2, value=1)
+            transition_matrix = builder.build()
+
+            state_labeling = stormpy.storage.StateLabeling(4)
+            labels = {'empty', 'full'}
+            for label in labels:
+                state_labeling.add_label(label)
+
+            state_labeling.add_label_to_state('empty', 0)
+            state_labeling.add_label_to_state('full', 3)
+
+
+            components = stormpy.SparseModelComponents(transition_matrix=transition_matrix,
+                                                       state_labeling=state_labeling)
+            dtmc = stormpy.storage.SparseDtmc(components)
+            return dtmc_to_graph(dtmc, self.formula, self.qualitative)
+
+    @property
+    def formulae(self):
+        return [self.formula]
+
+    @property
+    def atomic_proposition_set(self):
+        return sorted(['try', 'succ', 'fail'])
 
 
 if __name__ == '__main__':

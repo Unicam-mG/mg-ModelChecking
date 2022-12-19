@@ -34,6 +34,6 @@ def to_one_hot(label, label_set, data_type):
     if len(label_set) > 64:
         vec = [0] * len(label_set)
         vec[index] = 1
-        return tf.constant(vec, dtype=tf.uint8)
+        return tf.constant(vec, dtype=data_type)
     else:
         return tf.constant(2 ** index, dtype=data_type)
