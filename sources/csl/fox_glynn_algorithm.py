@@ -5,6 +5,7 @@ from sources.csl.datasets.DebugCTMCDataset import DebugCTMCDataset
 
 
 # source: https://github.com/prismmodelchecker/prism/blob/master/prism/src/explicit/FoxGlynn.java
+# https://github.com/prismmodelchecker/prism/blob/master/prism/src/explicit/CTMCModelChecker.java
 
 def finder(q_tmax, accuracy, m, overflow, factor):
     sqrtpi = math.sqrt(math.pi)
@@ -164,7 +165,7 @@ if __name__ == '__main__':
 
     iters = 1
     while iters <= right:
-        print(sums)
+        print(soln)
         for s in nonAbs:
             soln2[s] = sum([P[s][j] * soln[j] for j in range(ctmc.nr_states)])
         if iters >= left:

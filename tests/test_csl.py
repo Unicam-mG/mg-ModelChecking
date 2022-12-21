@@ -4,8 +4,35 @@ from libmg import SingleGraphLoader, GNNCompiler, CompilationConfig, NodeConfig,
 
 from sources.csl.datasets.DebugCTMCDataset import DebugCTMCDataset
 from sources.csl.CSL import b_not, b_or, b_true, b_and, make_atomic_propositions, pmode, prod_emb, summation, plus, mul, \
-    prod_unif, prod_const
+    prod_unif, prod_const, to_mG, build_model
 from sources.csl.fox_glynn_algorithm import fox_glynn_algorithm
+
+
+class CSLToMgTest(tf.test.TestCase):
+    def test_parse(self):
+        self.assertEqual('empty', to_mG('\"empty\"'))
+        self.assertEqual('true', to_mG('true'))
+        self.assertEqual('false', to_mG('false'))
+        self.assertEqual('(empty);not', to_mG('!\"empty\"'))
+        self.assertEqual('((empty) || (full));and', to_mG('\"empty\" & \"full\"'))
+        self.assertEqual('((empty) || (full));or', to_mG('\"empty\" | \"full\"'))
+        self.assertEqual('((full);%;|*>+);probgr[0.5]', to_mG('P>0.5 [ X \"full\"]'))
+        self.assertEqual('((full);%;|*>+);probgreq[0.5]', to_mG('P>=0.5 [ X \"full\"]'))
+        self.assertEqual('((full);%;|*>+);proble[0.5]', to_mG('P<0.5 [ X \"full\"]'))
+        self.assertEqual('((full);%;|*>+);probleq[0.5]', to_mG('P<=0.5 [ X \"full\"]'))
+        self.assertEqual('((full);%;|*>+)', to_mG('P=? [ X \"full\"]'))
+        self.assertEqual('(mu X,f . ((((full);%) || (((((((empty);not) || (full);not);and);%) || (X;|*>+));*));+))',
+                         to_mG('P=? [ !\"empty\" U \"full\" ]'))
+
+        '''
+        self.assertEqual('((succ);%)', to_mG('P=? [ \"try\" U<=0 \"succ\" ]'))
+        
+        self.assertEqual('((((succ);%) || (((((try) || (succ);not);and);%) || ((succ);%;|*>+));*);+)',
+                         to_mG('P=? [ \"try\" U<=1 \"succ\" ]'))
+        self.assertEqual('((((succ);%) || (((((try) || (succ);not);and);%) || ((((succ);%) || (((((try) || ('
+                         'succ);not);and);%) || ((succ);%;|*>+));*);+;|*>+));*);+)',
+                         to_mG('P=? [ \"try\" U<=2 \"succ\" ]'))
+        '''
 
 
 class CSLTest(tf.test.TestCase):
@@ -13,57 +40,26 @@ class CSLTest(tf.test.TestCase):
     def test_next(self):
         datasetex = DebugCTMCDataset("P=? [ X (\"full\") ]", qualitative=False)
         loader = SingleGraphLoader(datasetex, epochs=1)
-        atom_props = make_atomic_propositions(['empty', 'full'], mode='bitset', data_type=tf.uint8)
-        compiler = GNNCompiler(FunctionDict({'not': b_not, 'or': b_or, 'pmode': pmode} | atom_props),
-                               FunctionDict({'sum': summation}),
-                               FunctionDict({'prod': prod_emb}), {}, {},
-                               CompilationConfig.xae_config(NodeConfig(tf.uint8, 1), EdgeConfig(tf.float32, 1),
-                                                            tf.uint8))
-        model = compiler.compile("full;pmode;|prod>sum")
+        model = build_model(datasetex, max_exit_rate=4.5, config=CompilationConfig.xae_config)
         x, y = loader.load().__iter__().__next__()
         self.assertAllEqual(y, model.call(x))
 
     def test_unbounded_until(self):
-        atom_props = make_atomic_propositions(['empty', 'full'], mode='bitset', data_type=tf.uint8)
-        compiler = GNNCompiler(FunctionDict(
-            {'not': b_not, 'or': b_or, 'pmode': pmode, 'plus': plus, 'mul': mul, 'true': b_true,
-             'and': b_and} | atom_props),
-                               FunctionDict({'sum': summation}), FunctionDict({'prod': prod_emb}),
-                               {'f': FixPointConfig(1, 0.0, 0.001)}, {},
-                               CompilationConfig.xae_config(NodeConfig(tf.uint8, 1), EdgeConfig(tf.float32, 1),
-                                                            tf.uint8))
         datasetuu = DebugCTMCDataset("P=? [ !\"empty\" U \"full\" ]", qualitative=False)
         loader = SingleGraphLoader(datasetuu, epochs=1)
-        model = compiler.compile(
-            'mu X,f . (((full;pmode) || (((((empty;not) || (full;not));and;pmode) || (X;|prod>sum));mul));plus)')
+        model = build_model(datasetuu, max_exit_rate=4.5, config=CompilationConfig.xae_config)
         x, y = loader.load().__iter__().__next__()
         self.assertAllClose(y, model.call(x), atol=0.001)
 
     def test_interval_until(self):
-        atom_props = make_atomic_propositions(['empty', 'full'], mode='bitset', data_type=tf.uint8)
-        compiler = GNNCompiler(FunctionDict(
-            {'not': b_not, 'or': b_or, 'pmode': pmode, 'plus': plus, 'mul': mul, 'true': b_true, 'and': b_and,
-             'prodc': prod_const} | atom_props),
-                               FunctionDict({'sum': summation}), FunctionDict({'prod': prod_unif}),
-                               {'f': FixPointConfig(1, 0.0, 0.001)}, {},
-                               CompilationConfig.xae_config(NodeConfig(tf.uint8, 1), EdgeConfig(tf.float32, 1),
-                                                            tf.uint8))
-
         # case 0, t
         datasetiu1 = DebugCTMCDataset("P=? [ true U[0, 7.5] \"full\" ]", qualitative=False)
         loader1 = SingleGraphLoader(datasetiu1, epochs=1)
 
-        # do a static fox-glynn
-        qt = 7.5 * 4.5
-        weights, left, right, total_weight = fox_glynn_algorithm(qt, 1.0e-300, 1.0e+300, 1.0e-10)
-        for i in range(left, right + 1):
-            weights[i - left] = weights[i - left] / total_weight
-        print(weights, left, right, total_weight)
+        model = build_model(datasetiu1, max_exit_rate=4.5, config=CompilationConfig.xae_config)
 
-        model = compiler.compile('((full;pmode;prodc[' + str(weights[0]) + ']) || ( ((full;not;pmode) || (full;pmode;|prod>sum)) ; mul; prodc[' + str(weights[1]) + ']));plus')
         x, y = loader1.load().__iter__().__next__()
-        print(model.call(x), y)
-        # self.assertAllClose(y, model.call(x))
+        self.assertAllClose(y, model.call(x))
 
         """
         datasetbu2 = DebugCTMCDataset("P=? [ true U<=2 \"succ\" ]", qualitative=False)

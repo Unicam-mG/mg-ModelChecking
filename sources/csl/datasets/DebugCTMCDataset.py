@@ -6,6 +6,7 @@ from spektral.data import Graph
 
 from sources.dataset_utils import get_np_data_type
 
+
 # TODO: remove 0 edges
 def ctmc_to_graph(ctmc, formula, qualitative):
     n_nodes = ctmc.nr_states
@@ -112,6 +113,14 @@ class DebugCTMCDataset(Dataset):
         components.exit_rates = exit_rates
         ctmc = stormpy.storage.SparseCtmc(components)
         return ctmc_to_graph(ctmc, self.formula, self.qualitative)
+
+    @property
+    def formulae(self):
+        return [self.formula]
+
+    @property
+    def atomic_proposition_set(self):
+        return sorted(['empty', 'full'])
 
 
 if __name__ == '__main__':

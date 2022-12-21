@@ -21,3 +21,5 @@ def make_atomic_propositions(atomic_proposition_set, mode, data_type):
             tf.bitwise.bitwise_and(x, to_one_hot(v, atomic_proposition_set, data_type)), tf.bool))
                  for atom_prop in atomic_proposition_set}
     return funcs
+
+# TODO: simplify cases like phi1 and not phi2
