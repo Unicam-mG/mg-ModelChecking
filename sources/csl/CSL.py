@@ -113,7 +113,6 @@ def to_mG(expr, max_exit_rate):
             return 'mu X,f . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
         elif isinstance(phi, LongRunAvarageOperator):
             output = '(((' + _to_mG(phi.subformula) +');%) || (((((mu X,p . (X;<*|+T)) || (|p2rate>+;^-1));mx) || (((mu X,p . (X;<*|+T)) || (|p2rate>+;^-1));mx;tmht;^-1));mx));mx;tmht'
-            # output = 'mu X,p . (X;<*|+T)'
             if phi.has_bound is True:
                 threshold = phi.threshold_expr.evaluate_as_double()
                 match phi.comparison_type:
@@ -172,7 +171,7 @@ def build_model(dataset, max_exit_rate, formulae=None, config=CompilationConfig.
                                                        'tmht': total_mean_holding_time} | funcs),
                            sigma_functions=FunctionDict({'+': summation, '+T': transpose_summation}),
                            phi_functions=FunctionDict({'*': prod_emb, 'x': prod_unif, 'p2rate': p2rate}),
-                           bottoms={'f': FixPointConfig(1, 0.0, 0.0001), 'p': FixPointConfig(1, 0.001, 0.00001)},
+                           bottoms={'f': FixPointConfig(1, 0.0, 0.0001), 'p': FixPointConfig(1, 0.01, 0.00001)},
                            tops={},
                            config=config(NodeConfig(data_type, data_size), EdgeConfig(tf.float32, 3), tf.uint8))
 

@@ -941,7 +941,7 @@ class CSLToMgTest(tf.test.TestCase):
                          '0.00017792692460878197]));+)',
                          to_mG('P=? [ true U>=1 \"full\" ]', 4.5))
 
-        self.assertEqual('', to_mG('S=? [ \"full\" ]', 4.5))
+        self.assertEqual('((((full);%) || (((((mu X,p . (X;<*|+T)) || (|p2rate>+;^-1));mx) || (((mu X,p . (X;<*|+T)) || (|p2rate>+;^-1));mx;tmht;^-1));mx));mx;tmht)', to_mG('S=? [ \"full\" ]', 4.5))
 
 
 class CSLTest(tf.test.TestCase):
