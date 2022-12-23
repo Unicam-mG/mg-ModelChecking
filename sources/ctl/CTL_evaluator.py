@@ -12,7 +12,6 @@ from CTL import build_model
 from sources.ctl.datasets.kripke_dataset_utils import ctl_to_mu_formulae
 from sources.ctl.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
 
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = "0"
 
 
@@ -97,12 +96,15 @@ class CTLModelPerformance(PerformanceTest):
         models = []
         total_compile_time = 0
         if self.split:
-            for formula in dataset.formulae:
-                model, compile_time = self.model_constructor(dataset, [formula])
+            formulas = dataset.formulae
+            for formula in formulas:
+                dataset._formulae = [formula]
+                model, compile_time = self.model_constructor(dataset)
                 models.append(model)
                 total_compile_time += compile_time
+            dataset._formulae = formulas
         else:
-            model, compile_time = self.model_constructor(dataset, dataset.formulae)
+            model, compile_time = self.model_constructor(dataset)
             models.append(model)
             total_compile_time = compile_time
         tot = 0.0
@@ -126,12 +128,15 @@ class CTLPredictPerformance(PerformanceTest):
         models = []
         total_compile_time = 0
         if self.split:
-            for formula in dataset.formulae:
-                model, compile_time = self.model_constructor(dataset, [formula])
+            formulas = dataset.formulae
+            for formula in formulas:
+                dataset._formulae = [formula]
+                model, compile_time = self.model_constructor(dataset)
                 models.append(model)
                 total_compile_time += compile_time
+            dataset._formulae = formulas
         else:
-            model, compile_time = self.model_constructor(dataset, dataset.formulae)
+            model, compile_time = self.model_constructor(dataset)
             models.append(model)
             total_compile_time = compile_time
         tot = 0.0
@@ -148,11 +153,11 @@ if __name__ == '__main__':
     dataset_name = "Philosophers-PT-000005"
     dataset = PetriNetDataset(dataset_name, MCCTypes.FIREABILITY, skip_model_checking=True)
     save_output_to_csv([dataset],
-                       [CTLPredictPerformance(lambda dataset, formulas: build_model(dataset, formulas,
-                                                                                    config=CompilationConfig.xa_config,
-                                                                                    optimize='predict',
-                                                                                    return_compilation_time=True),
-                                              lambda dataset: SingleGraphLoader(dataset, epochs=1), split=False),
+                       [CTLPredictPerformance(lambda dataset: build_model(dataset,
+                                                                          config=CompilationConfig.xa_config,
+                                                                          optimize='predict',
+                                                                          return_compilation_time=True),
+                                              lambda dataset: SingleGraphLoader(dataset, epochs=1), split=True),
                         ],
                        ['split predict compile', 'split predict exe', 'full predict compile', 'full predict exe'],
                        dataset_name + "_updated")

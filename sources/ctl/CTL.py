@@ -24,29 +24,29 @@ def to_mG(expr):
         elif isinstance(phi, CTL.AtomicProposition):
             return str(phi)
         elif isinstance(phi, CTL.Not):
-            return '(' + _to_mG(phi.subformula(0)) + ' ; not)'
+            return '(' + _to_mG(phi.subformula(0)) + ');not'
         elif isinstance(phi, CTL.Or):
             # check for equal terms and keep order
             sub_formulas = list(set(phi.subformulas()))
-            return '((' + ' || '.join([_to_mG(sub_formula) for sub_formula in sub_formulas]) + ') ; or)'
+            return '(' + ' || '.join(['(' + _to_mG(sub_formula) + ')' for sub_formula in sub_formulas]) + ');or'
         elif isinstance(phi, CTL.And):
             # check for equal terms and keep order
             sub_formulas = list(set(phi.subformulas()))
-            return '((' + ' || '.join([_to_mG(sub_formula) for sub_formula in sub_formulas]) + ') ; and)'
+            return '(' + ' || '.join(['(' + _to_mG(sub_formula) + ')' for sub_formula in sub_formulas]) + ');and'
         elif isinstance(phi, CTL.Imply):
             return _to_mG(CTL.Or(CTL.Not(phi.subformula(0)), phi.subformula(1)))
         elif isinstance(phi, CTL.E):
             sub_phi = phi.subformula(0)
             if isinstance(sub_phi, CTL.X):
-                return "( (" + _to_mG(sub_phi.subformula(0)) + ") ; |p3> or )"
+                return "(" + _to_mG(sub_phi.subformula(0)) + ");|p3>or"
             elif isinstance(sub_phi, CTL.G):
-                return "( nu X,b . ( ( (" + _to_mG(sub_phi.subformula(0)) + ") || (X ; |p3> or)) ; and) )"
+                return "nu X,b . (((" + _to_mG(sub_phi.subformula(0)) + ") || (X;|p3>or));and)"
             elif isinstance(sub_phi, CTL.F):
                 return _to_mG(CTL.EU(CTL.Bool(True), sub_phi.subformula(0)))
             elif isinstance(sub_phi, CTL.U):
-                return "( mu X,b . (((((" + _to_mG(
-                    sub_phi.subformula(0)) + ") || (X ; |p3> or) ); and) || (" + _to_mG(
-                    sub_phi.subformula(1)) + ") ) ; or) )"
+                return "mu X,b . (((((" + _to_mG(
+                    sub_phi.subformula(0)) + ") || (X;|p3>or));and) || (" + _to_mG(
+                    sub_phi.subformula(1)) + "));or)"
         elif isinstance(phi, CTL.A):
             sub_phi = phi.subformula(0)
             if isinstance(sub_phi, CTL.X):
@@ -84,8 +84,8 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
                            tops={'b': FixPointConfig(1, True)},
                            config=config(NodeConfig(data_type, data_size), tf.uint8))
     if formulae is None:
-        expr = " || ".join([to_mG(formula) for formula in dataset.formulae])
+        expr = " || ".join(['(' + to_mG(formula) + ')' for formula in dataset.formulae])
     else:
-        expr = " || ".join([to_mG(formula) for formula in formulae])
+        expr = " || ".join(['(' + to_mG(formula) + ')' for formula in formulae])
     return compiler.compile(expr, loss=tfa.metrics.HammingLoss(mode='multilabel'), optimize=optimize,
                             return_compilation_time=return_compilation_time)

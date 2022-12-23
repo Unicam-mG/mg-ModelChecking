@@ -1,9 +1,7 @@
 import tensorflow as tf
-from libmg import SingleGraphLoader, GNNCompiler, CompilationConfig, NodeConfig, EdgeConfig, FunctionDict, \
-    FixPointConfig
+from libmg import SingleGraphLoader, CompilationConfig
 
-from sources.pctl.PCTL import summation, prod, pmode, plus, mul, probgreq, b_not, b_or, b_true, b_and, \
-    make_atomic_propositions, to_mG, build_model
+from sources.pctl.PCTL import to_mG, build_model
 from sources.pctl.datasets.DebugDTMCDataset import DebugDTMCDataset
 
 

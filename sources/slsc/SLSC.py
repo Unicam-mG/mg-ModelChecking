@@ -40,19 +40,19 @@ def to_mG(phi):
             return str(args[0])
 
         def not_formula(self, args):
-            return '(' + str(args[0]) + ' ; not)'
+            return '(' + str(args[0]) + ');not'
 
         def or_formula(self, args):
-            return '((' + str(args[0]) + ' || ' + str(args[1]) + ');or)'
+            return '((' + str(args[0]) + ') || (' + str(args[1]) + '));or'
 
         def and_formula(self, args):
-            return '((' + str(args[0]) + ' || ' + str(args[1]) + ');and)'
+            return '((' + str(args[0]) + ') || (' + str(args[1]) + '));and'
 
         def near_formula(self, args):
-            return '(' + str(args[0]) + '; |> or)'
+            return '(' + str(args[0]) + ');|p3>or'
 
         def reachability_formula(self, args):
-            return "mu X,b . (( ((" + str(args[0]) + " || (X ; |> or) ) ; and) || " + str(args[1]) + " );or)"
+            return "mu X,b . (((((" + str(args[0]) + ") || (X;|p3>or));and) || (" + str(args[1]) + "));or)"
 
     parser = Lark(slsc_grammar, start='s_formula')
     return SLSCToMuGNN().transform(parser.parse(phi))
@@ -80,8 +80,8 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
                            tops={'b': FixPointConfig(1, True)},
                            config=config(NodeConfig(data_type, data_size), tf.uint8))
     if formulae is None:
-        expr = " || ".join([to_mG(formula) for formula in dataset.formulae])
+        expr = " || ".join(['(' + to_mG(formula) + ')' for formula in dataset.formulae])
     else:
-        expr = " || ".join([to_mG(formula) for formula in formulae])
+        expr = " || ".join(['(' + to_mG(formula) + ')' for formula in formulae])
     return compiler.compile(expr, loss=tfa.metrics.HammingLoss(mode='multilabel'), optimize=optimize,
                             return_compilation_time=return_compilation_time)

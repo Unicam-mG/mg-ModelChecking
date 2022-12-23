@@ -3,19 +3,22 @@ import tensorflow as tf
 
 from libmg import CompilationConfig
 from libmg import MultipleGraphLoader, SingleGraphLoader
-from sources.ctl.CTL import build_model
+from sources.ctl.CTL import build_model, to_mG
 from sources.ctl.datasets.pnml_kripke_dataset import PetriNetDataset, MCCTypes
 from sources.ctl.datasets.random_kripke_dataset import RandomKripkeDataset
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = "0"
 
 
-class CudaTest(tf.test.TestCase):
-    def setUp(self):
-        super(CudaTest, self).setUp()
-
-    def test_cuda(self):
-        self.assertEqual(tf.test.is_built_with_cuda(), True)
-
+class CTLToMgTest(tf.test.TestCase):
+    def test_parse(self):
+        self.assertEqual('try', to_mG('try'))
+        self.assertEqual('true', to_mG('true'))
+        self.assertEqual('false', to_mG('false'))
+        self.assertEqual('(try);not', to_mG('~try'))
+        self.assertIn(to_mG('try & succ'), {'((try) || (succ));and', '((succ) || (try));and'})
+        self.assertIn(to_mG('try | succ'), {'((try) || (succ));or', '((succ) || (try));or'})
+        self.assertEqual('(try);|p3>or', to_mG('E X try'))
+        self.assertEqual('nu X,b . (((try) || (X;|p3>or));and)', to_mG('E G try'))
+        self.assertEqual('mu X,b . (((((try) || (X;|p3>or));and) || (succ));or)', to_mG('E try U succ'))
 
 class RandomKripkeTest(tf.test.TestCase):
 

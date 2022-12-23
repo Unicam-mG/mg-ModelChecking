@@ -104,8 +104,8 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xaei_config, op
                            tops={},
                            config=config(NodeConfig(data_type, data_size), EdgeConfig(tf.float32, 1), tf.uint8))
     if formulae is None:
-        expr = " || ".join([to_mG(formula) for formula in dataset.formulae])
+        expr = " || ".join(['(' + to_mG(formula) + ')' for formula in dataset.formulae])
     else:
-        expr = " || ".join([to_mG(formula) for formula in formulae])
+        expr = " || ".join(['(' + to_mG(formula) + ')' for formula in formulae])
     return compiler.compile(expr, loss=tfa.metrics.HammingLoss(mode='multilabel'), optimize=optimize,
                             return_compilation_time=return_compilation_time)
