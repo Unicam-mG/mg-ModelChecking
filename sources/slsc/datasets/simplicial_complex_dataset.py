@@ -68,7 +68,7 @@ class SimplicialComplexDataset(Dataset):
 
     def download(self):
         os.makedirs(self.path)
-        st = SimplexTree()
+        st = SimplexTree(None)
         for simplex in self.simplices:
             st.insert(simplex)
         simplices_with_id_by_rank: Dict[int, List[Tuple[Set[str], int]]] = {i: [] for i in range(st.dimension() + 1)}

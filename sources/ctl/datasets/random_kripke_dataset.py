@@ -45,6 +45,7 @@ def networkx_to_kripke(g, initial_state, graph_labels):
     Convert a networkx directed Graph to Aldebaran format
     :param g: A networkx directed Graph
     :param initial_state: Initial state of the graph, numbered from 0 to n_states - 1
+    :param graph_labels: Labels to use in the Kripke structure
     :return: A kripke structure object
     """
     graph_labels = iter(graph_labels)
@@ -71,6 +72,7 @@ def networkx_to_lts(g, initial_state, graph_labels):
     Convert a networkx directed Graph to LTS in Aldebaran format
     :param g: A networkx directed Graph
     :param initial_state: Initial state of the graph, numbered from 0 to n_states - 1
+    :param graph_labels: Labels to use in the Kripke structure
     :return: A string representing the input graph in Aldebaran (.aut) format
     """
     graph_labels = iter(graph_labels)

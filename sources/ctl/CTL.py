@@ -2,7 +2,7 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 from pyModelChecking import CTL, Bool
 from libmg import Sigma, Phi, FunctionDict
-from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
+from libmg import GNNCompiler, CompilationConfig, NodeConfig
 
 from sources.dataset_utils import get_tf_data_type
 from sources.propositional_logic import b_true, b_false, b_and, b_or, b_not, make_atomic_propositions
@@ -40,11 +40,11 @@ def to_mG(expr):
             if isinstance(sub_phi, CTL.X):
                 return "(" + _to_mG(sub_phi.subformula(0)) + ");|p3>or"
             elif isinstance(sub_phi, CTL.G):
-                return "nu X,b . (((" + _to_mG(sub_phi.subformula(0)) + ") || (X;|p3>or));and)"
+                return "nu X:bool[1] = true . (((" + _to_mG(sub_phi.subformula(0)) + ") || (X;|p3>or));and)"
             elif isinstance(sub_phi, CTL.F):
                 return _to_mG(CTL.EU(CTL.Bool(True), sub_phi.subformula(0)))
             elif isinstance(sub_phi, CTL.U):
-                return "mu X,b . (((((" + _to_mG(
+                return "mu X:bool[1] = false . (((((" + _to_mG(
                     sub_phi.subformula(0)) + ") || (X;|p3>or));and) || (" + _to_mG(
                     sub_phi.subformula(1)) + "));or)"
         elif isinstance(phi, CTL.A):
@@ -80,9 +80,7 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
                                                        'not': b_not, 'and': b_and, 'or': b_or} | funcs),
                            sigma_functions=FunctionDict({'or': Max}),
                            phi_functions=FunctionDict({'p3': p3}),
-                           bottoms={'b': FixPointConfig(1, False)},
-                           tops={'b': FixPointConfig(1, True)},
-                           config=config(NodeConfig(data_type, data_size), tf.uint8))
+                           config=config(NodeConfig(data_type, data_size), tf.uint8, precision=None))
     if formulae is None:
         expr = " || ".join(['(' + to_mG(formula) + ')' for formula in dataset.formulae])
     else:

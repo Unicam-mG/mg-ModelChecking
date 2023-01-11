@@ -19,12 +19,12 @@ class PCTLToMgTest(tf.test.TestCase):
         self.assertEqual('((succ);%;|*>+);probleq[0.5]', to_mG('P<=0.5 [ X \"succ\"]'))
         self.assertEqual('((succ);%;|*>+)', to_mG('P=? [ X \"succ\"]'))
         self.assertEqual('((succ);%)', to_mG('P=? [ \"try\" U<=0 \"succ\" ]'))
-        self.assertEqual('((((succ);%) || (((((try) || (succ);not);and);%) || ((succ);%;|*>+));*);+)',
+        self.assertEqual('((((succ);%) || ((((((try) || ((succ);not));and);%) || ((succ);%;|*>+));*));+)',
                          to_mG('P=? [ \"try\" U<=1 \"succ\" ]'))
-        self.assertEqual('((((succ);%) || (((((try) || (succ);not);and);%) || ((((succ);%) || (((((try) || ('
-                         'succ);not);and);%) || ((succ);%;|*>+));*);+;|*>+));*);+)',
+        self.assertEqual('((((succ);%) || ((((((try) || ((succ);not));and);%) || ((((succ);%) || ((((((try) || (('
+                         'succ);not));and);%) || ((succ);%;|*>+));*));+;|*>+));*));+)',
                          to_mG('P=? [ \"try\" U<=2 \"succ\" ]'))
-        self.assertEqual('(mu X,f . ((((succ);%) || ((((((try) || (succ);not);and);%) || (X;|*>+));*));+))',
+        self.assertEqual('(mu X:float[1] = 0.0 . ((((succ);%) || ((((((try) || ((succ);not));and);%) || (X;|*>+));*));+))',
                          to_mG('P=? [ \"try\" U \"succ\" ]'))
 
 

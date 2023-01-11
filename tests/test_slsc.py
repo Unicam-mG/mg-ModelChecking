@@ -1,4 +1,3 @@
-import os
 import tensorflow as tf
 from sources.slsc.SLSC import build_model, to_mG
 from sources.slsc.datasets.simplicial_complex_dataset import SimplicialComplexDataset, AdjacencyRelation, \
@@ -15,7 +14,7 @@ class SLSCToMgTest(tf.test.TestCase):
         self.assertEqual('((try) || (succ));and', to_mG('try and succ'))
         self.assertEqual('((try) || (succ));or', to_mG('try or succ'))
         self.assertEqual('(try);|p3>or', to_mG('N try'))
-        self.assertEqual('mu X,b . (((((try) || (X;|p3>or));and) || (succ));or)', to_mG('try R succ'))
+        self.assertEqual('mu X:bool[1] = false . (((((try) || (X;|p3>or));and) || (succ));or)', to_mG('try R succ'))
 
 
 class SimplicialComplexTest(tf.test.TestCase):

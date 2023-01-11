@@ -1,7 +1,7 @@
 import tensorflow as tf
 import tensorflow_addons as tfa
 import stormpy
-from libmg import PsiLocal, Phi, Sigma, CompilationConfig, GNNCompiler, FunctionDict, FixPointConfig, NodeConfig, \
+from libmg import PsiLocal, Phi, Sigma, CompilationConfig, GNNCompiler, FunctionDict, NodeConfig, \
     EdgeConfig
 from stormpy import BooleanLiteralFormula, UnaryBooleanStateFormula, BooleanBinaryStateFormula, ComparisonType
 
@@ -47,16 +47,16 @@ def to_mG(expr):
             steps = phi.upper_bound_expression.evaluate_as_int()
             phi1 = _to_mG(phi.left_subformula)
             phi2 = _to_mG(phi.right_subformula)
-            phi1_and_not_phi2 = '((' + phi1 + ') || (' + phi2 + ');not);and'
+            phi1_and_not_phi2 = '((' + phi1 + ') || ((' + phi2 + ');not));and'
             output = '(' + phi2 + ');%'
             for _ in range(steps):
-                output = '(((' + phi2 + ');%) || (((' + phi1_and_not_phi2 + ');%) || (' + output + ';|*>+));*);+'
+                output = '(((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (' + output + ';|*>+));*));+'
             return output
         elif phi.is_until_formula is True:
             phi1 = _to_mG(phi.left_subformula)
             phi2 = _to_mG(phi.right_subformula)
-            phi1_and_not_phi2 = '((' + phi1 + ') || (' + phi2 + ');not);and'
-            return 'mu X,f . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
+            phi1_and_not_phi2 = '((' + phi1 + ') || ((' + phi2 + ');not));and'
+            return 'mu X:float[1] = 0.0 . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
         elif isinstance(phi, BooleanBinaryStateFormula):
             string_phi = str(phi)
             if '&' in string_phi:
@@ -100,9 +100,8 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xaei_config, op
                                                        'probleq': probleq} | funcs),
                            sigma_functions=FunctionDict({'+': summation}),
                            phi_functions=FunctionDict({'*': prod}),
-                           bottoms={'f': FixPointConfig(1, 0.0, 0.001)},
-                           tops={},
-                           config=config(NodeConfig(data_type, data_size), EdgeConfig(tf.float32, 1), tf.uint8))
+                           config=config(NodeConfig(data_type, data_size), EdgeConfig(tf.float32, 1), tf.uint8,
+                                         precision=0.001))
     if formulae is None:
         expr = " || ".join(['(' + to_mG(formula) + ')' for formula in dataset.formulae])
     else:

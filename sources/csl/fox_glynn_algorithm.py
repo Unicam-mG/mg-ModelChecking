@@ -1,8 +1,6 @@
 import math
 import stormpy
 
-from sources.csl.datasets.DebugCTMCDataset import DebugCTMCDataset
-
 
 # source: https://github.com/prismmodelchecker/prism/blob/master/prism/src/explicit/FoxGlynn.java
 # https://github.com/prismmodelchecker/prism/blob/master/prism/src/explicit/CTMCModelChecker.java

@@ -1,4 +1,3 @@
-import os
 import tensorflow as tf
 
 from libmg import CompilationConfig
@@ -17,8 +16,9 @@ class CTLToMgTest(tf.test.TestCase):
         self.assertIn(to_mG('try & succ'), {'((try) || (succ));and', '((succ) || (try));and'})
         self.assertIn(to_mG('try | succ'), {'((try) || (succ));or', '((succ) || (try));or'})
         self.assertEqual('(try);|p3>or', to_mG('E X try'))
-        self.assertEqual('nu X,b . (((try) || (X;|p3>or));and)', to_mG('E G try'))
-        self.assertEqual('mu X,b . (((((try) || (X;|p3>or));and) || (succ));or)', to_mG('E try U succ'))
+        self.assertEqual('nu X:bool[1] = true . (((try) || (X;|p3>or));and)', to_mG('E G try'))
+        self.assertEqual('mu X:bool[1] = false . (((((try) || (X;|p3>or));and) || (succ));or)', to_mG('E try U succ'))
+
 
 class RandomKripkeTest(tf.test.TestCase):
 

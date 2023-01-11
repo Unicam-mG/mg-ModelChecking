@@ -118,9 +118,3 @@ class DebugDTMCDataset(Dataset):
     @property
     def atomic_proposition_set(self):
         return sorted(['try', 'succ', 'fail'])
-
-
-if __name__ == '__main__':
-    formula = "P>=0.9 [ X (!\"try\" | \"succ\" ) ]"
-    dataset = DebugDTMCDataset(formula)
-    print(dataset[0])

@@ -4,10 +4,9 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 import re
 import sys
-from libmg import PsiLocal, Phi, Sigma, CompilationConfig, GNNCompiler, FunctionDict, FixPointConfig, NodeConfig, \
+from libmg import PsiLocal, Phi, Sigma, CompilationConfig, GNNCompiler, FunctionDict, NodeConfig, \
     EdgeConfig, PsiGlobal
 
-from libmg.layers import PreImage
 import stormpy
 from stormpy import ComparisonType, BooleanBinaryStateFormula, UnaryBooleanStateFormula, BooleanLiteralFormula, \
     LongRunAvarageOperator
@@ -41,7 +40,6 @@ mx = PsiLocal(lambda x: tf.math.reduce_prod(x, axis=1, keepdims=True))
 total_mean_holding_time = PsiGlobal(single_op=lambda x: tf.math.reduce_sum(x, keepdims=True))
 
 
-
 def to_mG(expr, max_exit_rate):
     def _to_mG(phi):
         if phi.is_probability_operator is True:
@@ -64,10 +62,10 @@ def to_mG(expr, max_exit_rate):
             lb = float(Fraction((re.search(r'>=(.+)\s', str(phi)) or re.search(r'\[(.+),', str(phi))).group(1))) if phi.has_lower_bound else 0
             phi1 = _to_mG(phi.left_subformula)
             phi2 = _to_mG(phi.right_subformula)
-            phi1_and_not_phi2 = '((' + phi1 + ') || (' + phi2 + ');not);and'
+            phi1_and_not_phi2 = '((' + phi1 + ') || ((' + phi2 + ');not));and'
 
             if lb == 0 and ub == math.inf:
-                return 'mu X,f . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
+                return 'mu X:float[1] = 0.0 . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
             else:
                 # build formula
                 if lb == 0:
@@ -109,10 +107,10 @@ def to_mG(expr, max_exit_rate):
         elif phi.is_until_formula is True:
             phi1 = _to_mG(phi.left_subformula)
             phi2 = _to_mG(phi.right_subformula)
-            phi1_and_not_phi2 = '((' + phi1 + ') || (' + phi2 + ');not);and'
-            return 'mu X,f . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
+            phi1_and_not_phi2 = '((' + phi1 + ') || ((' + phi2 + ');not));and'
+            return 'mu X:float[1] = 0.0 . ((((' + phi2 + ');%) || ((((' + phi1_and_not_phi2 + ');%) || (X;|*>+));*));+)'
         elif isinstance(phi, LongRunAvarageOperator):
-            output = '(((' + _to_mG(phi.subformula) +');%) || (((((mu X,p . (X;<*|+T)) || (|p2rate>+;^-1));mx) || (((mu X,p . (X;<*|+T)) || (|p2rate>+;^-1));mx;tmht;^-1));mx));mx;tmht'
+            output = '(((' + _to_mG(phi.subformula) +');%) || (((((mu X:float[1] = 1 . (X;<*|+T)) || (|p2rate>+;^-1));mx) || (((mu X:float[1] = 1 . (X;<*|+T)) || (|p2rate>+;^-1));mx;tmht;^-1));mx));mx;tmht'
             if phi.has_bound is True:
                 threshold = phi.threshold_expr.evaluate_as_double()
                 match phi.comparison_type:
@@ -171,9 +169,8 @@ def build_model(dataset, max_exit_rate, formulae=None, config=CompilationConfig.
                                                        'tmht': total_mean_holding_time} | funcs),
                            sigma_functions=FunctionDict({'+': summation, '+T': transpose_summation}),
                            phi_functions=FunctionDict({'*': prod_emb, 'x': prod_unif, 'p2rate': p2rate}),
-                           bottoms={'f': FixPointConfig(1, 0.0, 0.0001), 'p': FixPointConfig(1, 0.01, 0.00001)},
-                           tops={},
-                           config=config(NodeConfig(data_type, data_size), EdgeConfig(tf.float32, 3), tf.uint8))
+                           config=config(NodeConfig(data_type, data_size), EdgeConfig(tf.float32, 3), tf.uint8,
+                                         precision=0.00001))
 
     if formulae is None:
         expr = " || ".join(['(' + to_mG(formula, max_exit_rate) + ')' for formula in dataset.formulae])

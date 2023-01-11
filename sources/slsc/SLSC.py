@@ -2,7 +2,7 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 from lark import Lark, Transformer
 from libmg import Phi, Sigma, FunctionDict
-from libmg import GNNCompiler, FixPointConfig, CompilationConfig, NodeConfig
+from libmg import GNNCompiler, CompilationConfig, NodeConfig
 
 from sources.dataset_utils import get_tf_data_type
 from sources.propositional_logic import b_true, b_false, b_and, b_or, b_not, make_atomic_propositions
@@ -30,10 +30,10 @@ Max = Sigma(lambda m, i, n, x: tf.cast(tf.math.segment_max(tf.cast(m, tf.uint8),
 
 def to_mG(phi):
     class SLSCToMuGNN(Transformer):
-        def true(self, args):
+        def true(self, _):
             return 'true'
 
-        def false(self, args):
+        def false(self, _):
             return 'false'
 
         def a_prop(self, args):
@@ -52,7 +52,7 @@ def to_mG(phi):
             return '(' + str(args[0]) + ');|p3>or'
 
         def reachability_formula(self, args):
-            return "mu X,b . (((((" + str(args[0]) + ") || (X;|p3>or));and) || (" + str(args[1]) + "));or)"
+            return "mu X:bool[1] = false . (((((" + str(args[0]) + ") || (X;|p3>or));and) || (" + str(args[1]) + "));or)"
 
     parser = Lark(slsc_grammar, start='s_formula')
     return SLSCToMuGNN().transform(parser.parse(phi))
@@ -76,8 +76,6 @@ def build_model(dataset, formulae=None, config=CompilationConfig.xai_config, opt
                                    tf.math.unsorted_segment_max(tf.cast(m, tf.uint8), i, n),
                                    tf.bool))}),
                            phi_functions=FunctionDict({'p3': p3}),
-                           bottoms={'b': FixPointConfig(1, False)},
-                           tops={'b': FixPointConfig(1, True)},
                            config=config(NodeConfig(data_type, data_size), tf.uint8))
     if formulae is None:
         expr = " || ".join(['(' + to_mG(formula) + ')' for formula in dataset.formulae])
